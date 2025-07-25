@@ -5,11 +5,17 @@
   <xi:include href="./docinfo.ptx" />
 
   <article xml:id="syllabus">
-    <title>Course Name Syllabus</title>
-    <subtitle>Prefix 101</subtitle>
+    <title>MATH-UA 122 Calculus II Departmental Syllabus</title>
+    <subtitle>Fall 2025 term</subtitle>
 
     <!-- Include frontmatter -->
     <xi:include href="./frontmatter.ptx" />
+
+    <p>
+      Calculus II is a coordinated course. This syllabus contains information shared across all lecture
+      sections. Your professors will also provide a syllabus supplement that contains information specific
+      to your lecture section.
+    </p>
 
     <!-- Include chapters -->
     <section xml:id="sec-course-info">
@@ -19,81 +25,78 @@
           <li>
             <title>Course Description</title>
             <p>
-              Basic concepts of logic, sets, partial order and other relations, and functions. Basic concepts of mathematics (definitions, proofs, sets, functions, and relations) with a focus on discrete structures: integers, bits, strings, trees, and graphs. Propositional logic, Boolean algebra, and predicate logic. Mathematical induction and recursion. Invariants and algorithmic correctness. Recurrences and asymptotic growth analysis. Fundamentals of counting.
+              Techniques of integration. Further applications. Plane analytic geometry. Polar coordinates
+              and parametric equations. Infinite series, including power series.
             </p>
           </li>
           <li>
             <title>Credits</title>
             <p>
-              3
+              4
             </p>
           </li>
           <li>
-            <title>Course Designations and Attributes</title>
+            <title>Prerequisites</title>
             <p>
-              <dl>
-                <li>
-                  <title>Breadth</title>
-                  <p>
-                    Natural Science
-                  </p>
-                </li>
-                <li>
-                  <title>Level</title>
-                  <p>
-                    Intermediate
-                  </p>
-                </li>
-                <li>
-                  <title>L&amp;S Credit</title>
-                  <p>
-                    Counts as Liberal Arts and Science credit in L&amp;S
-                  </p>
-                </li>
-              </dl>
-            </p>
-          </li>
-          <li>
-            <title>Requisite</title>
-            <p>
-              MATH 217 or 221
+              MATH-UA 121 Calculus I, or exam credit, or placement test.
+              Visit the <url href="https://math.nyu.edu/dynamic/courses/undergrad/math-ua-122/">departmental course page</url> for more detail.
             </p>
           </li>
           <li>
             <title>Instructional modality</title>
             <p>
-              In-person
+              Section 001 is online. All other sections are in-person.
             </p>
           </li>
         </dl>
       </p>
+
+      <p>“The book of the universe is written in the language of mathematics.” Galileo wrote this four hundred years ago, even before Newton and Leibniz discovered calculus. The statement is as valid today as ever: We use functions in all the sciences, and calculus allows us to analyze the functions and draw scientific conclusions.
+      </p>
+
+      <p>
+        Calculus II is a second semester calculus course for students who have previously been introduced to the basic ideas of differential and integral calculus. Over the semester we will study three (related) topics, topics that form a central part of the language of modern science:
+
+        <ul>
+          <li>
+            <p>
+            applications and methods of integration, 
+            </p>
+          </li>
+          <li>
+            <p>
+            infinite series and the representation of functions by power series, and
+            </p>
+          </li>
+          <li>
+            <p>
+            parametric curves in the plane.
+            </p>
+          </li>
+        </ul>
+      </p>
+
+      <p>
+        The material we take up in this course has applications in physics, chemistry, biology, environmental science, astronomy, economics, statistics, and just about everything else. We want you to leave the course not only with computational ability, but with the ability to use these notions in their natural scientific contexts, and with an appreciation of their mathematical beauty and power.
+      </p>
+
       <paragraphs>
         <title>Learning Outcomes</title>
         <p>
           <ol>
             <li>
               <p>
-                Be able to construct proofs by induction to prove properties in a variety of domains (mathematical formulas, recursively-defined structures, loop invariants, correctness of recursive programs).
+                Antidifferentiate elementary functions and evaluate definite integrals
               </p>
             </li>
             <li>
               <p>
-                Apply basic combinatoric techniques to counting problems.
+                Analyze sequence and series
               </p>
             </li>
             <li>
               <p>
-                Develop basic skills to construct mathematically rigorous arguments and proofs.
-              </p>
-            </li>
-            <li>
-              <p>
-                Gain exposure to the basics of program analysis (program correctness, recurrences, asymptotic analysis).
-              </p>
-            </li>
-            <li>
-              <p>
-                Demonstrate a familiarity with and an ability to reason about discrete structures/data types (integers, strings, bit strings, sets, relations, functions, graphs, trees).
+                Use calculus to analyze plane curves
               </p>
             </li>
           </ol>
@@ -102,107 +105,17 @@
       <paragraphs>
         <title>Meeting Times and Locations</title>
         <p>
-          Both sections have lecture meetings in ... LEC 001 meets TR 11am<ndash/>12:15pm and LEC 002 meets TR 9:30<ndash/>10:45am. Each student is enrolled in one 50-minute discussion section led by one of the teaching assistants. Your discussion section meets either on Monday or Wednesday. Check your Student Center for your discussion number, time, and location.
+          Lecture sections meet twice weekly for 75 minutes, led by a professor.
+          Recitation sections meets once weekly for 75 minutes, led by a teaching assistant.
+          The times and locations of your sections are visible on <url href="https://albert.nyu.edu/">Albert</url>.
         </p>
       </paragraphs>
       <paragraphs>
         <title>How the Credit Hours are Met by the Course</title>
         <p>
-          This class meets for two 75-minute lectures and one 50-minute discussion each week over the  semester and carries the expectation that students will work on course learning activities (e.g. reading, problem sets, papers, and studying) for about six hours outside of classroom per week. The syllabus includes more information about meeting times and expectations for student work.
+          This class meets for 3 hours and 45 minutes each week and carries the expectation that students will work on course learning activities (e.g. reading, problem sets, papers, and studying) for about 7 hours and 30 minutes outside of classroom per week. The syllabus includes more information about meeting times and expectations for student work.
         </p>
       </paragraphs>
-    </section>
-    <section xml:id="sec-staff" xmlns:xi="http://www.w3.org/2001/XInclude">
-      <title>Course Staff</title>
-      <subsection>
-        <title>Instructor</title>
-        <paragraphs>
-          <title>Dr. Mitch Keller</title>
-          <aside component="online">
-            <p>
-              My pronouns are he/him/his.
-              I ask that you address me as <q>Prof. Keller</q> or <q>Dr.
-              Keller</q>, the appropriate professional forms.
-              Since this is not high school, please do not address me as <q>Mr. Keller</q>.
-              In general, you will find that I am not an overly formal individual.
-              However, academia has a long history of marginalizing scholars<mdash/>professors, librarians, and students<mdash/>who don't present as the Hollywood image of a professor (older, white, male).
-              Using titles for all your instructors is a small way that we can make the academy more inclusive.
-              Therefore, in solidarity with my colleagues of all identities and backgrounds, <q>Prof.
-              Keller</q> is the form of address that I prefer.
-              </p>
-          </aside>
-          <p><nbsp/>
-            <dl>
-              <li>
-                <title>Title</title>
-                <p>
-                  Associate Director of Undergraduate Studies and Teaching Faculty
-                </p>
-              </li>
-              <li>
-                <title>Email</title>
-                <p>
-                  <url href="mailto:name@example.edu">name@example.edu</url>
-                </p>
-              </li>
-            </dl>
-          </p>
-        </paragraphs>
-      </subsection>
-      <subsection>
-        <title>Teaching Assistants</title>
-        <paragraphs>
-          <title>LEC 001 (TR 11am<ndash/>12:15pm)</title>
-            <p><nbsp/>
-              <dl>
-                <li>
-                <title>TA1</title>
-                <p>
-                  DIS 300 <url href="mailto:name@example.edu" visual="name@example.edu">name@example.edu</url>
-                </p>
-              </li>
-              <li>
-                <title>TA2</title>
-                <p>
-                  DIS 399 <url href="mailto:name@example.edu">name@example.edu</url>
-                </p>
-              </li>
-              </dl>
-            </p>
-        </paragraphs>
-        <paragraphs>
-          <title>LEC 002 (TR 9:30<ndash/>10:45am)</title>
-            <p><nbsp/>
-              <dl>
-                <li>
-                  <title>TA1</title>
-                  <p>
-                    DIS 321, 322 <url href="mailto:name@example.edu" visual="name@example.edu">name@example.edu</url>
-                  </p>
-                </li>
-                <li>
-                  <title>TA2</title>
-                  <p>
-                    DIS 301, 302 <url href="mailto:name@example.edu">name@example.edu</url>
-                  </p>
-                </li>
-                <li>
-                  <title>TA3</title>
-                  <p>
-                    DIS 325, 326 <url href="mailto:name@example.edu">name@example.edu</url>
-                  </p>
-                </li>
-              </dl>
-            </p>
-        </paragraphs>
-
-      </subsection>
-      <subsection xml:id="subsec-office-hours">
-        <title>Office Hours</title>
-        <p>
-          Students are welcome to attend the office hour of the instructor or any of the teaching assistants. Office hours are posted on Canvas, including updates in the event any individual office hour is cancelled or rescheduled.
-        </p>
-      </subsection>
     </section>
   <section xml:id="sec-materials">
     <title>Textbook and Other Required Materials</title>
@@ -211,28 +124,26 @@
         <li>
           <title>Textbook</title>
           <p>
-            The required course text is the ebook <pubtitle>Introduction to Discrete Mathematics</pubtitle> by Irani et al. The ISBN is 978-1-394-05895-2. A subscription is $64. Students may begin subscribing on January 7, 2025 and the cutoff to subscribe is April 26, 2025. Subscriptions will last until May 23, 2025. <alert>To subscribe, click any zyBooks assignment link in Canvas and subscribe. (Do not go to the zyBooks website and create a new account.)</alert>
+            The course will closely follow the textbook <pubtitle>Essential Calculus, Early Transcendentals</pubtitle>, by James Stewart.
           </p>
         </li>
         <li>
-          <title>Canvas</title>
+          <title>WebAssign</title>
           <p>
-            Course materials will be posted to or linked from <url href="https://canvas.wisc.edu/courses/437531" visual="canvas.wisc.edu/courses/437531">Canvas</url>. This includes lecture slides, discussion worksheets, zyBook Participation and Challenge Activities, sample test questions, and written homework assignments. Announcements from the instructor and TAs will also be posted using Canvas. You are responsible for reading Canvas announcements in a timely manner.
+            The course also requires a subscription to Cengage WebAssign in order to do assigned
+            problems from the textbook. <em>The WebAssign subscription includes digital access to the textbook.</em>
+          </p>
+        </li>
+        <li>
+          <title>Brightspace</title>
+          <p>
+            Each lecturer will have their own <url href="https://brightspace.nyu.edu/">Brightspace</url> site, through which they will distribute lecture and study materials.
           </p>
         </li>
         <li>
           <title>Gradescope</title>
           <p>
-            You will scan and submit your written homework to Gradescope. Homework will be graded and returned to you within Gradescope. Tests and the final exam will be taken on paper, but the instructional team will scan them and upload them to Gradescope. Graded tests and the final exam will be returned to you using Gradescope. You will be able to access Gradescope using links from Canvas.
-          </p>
-        </li>
-        <li>
-          <title>Piazza</title>
-          <p>
-            We will use <url href="https://piazza.com/wisc/spring2025/sp25mathandcs240001002" visual="piazza.com/wisc/spring2025/sp25mathandcs240001002">Piazza</url>. This page is a forum for you to discuss the material of this class with other students and your TAs and/or instructor. Posts to this page should be confined to questions regarding the material and logistical questions about the class (e.g., exam dates and locations). Please do not use email for math questions.
-          </p>
-          <p>
-            Any posts containing comments (either positive or negative) about the instructors, the class, the students, or anything else, will be deleted. Unprofessional conduct may result in disciplinary action.
+            You will scan and submit your written homework to <url href="https://gradescope.com/">Gradescope</url>. Homework will be graded and returned to you within Gradescope. Tests and the final exam will be taken on paper, but the instructional team will scan them and upload them to Gradescope. Graded tests and the final exam will be returned to you using Gradescope. You will be able to access Gradescope using links from Brightspace.
           </p>
         </li>
       </dl>
