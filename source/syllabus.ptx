@@ -5,8 +5,8 @@
   <xi:include href="./docinfo.ptx" />
 
   <article xml:id="syllabus">
-    <title>MATH-UA 122 Calculus II Departmental Syllabus</title>
-    <subtitle>Fall 2025 term</subtitle>
+    <title>MATH-UA 122 Calculus II</title>
+    <subtitle>Departmental Syllabus, Fall 2025 term</subtitle>
 
     <!-- Include frontmatter -->
     <xi:include href="./frontmatter.ptx" />
