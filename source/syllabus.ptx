@@ -197,115 +197,79 @@
         <li>
           <title>Textbook</title>
           <p>
-            The course will closely follow the textbook <pubtitle>Essential Calculus, Early Transcendentals</pubtitle>, by James Stewart.
+            The course will closely follow the textbook <pubtitle>Essential
+            Calculus, Early Transcendentals</pubtitle>, by James Stewart. An
+            electronic version of the text is included in WebAssign.
           </p>
         </li>
         <li>
           <title>WebAssign</title>
           <p>
-            The course also requires a subscription to Cengage WebAssign in order to do assigned
-            problems from the textbook. <em>The WebAssign subscription includes digital access to the textbook.</em>
+            The course also requires a subscription to Cengage WebAssign in
+            order to do assigned textbook problems. You can buy your
+            subscription automatically through <url
+            href="https://www.nyu.edu/about/leadership-university-administration/office-of-the-president/office-of-the-executivevicepresident/finance-and-budget/campus-services/nyu-campus-stores/included.html">Folett
+            ACCESS</url>, independently through the <url
+            href="https://www.bkstr.com/nyustore/home">NYU Bookstore</url>, or
+            within WebAssign itself. For most students, the lowest price will be
+            found through ACCESS. This is the only purchase required to
+            participate in the course.
           </p>
         </li>
         <li>
           <title>Brightspace</title>
           <p>
-            Each lecturer will have their own <url href="https://brightspace.nyu.edu/">Brightspace</url> site, through which they will distribute lecture and study materials.
+            Each lecturer will have their own <url
+            href="https://brightspace.nyu.edu/">Brightspace</url> site, through
+            which they will distribute lecture and study materials.
+            Brightspace is your course hub which links to each of the other platforms used.
           </p>
         </li>
         <li>
           <title>Gradescope</title>
           <p>
-            You will scan and submit your written homework to <url href="https://gradescope.com/">Gradescope</url>. Homework will be graded and returned to you within Gradescope. Tests and the final exam will be taken on paper, but the instructional team will scan them and upload them to Gradescope. Graded tests and the final exam will be returned to you using Gradescope. You will be able to access Gradescope using links from Brightspace.
+            You will scan and submit your written homework to <url
+            href="https://gradescope.com/">Gradescope</url>. Homework will be
+            graded and returned to you within Gradescope. Quizzes and exams will
+            be taken on paper, but the instructional team will scan them and
+            upload them to Gradescope. Graded quizzes and midterms will be
+            returned to you using Gradescope. 
+          </p>
+        </li>
+        <li>
+          <title>Discussion boards</title>
+          <p>
+            Lecture sections may use <url href="https://edstem.org/">Ed Discussions</url>, 
+            <url href="https://campuswire.com/">Campuswire</url>, or the Brightspace
+            Discussions tool to organize questions and discussion outside of class. 
+          </p>
+        </li>
+        <li>
+          <title>PollEverywhere</title>
+          <p>
+            Lecturers may use <url href="https://polleverywhere.com/">PollEverywhere</url>
+            or other polling software to facilitate in-class discussion. 
           </p>
         </li>
       </dl>
     </p>
   </section>
-  <section xml:id="sec-assessments">
-    <title>Assessments</title>
-    <paragraphs>
-      <title>zyBook Participation Activities</title>
-      <p>
-        Reading assignments including questions graded for completion to give you the opportunity to check your understanding will be regularly assigned in our zyBook. These assignments are meant to be done <em>before</em> we cover content in lecture so that we have more time for active learning in class. <alert>You will receive full credit for a zyBook Participation Activity if you answer the questions.</alert> Because these zyBook Participation Activities are your first exposure to the material, we do not expect you to understand everything from the reading alone. <em>You will gain the most from these activities if you take them seriously, think about the questions before answering, and work to understand the reasoning for the correct answer when you get a question incorrect.</em>
-      </p>
-      <p>
-        zyBook Participation Activities are due each Tuesday morning at 8am CT. They are worth 3% of your course grade. No late zyBook Participation Activities will be accepted, but the lowest three scores will be dropped.
-      </p>
-    </paragraphs>
-    <paragraphs>
-      <title>Discussion Participation</title>
-      <p>
-        Starting in the second week, the teaching assistants will take attendance in discussion. Mathematics is a human activity, and we learn by engaging with other humans. Discussion allows you to do this in a small enough group that every student can interact with peers and their TA during each meeting. Students who do not actively participate during activities in discussion may not receive credit for participation. You must attend the discussion section for which you are registered; missed discussion sections may not be made up. However, we will drop three, so discussion participation will be taken out of 10 and is 3% of your course grade.
-      </p>
-    </paragraphs>
-    <paragraphs>
-      <title>zyBook Challenge Activities</title>
-      <p>
-        Most weeks you will have a zyBook Challenge Activity. Unlike the zyBook Participation Activities, the zyBook Challenge Activities are (automatically) graded for correctness. The zyBook Challenge Activities follow up on material from lecture after you have also had time to work on the material in discussion.
-      </p>
-      <p>
-        zyBook Challenge Activities are due Thursday nights at 11:59pm CT. They are worth 7% of your course grade. No late zyBook Challenge Activities will be accepted, but the lowest two scores will be dropped.
-      </p>
-    </paragraphs>
-    <paragraphs>
-      <title>Written Homework</title>
-      <p>
-        Most weeks you will have a written homework assignment. These will give you an opportunity to write out proofs and solutions in the manner that you will be expected to on the exams. You will submit your solutions using Gradescope following instructions provided on Canvas. The questions on each written homework will be graded for correctness by the TAs and graders.
-      </p>
-      <p>
-        Collaborating with other students on the written homework is encouraged, but you must write up all reasoning and solutions on your own (in other words, no copying). Failure to abide by this guideline could be construed as a form of academic dishonesty.
-      </p>
-      <p>
-        The purpose of this course is to develop your ability to understand and construct mathematical arguments or proofs. The use of artificial intelligence (AI) tools and applications (including, but not limited to, ChatGPT, Copilot, DALL-E, and others) for written homework does not support the learning objectives of this course and is prohibited. Using them in any way for written homework in this course is a violation of the course’s expectations and will be addressed through UW–Madison’s academic misconduct policy, specifically UWS 14.03(1)b (b) Uses unauthorized materials or fabricated data in any academic exercise.
-      </p>
-      <p>
-        Each problem on written homework should be completed with neat, understandable, detailed solutions and explanations. Your explanations and proofs must be sound and rigorous, paying attention to detail and clarity.
-      </p>
-      <p>
-        Written homework is due Thursday nights at 11:59pm CT. It is worth 15% of your course grade. Late written homework will generally not be accepted. Since you likely will either experience a technical difficulty (e.g., missed the deadline, your computer shut down as you were submitting it, internet outage, etc.) or a personal emergency (being sick, attending a funeral, etc.) during the semester, the two lowest two written homework scores will be dropped. You do not need to contact your instructor or TA if such a situation does come up.
-      </p>
-    </paragraphs>
-    <paragraphs>
-      <title>Tests and Exams</title>
-      <p>
-        This course will have two tests and a final exam. Each will be worth 24% of your course grade. The dates and times for these assessments are:
-        <dl>
-          <li>
-            <title>Test I</title>
-            <p>
-              Wednesday, February 26, 2025. 7:30<ndash/>9pm. Location announced via Canvas.
-            </p>
-          </li>
-          <li>
-            <title>Test II</title>
-            <p>
-              Wednesday, April 9, 2025. 7:30<ndash/>9pm. Location announced via Canvas.
-            </p>
-          </li>
-          <li>
-            <title>Final Exam</title>
-            <p>
-              Tuesday, May 6, 2025. 5:05<ndash/>7:05pm. Location announced via Canvas.
-            </p>
-          </li>
-        </dl>
-      </p>
-      <p>
-        Students must use the form provided on Canvas to inform the instructor of conflicts with the dates and times of the tests or final exam during the first two week of classes. Reports of conflicts will be reviewed. Submitting incorrect information in order to take a test or the final exam at a different time may be considered an act of academic misconduct.
-      </p>
-      <p>
-        During exams, students will not be allowed to use any notes or electronic devices. Ample space will be provided on the exams for you to show your work. You must bring a writing utensil.
-      </p>
-      <p>
-        <em>Added March 7, 2025</em>: If a student's overall course grade would increase by using their final exam score in place of the lower of their scores on Test I and Test II, they will receive the grade based on this alternative grade computation method.
-      </p>
-    </paragraphs>
-  </section>
   <section xml:id="sec-grading">
     <title>Grading</title>
     <p>
-      The grade components and their are all identified above. For quick reference, they are also summarized in the table below.
+      Most of the grade components are identified above. Participation will be
+      measured through attendance and completion of in-class activities. 
+      The exact rubric may vary across lecture sections.
+    </p>
+    <p>
+      The lowest five (5) problem set scores and the lowest five (5) quiz scores
+      will be dropped before averaging. This is to account for any unforeseen
+      circumstances which prevent you from attending recitation or completing an
+      assignment to the best of your ability. <em>There will be no other extensions
+      or makeups on quizzes or problem sets</em>.
+    </p>
+    <p>
+      The grade components are averaged into a final calculated grade using the following weights:
     </p>
     <tabular>
       <row header="yes" bottom="minor">
@@ -313,36 +277,38 @@
         <cell>Weight</cell>
       </row>
       <row>
-        <cell>zyBook Participation Activities</cell>
-        <cell>3%</cell>
+        <cell>Problem sets</cell>
+        <cell>10%</cell>
       </row>
       <row>
-        <cell>Discussion Participation</cell>
-        <cell>3%</cell>
-      </row>
-      <row>
-        <cell>zyBook Challenge Activities</cell>
-        <cell>7%</cell>
-      </row>
-      <row>
-        <cell>Written Homework</cell>
+        <cell>Quizzes</cell>
         <cell>15%</cell>
       </row>
       <row>
-        <cell>Test I</cell>
-        <cell>24%</cell>
+        <cell>WebAssignments</cell>
+        <cell>5%</cell>
       </row>
       <row>
-        <cell>Test II</cell>
-        <cell>24%</cell>
+        <cell>Midterm I</cell>
+        <cell>20%</cell>
       </row>
       <row>
-        <cell>Final Exam</cell>
-        <cell>24%</cell>
+        <cell>Midterm II</cell>
+        <cell>20%</cell>
+      </row>
+      <row>
+        <cell>Final exam</cell>
+        <cell>25%</cell>
+      </row>
+      <row>
+        <cell>Participation</cell>
+        <cell>5%</cell>
       </row>
     </tabular>
     <p>
-      Grades will be calculated to two decimal places. They will <em>not</em> be rounded up to the next integer. The lower cutoff for each letter grade is given in the table below. It is possible that these cutoffs will be adjusted at the end of the semester. However, if this is done, it will only be done in a way that benefits students by lowering the cutoff to earn a given letter grade.
+      Grades will be calculated to two decimal places. They will <em>not</em> be
+      rounded up to the next whole number. The lower cutoff for each letter
+      grade is given in the table below. 
     </p>
     <tabular>
       <col halign="center"/><col />
@@ -352,152 +318,47 @@
       </row>
       <row>
         <cell>A</cell>
-        <cell>92%</cell>
+        <cell>93%</cell>
       </row>
       <row>
-        <cell>AB</cell>
+        <cell>A-</cell>
+        <cell>90%</cell>
+      </row>
+      <row>
+        <cell>B+</cell>
         <cell>87%</cell>
       </row>
       <row>
         <cell>B</cell>
-        <cell>82%</cell>
+        <cell>83%</cell>
       </row>
       <row>
-        <cell>BC</cell>
-        <cell>77%</cell>
+        <cell>B-</cell>
+        <cell>80%</cell>
+      </row>
+      <row>
+        <cell>C+</cell>
+        <cell>75%</cell>
       </row>
       <row>
         <cell>C</cell>
-        <cell>70%</cell>
+        <cell>65%</cell>
       </row>
       <row>
         <cell>D</cell>
-        <cell>60%</cell>
+        <cell>50%</cell>
       </row>
       <row>
         <cell>F</cell>
         <cell>0%</cell>
       </row>
     </tabular>
-    <paragraphs>
-      <title>Incomplete Grades</title>
-      <p>
-        Incomplete grades will be assigned only under extraordinary circumstances in accordance with L&#x26;S policy, which states as follows:
-      </p>
-      <blockquote>
-        <p>
-          <q>An Incomplete (I) may be reported for a student who has been enrolled in a course with a passing grade until near the end of the semester/term and then, due to illness or some other unusual and substantiated cause beyond the student’s control, has been unable to take or complete the final examination (or to complete some limited amount of term work). An Incomplete is not given to a student who stays away from a final examination unless the student proves to the instructor that he or she was prevented from attending as indicated above. In the absence of such proof the grade reported will be an F. Even when a student can provide verifiable documentation, a student may still earn a grade of F if his/her work convinces the instructor that the student cannot successfully pass the course.</q>
-        </p>
-      </blockquote>
-      <p>
-        If you feel an incomplete grade may be warranted, you must contact me <em>before</em> the end of the final examination period on Friday, May 9, 2025.
-      </p>
-    </paragraphs>
-  </section>
-  <section xml:id="sec-schedule">
-    <title>Tentative Schedule of Topics</title>
     <p>
-      <dl>
-        <li>
-          <title>Week 1</title>
-          <p>
-            Integer Properties; Logic
-          </p>
-        </li>
-        <li>
-          <title>Week 2</title>
-          <p>
-            Logic
-          </p>
-        </li>
-        <li>
-          <title>Week 3</title>
-          <p>
-            Proofs
-          </p>
-        </li>
-        <li>
-          <title>Week 4</title>
-          <p>
-            Sets; Functions
-          </p>
-        </li>
-        <li>
-          <title>Week 5</title>
-          <p>
-            Functions; Computation
-          </p>
-        </li>
-        <li>
-          <title>Week 6</title>
-          <p>
-            Computation and <alert>Test I on Wednesday, February 26 (7:30<ndash/>9pm)</alert>
-          </p>
-        </li>
-        <li>
-          <title>Week 7</title>
-          <p>
-            Induction
-          </p>
-        </li>
-        <li>
-          <title>Week 8</title>
-          <p>
-            Recursion
-          </p>
-        </li>
-        <li>
-          <title>Week 9</title>
-          <p>
-            Recursion; Recurrence Relations
-          </p>
-        </li>
-        <li>
-          <title>Spring Break</title>
-          <p>
-            March 22<ndash/>30, 2025
-          </p>
-        </li>
-        <li>
-          <title>Week 10</title>
-          <p>
-            Relations and digraphs
-          </p>
-        </li>
-        <li>
-          <title>Week 11</title>
-          <p>
-            Couting and <alert>Test II on Wednesday, April 9 (7:30<ndash/>9pm)</alert>
-          </p>
-        </li>
-        <li>
-          <title>Week 12</title>
-          <p>
-            Counting; Graphs
-          </p>
-        </li>
-        <li>
-          <title>Week 13</title>
-          <p>
-            Graphs
-          </p>
-        </li>
-        <li>
-          <title>Week 14</title>
-          <p>
-            Trees
-          </p>
-        </li>
-        <li>
-          <title>Final Exam</title>
-          <p>
-            <alert>Tuesday, May 6 (5:05<ndash/>7:05pm)</alert>
-          </p>
-        </li>
-      </dl>
-    </p>
-    <p>
-      Note that class will meet as scheduled during the weeks of the two tests in addition to meeting on Wednesday evening for the test.
+      It is possible that these cutoffs will be adjusted at the end of the
+      semester, but only in the downward direction in order to raise letter
+      grades slightly. There is no school- or departmentally-prescribed
+      distribution of letter grades. Letter grades across sections will be
+      comparable.
     </p>
   </section>
   <section xml:id="sec-inst-statements">
