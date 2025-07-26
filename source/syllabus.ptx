@@ -103,7 +103,7 @@
         </p>
       </paragraphs>
       <paragraphs>
-        <title>Meeting Times and Locations</title>
+        <title>Meeting Pattern</title>
         <p>
           Lecture sections meet twice weekly for 75 minutes, led by a professor.
           Recitation sections meets once weekly for 75 minutes, led by a teaching assistant.
@@ -113,10 +113,83 @@
       <paragraphs>
         <title>How the Credit Hours are Met by the Course</title>
         <p>
-          This class meets for 3 hours and 45 minutes each week and carries the expectation that students will work on course learning activities (e.g. reading, problem sets, papers, and studying) for about 7 hours and 30 minutes outside of classroom per week. The syllabus includes more information about meeting times and expectations for student work.
+          This class meets for 3 hours and 45 minutes each week and carries the
+          expectation that students will work on course learning activities
+          (e.g. reading, problem sets, papers, and studying) for about 7 hours
+          and 30 minutes outside of classroom per week. The syllabus includes
+          more information about meeting times and expectations for student
+          work.
         </p>
       </paragraphs>
     </section>
+  <section xml:id="sec-activities">
+    <title>Learning Activities</title>
+    <p>
+      Most weeks we will follow the same pattern of engagement with the course
+      material. It alternates between instruction and assessment, and is
+      designed for you to have many opportunities to practice, ask for help, and
+      get feedback on every topic. 
+    </p>
+    <paragraphs>
+      <title>Pre-lecture activities</title>
+      <p>
+        Before each lecture, you will be expected to complete a reading
+        assignment. The assignment may also include watching videos and
+        completing a basic quiz. The goal of these activities is to prepare you
+        for lecture. Your professor will also use your responses to these
+        activities to prepare for lecture.
+      </p>
+    </paragraphs>
+
+    <paragraphs>
+      <title>Lecture</title>
+      <p>
+        Lectures will be interactive, with opportunities for you to ask
+        questions and work on problems. Your professor will also use lecture to
+        reinforce new concepts and provide context.
+      </p>
+    </paragraphs>
+
+    <paragraphs>
+      <title>WebAssignments</title>
+      <p>
+        After lecture you will continue to practice the procedures and concepts
+        through a “WebAssignment”—an assignment on the WebAssign platform. You
+        will have multiple opportunities to attempt these problems, and other
+        problems like them. WebAssignments are due before recitation.
+      </p>
+    </paragraphs> 
+
+    <paragraphs>
+      <title>Recitation</title>
+      <p>
+        Recitation is your weekly class time with your teaching assistant.
+        Recitation begins with a quiz and continues with supervised practice
+        on worksheets.
+      </p>
+    </paragraphs>
+
+    <paragraphs>
+      <title>Problem sets</title>
+      <p>
+        Problem sets are due at the end of each week. They are designed to
+        challenge you to apply the concepts into new or unique situations.
+        Problem sets are also where you learn to present worked solutions
+        clearly and logically.
+      </p>
+    </paragraphs>
+
+    <paragraphs>
+      <title>Exams</title>
+      <p>
+        There will be two midterm exams and one final exam. Midterms are
+        summative assessments and comprehensive of the course material taught
+        until that point. The final will be cumulative. <em>Exams are designed
+        to test your mastery of the course material at a deep and synthetic
+        level.</em>
+      </p>
+    </paragraphs>
+  </section>
   <section xml:id="sec-materials">
     <title>Textbook and Other Required Materials</title>
     <p>
