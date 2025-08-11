@@ -25,8 +25,13 @@
     <target name="scorm" standalone="yes" format="html" compression="scorm"
             output-dir="scorms" publication="publication_standalone.ptx"
             />
+    <target name="scorm-nosols" standalone="yes" format="html" compression="scorm"
+            output-dir="scorms" publication="publication_standalone_nosols.ptx"
+            />
     <target name="pdf" standalone="yes" format="pdf"
             output-dir="pdfs" publication="publication_standalone.ptx" />
+    <target name="pdf-nosols" standalone="yes" format="pdf"
+            output-dir="pdfs" publication="publication_standalone_nosols.ptx" />
   </targets>
 </project>
 

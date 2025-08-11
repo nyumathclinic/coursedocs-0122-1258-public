@@ -21,11 +21,11 @@
     <!-- There are four components (statement/hint/answer/solution) for each -->
     <!-- of five exercise types (inline/divisional/worksheet/reading/        -->
     <!-- project).                                                           -->
-      <!-- <exercise-inline statement="yes" hint="yes" answer="no" solution="no" /> -->
-      <!-- <exercise-divisional statement="yes" hint="yes" answer="no" solution="yes" /> -->
-      <!-- <exercise-worksheet statement="yes" hint="yes" answer="no" solution="no" /> -->
-      <!-- <exercise-reading statement="yes" hint="yes" answer="no" solution="no" /> -->
-      <!-- <exercise-project statement="yes" hint="yes" answer="yes" solution="yes" /> -->
+      <!--<exercise-inline statement="yes" hint="yes" answer="no" solution="no" />-->
+      <!--<exercise-divisional statement="yes" hint="yes" answer="no" solution="yes" />-->
+      <exercise-worksheet statement="yes" hint="yes" answer="no" solution="no" />
+      <!--<exercise-reading statement="yes" hint="yes" answer="no" solution="no" />-->
+      <!--<exercise-project statement="yes" hint="yes" answer="yes" solution="yes" />-->
 
     <!-- Style of fill-in-the-blanks: -->
       <!--<fillin textstyle="underline" mathstyle="shade" />-->
@@ -38,7 +38,6 @@
 
     <!-- QR code image: set path to an image to put in center of QR codes -->
       <!-- <qrcode image="image.png" /> -->
-    <!-- <worksheet margin="1in" left="2in"/> -->
   </common>
 
 
