@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pretext>
+    <article xml:id="article">
+
+    <!-- When creating a new activity, make a copy of this file with appropriate name -->
+        <worksheet margin="1in" bottom="1.25cm" xml:id="worksheet">
+            <title>Worksheet for Sections 5.1–5.4</title>
+
+            <introduction>
+                <p>
+                    These exercises are designed to help you practice the concepts of the definite integral
+                    and the Fundamental Theorem of Calculus.
+                </p>
+            </introduction>
+
+            <exercise workspace="2in">
+                <statement>
+                    <p>
+                        Which of the following are equal to <me>\int_1^5 \frac{\ln x}{x} \, dx</me>?
+                    </p>
+                </statement>
+                <choices>
+                    <choice correct="no">
+                        <statement>
+                            <p>
+                                <m>\sum_{i = 1}^5 \frac{\ln x_i}{x_i} \Delta x</m>, 
+                        where <m>\Delta x = 4/n</m> and <m>x_i = 1 + i \Delta x_i</m>
+                            </p>
+                        </statement>
+                        <feedback>
+                            <p>
+                                This is <m>R_5</m> approximating <m>\int_1^5 \frac{\ln x}{x} \, dx</m>
+                            </p>
+                        </feedback>
+                    </choice>
+                    <choice correct="no">                        
+                        <statement>
+                            <p>
+                                <m>\lim_{n \to \infty} \sum_{i = 1}^5 \frac{\ln x_i}{x_i} \Delta x</m>, 
+                        where <m>\Delta x = 4/n</m> and <m>x_i = 1 + i \Delta x_i</m>
+                            </p>
+                        </statement>
+                        <feedback>
+                            <p>
+                                The sum counts only the first five terms in <m>R_n</m>.
+                            </p>
+                        </feedback>
+                    </choice>
+                    <choice correct="yes">
+                        <statement>
+                            <p>
+                                <m>\displaystyle \lim_{n \to \infty} \sum_{i = 1}^n \frac{\ln x_i}{x_i} \Delta x</m>, 
+                                where <m>\Delta x = 4/n</m> and <m>x_i = 1 + i \Delta x_i</m>
+                            </p>
+                        </statement>
+                        <feedback>
+                            <p>
+                                Yes, this is <m>\lim_{n\to\infty} R_n</m>, 
+                                which converges to <m>\int_1^5 \frac{\ln x}{x}\,dx</m>.
+                            </p>
+                        </feedback>
+                    </choice>
+                </choices>
+            </exercise>
+        </worksheet>
+    </article>
+</pretext>
