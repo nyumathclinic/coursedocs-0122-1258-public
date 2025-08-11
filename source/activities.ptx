@@ -11,8 +11,8 @@
       </p>
     </introduction>
     <!-- The xpointer="ws-defint" says to only include the element with xml:id "ws-defint".  This is how we can have a standalone file and also include it here -->
-    <xi:include href="./activities/ws_05_01.ptx" xpointer="ws-defint"/>
-    <xi:include href="./activities/ws_05_05.ptx" xpointer="ws-usub"/>
+    <xi:include href="./activities/ws_05_01.ptx" xpointer="xpointer(//worksheet[1])"/>
+    <xi:include href="./activities/ws_05_05.ptx" xpointer="xpointer(//worksheet[1])"/>
     <!-- Add more xi:include files here to include them in the main course -->
 
     <!-- These would be documents that are fully included into the project. -->

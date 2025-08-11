@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pretext xmlns:xi="http://www.w3.org/2001/XInclude">
+    <article xml:id="art-ps01">
+        <title>Problem Set 1</title>
+        <worksheet xml:id="ws-ps01">
+            <title>Problem Set 1</title>
+
+            <!-- When creating a new activity, make a copy of this file with appropriate name -->
+            <introduction>
+                <p>
+                    This problem set is designed to reinforce your understanding of the foundational concepts of integration, covering material from Sections 5.1-5.5 of Stewart's Calculus: Early Transcendentals, 7th Edition.
+                    It aims to challenge you with problems ranging from direct application to extended thinking, and should take an average of 3 hours to complete.
+                </p>
+            </introduction>
+
+            <exercise xml:id="exercise-area-approximation">
+                <statement>
+                    <p>
+                        Estimate the area under the curve <m>f(x) = \frac{1}{x}</m> from <m>x=1</m> to <m>x=5</m> using four rectangles.
+                    </p>
+
+                    <ol>
+                        <li>
+                            <p>
+                                Use <em>right endpoints</em>.
+                                Sketch the graph and the rectangles.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                Repeat the estimation using <em>left endpoints</em>.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                Explain why one estimate is an overestimate and the other is an underestimate.
+                            </p>
+                        </li>
+                    </ol>
+                </statement>
+            </exercise>
+        </worksheet>
+    </article>
+</pretext>

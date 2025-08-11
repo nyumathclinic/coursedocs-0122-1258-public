@@ -34,9 +34,19 @@ pretext build scorm -i ./source/activities/magic-beans.ptx
 
 ### How this is done
 
-Look at the source files, in particular `source/acitivies.ptx` and `source/activities/magic-beans.ptx` to see how the activities are included in the main document and can also build on their own.
+Look at the source files, in particular `source/activities.ptx` and `source/activities/magic-beans.ptx` to see how the activities are included in the main document and can also build on their own.
 
-The use of `xpointer="/1/1/1"` is a little mysterious; we could have also used `xpoint="Activity-magic-beans"` to refer to the activity by its `xml:id`, although this would require us changing that for each included activity.
+Each `worksheet` element in a worksheet `.ptx` file needs an `xml:id` to be pointed to by `activities.ptx`.
+It doesn't have to be unique to build `activities-web`, but it probably should be. I'm adopting the convention `ws-<code>`, 
+where `code` is a short slug for the topic. 
+
+You can also point to the worksheet element by a numerical path such as `/1/1/1`. But that's not stable; if you
+add elements to the higher levels, the child-index of the `pretext/article/worksheet` element will change. 
+
+It also seems you can use an xpath expression like `xpointer(//worksheet[1])`.
+
+
+
 
 
 ---
