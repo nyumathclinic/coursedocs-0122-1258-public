@@ -144,8 +144,8 @@
     <!-- https://pretextbook.org/doc/guide/html/publication-file-online.html#online-style-options -->
     <css
         theme="boulder"
-        primary-color="#57068c"
-        primary-color-dark="#eee6f3"
+        primary-color="#57068C"
+        primary-color-dark="#EEE6F3"
     />
 
     <!-- Search can be default or none, or you can use a Google-cx number to use google's search
