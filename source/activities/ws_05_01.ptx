@@ -3,7 +3,7 @@
 <pretext>
   <article xml:id="article">
     <!-- When creating a new activity, make a copy of this file with appropriate name -->
-    <worksheet margin="1in" bottom="1.25cm" xml:id="worksheet">
+    <worksheet margin="1in" bottom="1.25cm" xml:id="ws-defint">
       <title>Worksheet for Sections 5.1–5.4</title>
 
       <introduction>
