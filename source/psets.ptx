@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pretext xmlns:xi="http://www.w3.org/2001/XInclude">
   <xi:include href="./docinfo.ptx" />
-  <article xml:id="sec-worksheet" >
+  <article xml:id="sec-psets" >
     <title>Problem Sets</title>
     <xi:include href="./frontmatter.ptx" />
 
@@ -11,6 +11,9 @@
       </p>
     </introduction>
     <xi:include href="./psets/ps01.ptx" xpointer="xpointer(//worksheet[1])"/>
+    <xi:include href="./psets/ps01g.ptx" xpointer="ps01"/>
+    <xi:include href="./psets/ps02g.ptx" xpointer="xpointer(//section[1])"/>
+    
     
   </article>
 </pretext>
