@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<pretext>
+<pretext xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/">
   <article xml:id="article">
     <!-- When creating a new activity, make a copy of this file with appropriate name -->
     <worksheet margin="1in" bottom="1.25in" xml:id="ws-defint">
@@ -24,10 +24,11 @@
 
 
       <page>
-        <exercise>
+        <exercise xml:id="judson-math-harvard-edu_2003-09-01_oil">
+          <metadata> <dc:identifier xsi:type="dcterms:URI">tag:judson@math.harvard.edu:2003-09-01,oil</dc:identifier> <dcterms:created>2003-09-01</dcterms:created> </metadata>
           <introduction>
             <p>
-              The rate at which the world’s oil is being consumed is increasing.
+              The rate at which the world&#x2019;s oil is being consumed is increasing.
               Suppose that the rate (measured in billions of barrels per year) is given by the function <m>r(t)</m>, where <m>t</m> is measured in years and <m>t = 0</m> on January 1, 1990.
             </p>
           </introduction>
