@@ -1,23 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <pretext xmlns:xi="http://www.w3.org/2001/XInclude">
   <xi:include href="./docinfo.ptx" />
   <article xml:id="sec-worksheet" >
     <title>Worksheets</title>
-    <xi:include href="./frontmatter.ptx" />
 
+    <xi:include href="./frontmatter.ptx" />
     <introduction>
       <p>
-        These activities are designed to be used in class to help students understand the material. They are not graded, but students are encouraged to work on them in groups and ask the instructor for help when needed.
+        These activities are designed to be used in class to help students understand the material.
+        They are not graded, but students are encouraged to work on them in groups and ask the instructor for help when needed.
       </p>
     </introduction>
     <!-- The xpointer="ws-defint" says to only include the element with xml:id "ws-defint".  This is how we can have a standalone file and also include it here -->
     <xi:include href="./activities/ws_05_01.ptx" xpointer="xpointer(//worksheet[1])"/>
     <xi:include href="./activities/ws_05_05.ptx" xpointer="xpointer(//worksheet[1])"/>
-    <!-- Add more xi:include files here to include them in the main course -->
-
-    <!-- These would be documents that are fully included into the project. -->
-    <!-- <xi:include href="./activities/wkst-relns-digramphs.ptx"/> -->
-    <!-- <xi:include href="./activities/wkst-eqrel-counting.ptx"/> -->
-    
+    <xi:include href="./activities/ws_06_01.ptx" xpointer="xpointer(//worksheet[1])"/>
+    <!-- Add more xi:include files here to include them in the main course --> <!-- These would be documents that are fully included into the project. --> <!--
+    <xi:include href="./activities/wkst-relns-digramphs.ptx"/>
+    --> <!--
+    <xi:include href="./activities/wkst-eqrel-counting.ptx"/>
+    -->
   </article>
 </pretext>
