@@ -49,7 +49,7 @@
         </solution>
       </exercise>
 
-      <exercise>
+      <exercise workspace="1in">
         <!-- Thomas, Exercise 5.7.3 -->
         <statement>
           <p>
@@ -70,7 +70,7 @@
         </solution>
       </exercise>
 
-      <exercise>
+      <exercise workspace="1in">
         <statement>
           <!-- Thomas, Exercise 5.7.8 -->
           <p>
@@ -88,7 +88,7 @@
         </solution>
       </exercise>
 
-      <exercise>
+      <exercise workspace="1in">
         <!-- Thomas, Exercise 5.7.10 -->
         <statement>
           <p>
@@ -114,7 +114,7 @@
         </p>
       </introduction>
 
-      <exercise>
+      <exercise workspace="1in">
         <!-- Thomas, Exercise 5.7.13 -->
         <statement>
           <p>
@@ -133,7 +133,7 @@
         </solution>
       </exercise>
 
-      <exercise>
+      <exercise workspace="1in">
         <!-- Thomas, Exercise 5.7.20 -->
         <statement>
           <p>
@@ -152,7 +152,7 @@
         </solution>
       </exercise>
 
-      <exercise>
+      <exercise workspace="1in">
         <statement>
           <p>
             <m>\int x^2 e^{3x^3-1}\,dx</m>
@@ -172,7 +172,7 @@
       </exercise>
       </exercisegroup>
 
-      <exercise>
+      <exercise workspace="1in">
         <introduction>
           <p>
             Sometimes there is more than one way to skin a cat:
@@ -286,7 +286,7 @@
         </p>
       </introduction>
 
-      <exercise>
+      <exercise workspace="1in">
         <statement>
           <p>
             <m>\int\sin^2 x\,dx</m>
@@ -308,7 +308,7 @@
         </solution>
       </exercise>
 
-      <exercise>
+      <exercise workspace="1in">
         <statement>
           <p>
             <m>\int\cos^2 x\,dx</m>
@@ -331,7 +331,7 @@
       </exercise>
       </exercisegroup>
 
-      <exercise>
+      <exercise workspace="1in">
         <statement>
           <p>
             Find

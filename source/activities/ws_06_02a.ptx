@@ -31,7 +31,7 @@
           </p>
         </introduction>
 
-        <exercise>
+        <exercise workspace="1in">
           <statement>
             <p>
               <m>\int \sin(x) \cos^2(x) \,dx</m>
@@ -53,7 +53,7 @@
           </solution>
         </exercise>
 
-        <exercise>
+        <exercise workspace="1in">
           <statement>
             <p>
               <m>\int_0^{\pi/2} \sin^2(x) \cos^3(x) \,dx</m>
@@ -76,7 +76,7 @@
           </solution>
         </exercise>
 
-        <exercise>
+        <exercise workspace="1in">
           <statement>
             <p>
               <m>\int \sin^4(x)\,dx</m>
@@ -108,7 +108,7 @@
 
 
       <page>
-        <exercise>
+        <exercise workspace="1in">
           <statement>
             <p>
               <m>\int \sec^4(x)\tan^3(x)\,dx</m>
@@ -129,7 +129,7 @@
           </solution>
         </exercise>
 
-        <exercise>
+        <exercise workspace="1in">
           <statement>
             <p>
               <m>\int \sec^4(x)\tan^2(x)\,dx</m>
@@ -146,7 +146,7 @@
           </solution>
         </exercise>
 
-        <exercise>
+        <exercise workspace="1in">
           <statement>
             <p>
               <m>\int \sec^3(x)\tan(x)\,dx</m>

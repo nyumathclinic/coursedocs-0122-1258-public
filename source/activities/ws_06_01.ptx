@@ -40,7 +40,7 @@
           </p>
         </introduction>
 
-        <exercise>
+        <exercise workspace="1in">
           <statement>
             <p>
               <m>\int x\sin 2x \,dx</m>
@@ -59,7 +59,7 @@
           </solution>
         </exercise>
 
-        <exercise>
+        <exercise workspace="1in">
           <statement>
             <p>
               <m>\int t^2 \cos t\,dt</m>
@@ -89,7 +89,7 @@
           </solution>
         </exercise>
 
-        <exercise>
+        <exercise workspace="1in">
           <statement>
             <p>
               <m>\int_1^2 x \ln x\,dx</m>
@@ -130,7 +130,7 @@
 
 
       <page>
-        <exercise>
+        <exercise workspace="1in">
           <title>Dirty Tricks, part I</title>
 
           <introduction>
@@ -226,7 +226,7 @@
           </p>
         </introduction>
 
-        <exercise>
+        <exercise workspace="1in">
           <statement>
             <p>
               <m>\int e^{\sqrt{3x+9}}\,dx</m>
@@ -269,7 +269,7 @@
           </solution>
         </exercise>
 
-        <exercise>
+        <exercise workspace="1in">
           <statement>
             <p>
               <m>\int\sin(\ln x)\,dx</m>
@@ -292,7 +292,7 @@
           </solution>
         </exercise>
 
-        <exercise>
+        <exercise workspace="1in">
           <statement>
             <p>
               Use a trigonometric identity, then integrate by parts: <m>\int_0^{\pi/3} x\tan^2 x\,dx</m>
@@ -334,7 +334,7 @@
           </p>
         </introduction>
 
-        <exercise>
+        <exercise workspace="1in">
           <statement>
             <p>
               <m>\int\arctan x\,dx</m>
@@ -358,7 +358,7 @@
           </solution>
         </exercise>
 
-        <exercise>
+        <exercise workspace="1in">
           <statement>
             <p>
               <m>\int\operatorname{arcsec} x\,dx</m>
@@ -386,7 +386,7 @@
 
 
       <page>
-        <exercise>
+        <exercise workspace="1in">
           <statement>
             <p>
               Prove the reduction formula
