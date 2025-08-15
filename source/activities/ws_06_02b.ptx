@@ -83,39 +83,32 @@
               <diagram dimensions="(300,300)" margins="10">
               <coordinates bbox="(-1,-1,2,2)">
               <definition>
-                      p1 = (0,0)
+p1 = [0,0]
               </definition>
 
               <definition>
-                      p2 = (sqrt(3),0)
+p2 = [sqrt(3),0]
               </definition>
 
               <definition>
-                      p3 = (sqrt(3),2)
+p3 = [sqrt(3),2]
               </definition>
 
               <definition>
-                      v = p3 - p1
+v = p3 - p1
               </definition>
 
               <definition>
-                      th = degrees(atan2(v[1],v[0]))
+th = degrees(atan2(v[1],v[0]))
               </definition>
               <triangle vertices="(p1,p2,p3)" />
-              <label anchor="0.5*(p1+p2)" alignment="s">
-              <m>\sqrt{3}</m>
-              </label>
-              <label anchor="0.5*(p2+p3)" alignment="e">
-              <m>x</m>
-              </label>
+              <label anchor="0.5*(p1+p2)" alignment="s"><m>\sqrt{3}</m></label>
+              <label anchor="0.5*(p2+p3)" alignment="e"><m>x</m></label>
+              <!-- I wanted rotate="th" here but it didn't work -->
               <label anchor="0.5*(p1+p3)" alignment="n"
-                      rotate="49.107"
-                    >
-              <m>\sqrt{x^2+3}</m>
-              </label>
-              <angle-marker points="(p2,p1,p3)">
-              <m>\theta</m>
-              </angle-marker>
+                      rotate="49.107" 
+                    ><m>\sqrt{x^2+3}</m></label>
+              <angle-marker points="(p2,p1,p3)"><m>\theta</m></angle-marker>
               </coordinates>
               </diagram>
               </prefigure>
