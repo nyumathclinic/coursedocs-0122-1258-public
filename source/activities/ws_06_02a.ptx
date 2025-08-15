@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pretext>
+  <article xml:id="article">
+    <worksheet margin="1in" bottom="1.25in" xml:id="ws-trigint">
+      <title>Worksheet for Section 6.2: Trigonometric Integrals</title>
+
+      <objectives>
+        <ul>
+          <li>
+            <p>
+              Evaluate integrals of functions involving powers of sine and cosine.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Evaluate integrals of functions involving powers of secant and tangent.
+            </p>
+          </li>
+        </ul>
+      </objectives>
+
+
+      <page>
+        <introduction>
+          <p>
+            Evaluate the integrals.
+            In the case of a definite integral, your answer should be a number.
+            For indefinite integrals, your answer should be the most general antiderivative (this means don’t forget <m>+C</m>).
+          </p>
+        </introduction>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>\int \sin(x) \cos^2(x) \,dx</m>
+            </p>
+          </statement>
+
+          <solution>
+            <p>
+              Substitute <m>u = \cos(x)</m>.
+              Then <m>du = -\sin(x) dx</m>, so
+              <me>
+                \begin{aligned} \int \sin(x) \cos^2(x) \,dx &amp;= \int u^2\, du \\ &amp;= -\frac{1}{3}u^3+C \end{aligned}
+              </me>
+              Unsubstitute back <m>u = \cos(x)</m>:
+              <me>
+                \int \sin(x) \cos^2(x) \,dx = -\frac{1}{3}\cos^3(x)+C
+              </me>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>\int_0^{\pi/2} \sin^2(x) \cos^3(x) \,dx</m>
+            </p>
+          </statement>
+
+          <solution>
+            <p>
+              Keep one power of cosine and write the rest in terms of sine:
+              <me>
+                \int_0^{\pi/2} \sin^2(x) \cos^3(x) \,dx = \int_0^{\pi/2} \sin^2(x) \cos^2(x) \cos(x)\,dx = \int_0^{\pi/2} \sin^2(x)(1-\sin^2(x)) \cos (x)\,dx
+              </me>
+              Substitute <m>u = \sin(x)</m>, so <m>du = \cos(x) \,dx</m>.
+              Also <m>x=0 \implies u=0</m>, and <m>x=\pi/2 \implies u=1</m>.
+              So
+              <me>
+                \begin{aligned} \int_0^{\pi/2} \sin^2(x)(1-\sin^2(x)) \cos (x)\,dx &amp;= \int_0^1 u^2(1-u^2)\,dx \\&amp;= \int_0^1 (u^2 - u^4)\,dx \\&amp;= \left.\frac{1}{3}u^3 - \frac{1}{5}u^5\right|_0^1 \\&amp;= \frac{1}{3} - \frac{1}{5} = \frac{2}{15} \end{aligned}
+              </me>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>\int \sin^4(x)\,dx</m>
+            </p>
+          </statement>
+
+          <solution>
+            <p>
+              First, we use the half-angle identity for <m>\sin^2(x)</m>:
+              <md>
+                <mrow> \int \sin^4(x)\,dx\amp= \int\left(\sin^2(x)\right)^2\,dx = \int\left(\frac{1 - \cos(2x)}{2}\right)^2 \,dx</mrow>
+                <mrow> \amp = \int\frac{1 - 2 \cos (2x) + \cos^2(2x)}{4} \,dx </mrow>
+                <mrow> \amp = \int\left( \frac{1}{4} - \frac{1}{2} \cos(2x) + \frac{1}{4} \cos^2(2x)\right)\,dx</mrow>
+              </md>
+              Now we use the half-angle identity for <m>\cos^2(2x)</m>:
+              <md>
+                <mrow> \phantom{\int \sin^4(x)\,dx} \amp = \int\left( \frac{1}{4} - \frac{1}{2} \cos(2x) + \frac{1}{4} \cdot\frac{1+\cos(4x)}{2}\right)\,dx </mrow>
+                <mrow> \amp = \int\left( \frac{3}{8} - \frac{1}{2} \cos(2x) + \frac{1}{8}\cos(4x)\right)\,dx</mrow>
+              </md>
+              Now we just do it!
+              <md>
+                <mrow> \phantom{\int \sin^4(x)\,dx} \amp = \frac{3}{8}x - \frac{1}{4} \sin(2x) + \frac{1}{32}\sin(4x) + C  </mrow>
+              </md>
+              We did some small <m>u</m>-substitutions on the <m>2x</m> and <m>4x</m> terms.
+            </p>
+
+            <p>
+              There are other ways to do it, but they all involve using the half-angle identities twice.
+            </p>
+          </solution>
+        </exercise>
+      </page>
+
+
+      <page>
+        <exercise>
+          <statement>
+            <p>
+              <m>\int \sec^4(x)\tan^3(x)\,dx</m>
+            </p>
+          </statement>
+
+          <solution>
+            <p>
+              Keep two powers of secant:
+              <me>
+                \begin{aligned} \int \sec^4(x)\tan^3(x)\,dx &amp;= \int\sec^2(x)\tan^3(x)\sec^2(x)\,dx \end{aligned}
+              </me>
+              Now substitute <m>u=\tan(x) </m>, so <m>du = \sec^2(x)\, dx</m> and <m>\sec^2(x) = 1+u^2</m>:
+              <me>
+                \begin{aligned} \phantom{\int \sec^4(x)\tan^3(x)\,dx} &amp;= \int(1+u^2)u^3 \,du \\ &amp;= \int \left(u^3 + u^5\right)\,du \\ &amp;= \frac{1}{4} \tan^4(x) + \frac{1}{6} \tan^6(x) + C \end{aligned}
+              </me>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>\int \sec^4(x)\tan^2(x)\,dx</m>
+            </p>
+          </statement>
+
+          <solution>
+            <p>
+              Again, keep two powers of secant, and substitute <m>u=\tan(x)</m>:
+              <me>
+                \begin{aligned} \int \sec^4(x)\tan^2(x)\,dx &amp;= \int\sec^2(x)\tan^2(x)\sec^2(x)\,dx \\ &amp;= \int(1+u^2)u^2 \,du \\ &amp;= \int \left(u^2 + u^4\right)\,du \\ &amp;= \frac{1}{3} \tan^3(x) + \frac{1}{5} \tan^5(x) + C \end{aligned}
+              </me>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise>
+          <statement>
+            <p>
+              <m>\int \sec^3(x)\tan(x)\,dx</m>
+            </p>
+          </statement>
+
+          <solution>
+            <p>
+              Keep <m>\sec(x)\tan(x)</m> to form <m>du</m> when <m>u = \sec(x)</m>:
+              <me>
+                \begin{aligned} \int \sec^3(x)\tan(x)\,dx &amp;= \int \sec^2(x) \sec(x)\tan(x) \,dx \\ &amp;= \int u^2 \,du \\ &amp;= \frac{1}{3}u^3 + C = \frac{1}{3} \sec^3(x) + C \end{aligned}
+              </me>
+            </p>
+          </solution>
+        </exercise>
+      </page>
+    </worksheet>
+  </article>
+</pretext>
