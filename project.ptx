@@ -26,6 +26,27 @@
     <target name="notes-print" format="pdf" source="notes.ptx"
             publication="publication.ptx" output-filename="notes.pdf"/>
 
+            
+    <target name="ws-05-01-sol-pdf"  format="pdf"
+            source="activities/ws_05_01.ptx"
+            output-dir="pdfs" publication="publication_standalone.ptx" 
+            output-filename="ws_05_01-sol.pdf" />
+    <target name="ws-05-01-pdf"  format="pdf"
+            source="activities/ws_05_01.ptx"
+            output-dir="pdfs" publication="publication_standalone_nosols.ptx" 
+            output-filename="ws_05_01.pdf"/>
+    <target name="ws-05-05-sol-pdf"  format="pdf"
+            source="activities/ws_05_05.ptx"
+            output-dir="pdfs" publication="publication_standalone.ptx" 
+            output-filename="ws_05_05-sol.pdf" />
+    <target name="ws-05-05-pdf"  format="pdf"
+            source="activities/ws_05_05.ptx"
+            output-dir="pdfs" publication="publication_standalone_nosols.ptx" 
+            output-filename="ws_05_05.pdf"/>
+
+
+
+
   <!-- The following targets are used to create stand-alone documents, -->
   <!-- either scorm archives or pdfs. Run with `pretext build scorm -i source/[filename.ptx]`-->
     <target name="scorm" standalone="yes" format="html" compression="scorm"
