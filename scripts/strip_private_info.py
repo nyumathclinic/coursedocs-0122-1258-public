@@ -83,12 +83,13 @@ def strip_solutions_from_xml_files(directory):
 
 
 if __name__ == "__main__":
-    if not is_git_repo_clean():
-        print(
-            "Error: The Git repository is not clean. Please commit or stash your changes before running this script.",
-            file=sys.stderr,
-        )
-        sys.exit(1)
+    # This doesn't work right now because the GitHub Actions runner doesn't have a clean repo.
+    # if not is_git_repo_clean():
+    #     print(
+    #         "Error: The Git repository is not clean. Please commit or stash your changes before running this script.",
+    #         file=sys.stderr,
+    #     )
+    #     sys.exit(1)
 
     # If the repository is clean, proceed with the main task.
     strip_solutions_from_xml_files(".")
