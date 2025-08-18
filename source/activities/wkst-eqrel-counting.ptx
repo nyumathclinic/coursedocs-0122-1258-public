@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Contributed by Mitch Keller -->
+<?xml version='1.0' encoding='UTF-8'?>
 <worksheet>
   <title>Equivalence Relations and Counting</title>
   <page>
@@ -11,40 +10,7 @@
         </p>
       </statement>
 
-      <solution component="w2s">
-        <p>
-          Since <m>R</m> is an equivalence relation, the relation is reflexive, so every element is related to itself. Since we are told <m>aRd</m>, this means by symmetry that <m>d R a</m>. Similarly, <m>cRb</m> because <m>bRc</m> and <m>dRe</m> because <m>eRd</m>. By transitivity, we have that <m>aRe</m> and <m>e R a</m>. To make writing the elements of <m>R</m> easier to see, here is the equivalence relation as a diagram:
-        </p>
-        <image width="50%">
-          <shortdescription>An equivalence relation as a digraph</shortdescription>
-          <prefigure xmlns="https://prefigure.org" label="2025-Worksheet-12-Ex-7">
-            <diagram dimensions="(200,200)" margins="5">
-              <definition>N=5</definition>
-              <definition>f(t)=(cos(2*pi*t/N), sin(2*pi*t/N))</definition>
-              <coordinates bbox="(-1.75,-1.75,1.75,1.75)">
-                <network directed="yes" scale="0.8"
-                node-fill="#ffffff" node-stroke="black"
-                seed="1" labels="yes" loop-scale="(0.5,0.5)"
-                tactile-node-size="40" node-size="10" >
-                <node at="1" p="f(0)" edges="[1,4,5]" loop-orientation="0"><m>a</m></node>
-                <node at="2" p="f(1)" edges="[2,3]" loop-orientation="0"><m>b</m></node>
-                <node at="3" p="f(2)" edges="[3,2]"><m>c</m></node>
-                <node at="4" p="f(3)" edges="[1,4,5]"><m>d</m></node>
-                <node at="5" p="f(4)" edges="[1,4,5]" loop-orientation="270"><m>e</m></node>
-              </network>
-            </coordinates>
-          </diagram>
-        </prefigure>
-      </image>
-      <p>
-        From this, we can more readily see that the relation will be
-        <md>
-          <mrow>R = \{ \amp(a,a), (d,d), (e,e), (a,d), (d,a), (a,e), (e,a) , </mrow>
-            <mrow>\amp (d,e), (e,d), (b,b), (c,c), (b,c), (c,b) \}</mrow>
-          </md>.
-        </p>
-      </solution>
-    </exercise>
+      </exercise>
 
     <exercise>
       <introduction>
@@ -172,27 +138,7 @@
           Describe the partition of <m>\Z</m> resulting from the equivalence relation <m>\equiv \pmod{4}</m>.
         </p>
       </statement>
-      <solution component="w2s">
-        <p>
-          The way congruence modulo <m>4</m> partitions <m>\Z</m> is based on the remainder after division. So, there are four equivalence classes:
-          <md>
-            <mrow>
-              [0] \amp = \{ x \in \Z : x \equiv 0 \pmod 4\} = \{ \ldots,-8,  -4, 0, 4, 8, 12, \ldots \},
-            </mrow>
-            <mrow>
-              [1] \amp = \{ x \in \Z : x \equiv 1 \pmod 4\} = \{ \ldots,-7,  -3, 1,5, 9, 13, \ldots \},
-            </mrow>
-            <mrow>
-              [2] \amp = \{ x \in \Z : x \equiv 2 \pmod 4\} = \{ \ldots,-6,-2,2,6,10,14 \ldots \},
-            </mrow>
-            <intertext>and</intertext>
-            <mrow>
-              [3] \amp = \{ x \in \Z : x \equiv 3 \pmod 4\} = \{ \ldots,-5,-1,3,7,11,15, \ldots \}.
-            </mrow>
-          </md>
-        </p>
-      </solution>
-    </exercise>
+      </exercise>
     <exercise workspace="0.25in">
       <introduction>
         <p>
@@ -283,12 +229,7 @@
         </p>
       </statement>
 
-      <solution component="w2s">
-        <p>
-          One possibility is <m>f(x) = \lceil \frac{x}{3} \rceil</m>. This is a <m>3</m>-to-<m>1</m> correspondence because for <m>j \in \{1, 2, \ldots, 10\}</m>, the numbers that will get mapped to <m>j</m> under <m>f</m> will be <m>3j</m>, <m>3j-1</m>, and <m>3j-2</m> (which are all elements of <m>\{1,2,\cdots,30\}</m>).
-        </p>
-      </solution>
-    </exercise>
+      </exercise>
 
     <exercise workspace="0.65in">
       <statement>
@@ -297,12 +238,7 @@
         </p>
       </statement>
 
-      <solution component="w2s">
-        <p>
-          There are <m>3</m> choices for the first character in the string, and <m>2</m> choices for the second character. For the third, since we cannot have two consecutive characters be the same, we therefore have <m>2</m> choices. Similarly, there are <m>2</m> choices for the fourth, etc. Hence, there are <m>3 \cdot 2^9</m> strings of length <m>10</m> in which no two consecutive characters are the same.
-        </p>
-      </solution>
-    </exercise>
+      </exercise>
 
 
 
@@ -314,12 +250,7 @@
         </p>
       </statement>
 
-      <solution component="w2s">
-        <p>
-          There are <m>2</m> choices for the leader at the front. Then, there are <m>10!</m> choices made for the ten girl scouts in the middle. Finally, there is one choice for the leader at the back of the line. Hence there are <m>2 \cdot 10!</m> ways to line up the entire troop.
-        </p>
-      </solution>
-    </exercise>
+      </exercise>
 
     <exercise workspace="0.75in">
       <introduction>

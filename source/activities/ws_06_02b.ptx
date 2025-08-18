@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
+<?xml version='1.0' encoding='UTF-8'?>
 <pretext>
   <article xml:id="article">
     <worksheet margin="1in" bottom="1.25in" xml:id="ws-trigsub">
@@ -19,7 +18,7 @@
         <p>
           Evaluate the integrals.
           In the case of a definite integral, your answer should be a number.
-          For indefinite integrals, your answer should be the most general antiderivative (this means don&#2019;t forget <m>+C</m>).
+          For indefinite integrals, your answer should be the most general antiderivative (this means donߣt forget <m>+C</m>).
         </p>
       </introduction>
 
@@ -32,31 +31,7 @@
             </p>
           </statement>
 
-          <solution>
-            <p>
-              Let <m>x = 2 \sin \theta</m>, so that <m>dx = 2 \cos \theta\,d\theta</m> and <m>\sqrt{4-x^2} = 2 \cos\theta</m>.
-              Also, <m>\theta =0</m> when <m>x=0</m> and <m>\theta=\pi/2</m> when <m>x=2</m>.
-              So
-              <me>
-                \begin{aligned} \int_0^2\sqrt{4-x^2}\,dx &amp;= 4\int_0^{\pi/2} \cos^2 (\theta)\,d\theta \\ &amp;= 4\int_0^{\pi/2} \frac{1+\cos(2\theta)}{2}\,d\theta \\ &amp;= 2\int_0^{\pi/2} \left(1+\cos(2\theta)\right)\,d\theta \\ \end{aligned}
-              </me>
-              Now <m>\int_0^{\pi/2} 1 \,d\theta</m> is clearly <m>\frac{\pi}{2}</m>.
-              What about <m>\int_0^{\pi/2} \cos(2\theta)\,d\theta</m>? There is a way to make it go away.
-              Notice that the sinusoidal functions spend as much time above the axis as below the axis.
-              The integral of cosine from <m>0</m> to <m>\pi</m> is <m>0</m>.
-              But <m>\cos(2\theta)</m> has twice the frequency, so half the period, so the integral is zero again.
-            </p>
-
-            <p>
-              Putting this together, we have
-              <me>
-                \int_0^2\sqrt{4-x^2}\,dx = \pi
-              </me>
-              Notice this integral measures the area of a quarter of the circle of radius 2.
-              So this jives with our well-known formula for the area of a circle.
-            </p>
-          </solution>
-        </exercise>
+          </exercise>
 
         <exercise workspace="1in">
           <statement>
@@ -65,64 +40,7 @@
             </p>
           </statement>
 
-          <solution>
-            <p>
-              Let <m>x = \sqrt{3} \tan\theta</m>, so <m>dx = \sqrt{3}\sec^2\theta\,d\theta</m> and <m>\sqrt{x^2 + 3} = \sqrt{3}\sec\theta</m>.
-              Then
-              <me>
-                \begin{aligned} \int\frac{dx}{\sqrt{x^2 + 3}} &amp;= \int\frac{\sqrt{3}\sec^2\theta}{\sqrt{3}\sec\theta}\,d\theta \\ &amp;= \int \sec\theta \,d\theta \\ &amp;= \ln| \sec\theta + \tan\theta| + C \\ \end{aligned}
-              </me>
-            </p>
-
-            <p>
-              If <m>x=\sqrt{3} \tan\theta</m>, then <m>\tan\theta=\frac{x}{\sqrt{3}}</m>, which means <m>\sec\theta=\frac{\sqrt{x^2+3}}{\sqrt{3}}</m>.
-            </p>
-
-            <image width="60%">
-              <prefigure xmlns="https://prefigure.org" label="secant-tangent-diagram">
-              <diagram dimensions="(300,300)" margins="10">
-              <coordinates bbox="(-1,-1,2,2)">
-              <definition>
-p1 = [0,0]
-              </definition>
-
-              <definition>
-p2 = [sqrt(3),0]
-              </definition>
-
-              <definition>
-p3 = [sqrt(3),2]
-              </definition>
-
-              <definition>
-v = p3 - p1
-              </definition>
-
-              <definition>
-th = degrees(atan2(v[1],v[0]))
-              </definition>
-              <triangle vertices="(p1,p2,p3)" />
-              <label anchor="0.5*(p1+p2)" alignment="s"><m>\sqrt{3}</m></label>
-              <label anchor="0.5*(p2+p3)" alignment="e"><m>x</m></label>
-              <!-- I wanted rotate="th" here but it didn't work -->
-              <label anchor="0.5*(p1+p3)" alignment="n"
-                      rotate="49.107" 
-                    ><m>\sqrt{x^2+3}</m></label>
-              <angle-marker points="(p2,p1,p3)"><m>\theta</m></angle-marker>
-              </coordinates>
-              </diagram>
-              </prefigure>
-            </image>
-
-            <p>
-              So
-              <me>
-                \begin{aligned} \int\frac{dx}{\sqrt{x^2 + 3}} &amp;= \ln\left| \frac{\sqrt{x^2+3}}{3} + \frac{x}{\sqrt{3}}\right| + C \\ &amp;= \ln\left| \frac{\sqrt{x^2+3}+x}{3}\right| + C \\ &amp;= \ln\left| \sqrt{x^2+3}+x\right| - \ln\sqrt{3} + C \\ &amp;= \ln\left| \sqrt{x^2+3}+x\right| + C \\ \end{aligned}
-              </me>
-              The constants on the last two lines are different!
-            </p>
-          </solution>
-        </exercise>
+          </exercise>
 
         <exercise workspace="1in">
           <statement>
@@ -131,26 +49,7 @@ th = degrees(atan2(v[1],v[0]))
             </p>
           </statement>
 
-          <solution>
-            <p>
-              Let <m>x=3 \sec\theta</m>, so <m>dx = 3 \sec\theta\tan\theta\,d\theta</m> and <m>\sqrt{x^2-9} = 3 \tan\theta</m>.
-              Then
-              <me>
-                \begin{aligned} \int \sqrt{x^2-9}\,dx &amp;= 9 \int\tan^2\theta\sec\theta\,d\theta \\ &amp;= 9 \int(\sec^2\theta-1)\sec\theta\,d\theta \\ &amp;= 9 \left\{\int\sec^3 \theta\,d\theta - \int\sec\theta \,d\theta\right\} \\ &amp;= 9 \left\{\frac{1}{2}\left(\sec\theta\tan\theta+\ln|\sec\theta + \tan \theta|\right) - \ln|\sec\theta + \tan\theta|\right\} + C\\ &amp;= \frac{9}{2} \sec\theta\tan\theta - \frac{9}{2}\ln|\sec\theta + \tan \theta| + C \\ \end{aligned}
-              </me>
-              If <m>x=3 \sec\theta</m>, then <m>\sec\theta=\frac{x}{3}</m>:
-            </p>
-
-            <p>
-              We see <m>\tan\theta=\frac{\sqrt{x^2-9}}{3}</m>.
-              <me>
-                \begin{aligned} \int \sqrt{x^2-9}\,dx &amp;= \frac{9}{2}\cdot \frac{x}{3} \cdot\frac{\sqrt{x^2-9}}{3} - \frac{9}{2} \ln\left|\frac{x}{3} + \frac{\sqrt{x^2-9}}{3}\right| + C \\ &amp;= \frac{1}{2} x \sqrt{x^2-9} - \frac{9}{2}\ln|x + \sqrt{x^2-9}| + C \end{aligned}
-              </me>
-              The <m>C</m> on the last line is different from the one on the penultimate line; as in the last problem we have subsumed the <m>-\ln 3</m> constant.
-              See <url href="http://wolfr.am/150uZMy">http://wolfr.am/150uZMy</url>.
-            </p>
-          </solution>
-        </exercise>
+          </exercise>
       </page>
 
 
@@ -162,26 +61,7 @@ th = degrees(atan2(v[1],v[0]))
             </p>
           </statement>
 
-          <solution>
-            <p>
-              This time let <m>\sqrt{3} x = 2 \sin\theta</m>.
-              Then <m>\sqrt{3} \,dx = 2 \cos\theta\,d\theta</m> and <m>\sqrt{4-3x^2} = 2 \cos \theta</m>.
-              So
-              <me>
-                \begin{aligned} \int x^2\sqrt{4-3x^2}\,dx &amp;= \int\frac{4}{3} \sin^2\theta \cdot 2 \cos \theta \cdot \frac{2}{\sqrt 3} \cos\theta\,d\theta \\ &amp;= \frac{16}{3\sqrt{3}} \int\sin^2\theta \cos^2\theta\,d\theta \\ &amp;= \frac{4}{3\sqrt{3}} \int \sin^2(2\theta)\,d\theta\\ &amp;= \frac{2}{3\sqrt{3}} \int (1-\cos(4\theta))\,d\theta \\ &amp;= \frac{2}{3\sqrt{3}}\theta - \frac{1}{6\sqrt{3}}\sin(4\theta) + C \end{aligned}
-              </me>
-              To put this back in terms of <m>x</m>, use the identity
-              <me>
-                \sin(4\theta) = 2 \sin(2\theta)\cos(2\theta) = 4 \sin(\theta)\cos(\theta)(1-2\sin^2\theta)
-              </me>
-              then unsubstitute <m>\theta = \arcsin\left(\frac{\sqrt{3}}2 x\right)</m>, <m>\sin\theta = \frac{\sqrt{3}x}{2}</m>, and <m>\cos\theta=\frac{\sqrt{4-3x^2}}{2}</m>.
-              So
-              <me>
-                \begin{aligned} \int x^2\sqrt{4-3x^2}\,dx &amp;= \frac{2}{3\sqrt{3}} \arcsin\left(\frac{\sqrt{3}}{2}x\right) - \frac{1}{6\sqrt{3}}\cdot 4 \cdot \frac{\sqrt{3}}{2}x \cdot \frac{\sqrt{4-3x^2}}{2} \cdot \left(1 - \frac{3}{2}x^2\right) + C \\ &amp;= \frac{2}{3\sqrt{3}} \arcsin\left(\frac{\sqrt{3}}{2}x\right) - \frac{1}{6} x \sqrt{4-3x^2}\left(1 - \frac{3}{2}x^2\right) + C \\ &amp;= \frac{2}{3\sqrt{3}} \arcsin\left(\frac{\sqrt{3}}{2}x\right) + \frac{1}{12} x \sqrt{4-3x^2}\left(3x^2-2\right) + C \\ \end{aligned}
-              </me>
-            </p>
-          </solution>
-        </exercise>
+          </exercise>
 
         <exercise workspace="1in">
           <statement>
@@ -190,22 +70,7 @@ th = degrees(atan2(v[1],v[0]))
             </p>
           </statement>
 
-          <solution>
-            <p>
-              Let <m>u = e^t</m>.
-              Then <m>du = e^t \,dt</m> and
-              <me>
-                \int_{\ln(3/4)}^{\ln(4/3)} \frac{e^t\,dt}{(1+e^{2t})^{3/2}} = \int_{3/4}^{4/3}\frac{du}{(1+u^2)^{3/2}}.
-              </me>
-              Now let <m>u = \tan\theta</m>.
-              Then <m>du = \sec^2\theta\,d\theta</m> and
-              <me>
-                \begin{split} \int_{3/4}^{4/3}\frac{du}{(1+u^2)^{3/2}} &amp;= \int_{\arctan(3/4)}^{\arctan(4/3)} \frac{\sec^2\theta\,d\theta}{\sec^3\theta} \\ &amp;= \int_{\arctan(3/4)}^{\arctan(4/3)} \cos\theta\,d\theta \\ &amp;= \left.\sin\theta\right|_{\arctan(3/4)}^{\arctan(4/3)} \\ &amp;= \frac{4}{5} - \frac{3}{5} = \frac{1}{5}.
-                \end{split}
-              </me>
-            </p>
-          </solution>
-        </exercise>
+          </exercise>
       </page>
     </worksheet>
   </article>

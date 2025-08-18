@@ -1,8 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
+<?xml version='1.0' encoding='UTF-8'?>
 <pretext>
   <article xml:id="article">
-    <!-- When creating a new activity, make a copy of this file with appropriate name -->
+    
     <worksheet margin="1in" bottom="1.25in" xml:id="XXX">
       <title>Worksheet for Section XXX</title>
 
@@ -28,25 +27,19 @@
           <statement>
           </statement>
 
-          <solution>
-          </solution>
-        </exercise>
+          </exercise>
 
         <exercise workspace="1in">
           <statement>
           </statement>
 
-          <solution>
-          </solution>
-        </exercise>
+          </exercise>
 
         <exercise workspace="1in">
           <statement>
           </statement>
 
-          <solution>
-          </solution>
-        </exercise>
+          </exercise>
       </page>
     </worksheet>
   </article>
