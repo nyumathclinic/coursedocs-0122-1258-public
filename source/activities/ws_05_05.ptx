@@ -23,6 +23,8 @@
       </objectives>
 
       <exercisegroup>
+      <title>Using Substitution</title>
+
       <introduction>
         <p>
           Use the specified substitution to evaluate the given integrals.
@@ -107,6 +109,7 @@
       </exercise>
 
       </exercisegroup> <exercisegroup>
+      <title>Finding Substitutions</title>
 
       <introduction>
         <p>
@@ -276,6 +279,8 @@
       </exercise>
 
       <exercisegroup>
+      <title>Integration with half-angle identities</title>
+
       <introduction>
         <p>
           Use the identity
@@ -308,54 +313,131 @@
         </solution>
       </exercise>
 
-      <exercise workspace="1in">
+
+
+        <exercise workspace="1in">
+          <statement>
+            <p>
+              <m>\int\cos^2 x\,dx</m>
+            </p>
+          </statement>
+
+          <solution>
+            <p>
+              Using <m>\cos 2\alpha = 2\cos^2 \alpha-1</m>, we get
+              <me>
+                \sin^2\alpha = \frac{1+\cos 2\alpha}{2}
+              </me>
+              So
+              <me>
+                \begin{split} \int\sin^2 x\,dx &amp;= \int\left(\frac12 + \frac12\cos2 x\right)\,dx \\ &amp;= \frac{x}{2} + \frac{1}{4}\sin 2x + C.
+                \end{split}
+              </me>
+            </p>
+          </solution>
+        </exercise>
+        </exercisegroup>
+
+              <exercise workspace="1in">
+        <title>Symmetry</title>
+
         <statement>
           <p>
-            <m>\int\cos^2 x\,dx</m>
+            Which of the following integrals is/are equal to zero?
           </p>
         </statement>
 
-        <solution>
-          <p>
-            Using <m>\cos 2\alpha = 2\cos^2 \alpha-1</m>, we get
-            <me>
-              \sin^2\alpha = \frac{1+\cos 2\alpha}{2}
-            </me>
-            So
-            <me>
-              \begin{split} \int\sin^2 x\,dx &amp;= \int\left(\frac12 + \frac12\cos2 x\right)\,dx \\ &amp;= \frac{x}{2} + \frac{1}{4}\sin 2x + C.
-              \end{split}
-            </me>
-          </p>
-        </solution>
-      </exercise>
-      </exercisegroup>
+        <choices>
+          <choice correct="yes">
+            <statement>
+              <p>
+                <m>\displaystyle\int_{-1}^{1} \sin(x^3)\,dx</m>
+              </p>
+            </statement>
 
-      <exercise workspace="1in">
-        <statement>
-          <p>
-            Find
-            <me>
-              \int \sec x\,dx
-            </me>
-            by multiplying the numerator and denominator by <m>\sec x + \tan x</m>.
-          </p>
-        </statement>
+            <feedback>
+              <p>
+                The interval is symmetric about the origin, and the integrand is an odd function.
+                So the integral is zero.
+              </p>
+            </feedback>
+          </choice>
 
-        <solution>
-          <p>
-            We have
-            <me>
-              \begin{split} \int \sec x\,dx &amp;= \int\frac{\sec x(\sec x + \tan x)}{\sec x + \tan x}\,dx \\ &amp;= \int\frac{\sec^2x + \sec x \tan x}{\tan x + \sec x}\,dx \end{split}
-            </me>
-            Now notice the numerator is the derivative of the denominator.
-            So the substitution <m>u = \tan x + \sec x</m> gives
-            <me>
-              \int \sec x \,dx = \ln|\sec x + \tan x| + C.
-            </me>
-          </p>
-        </solution>
-      </exercise>
-    </worksheet>
-  </article>
-</pretext>
+            <choice correct="yes">
+              <statement>
+                <p>
+                  <m>\displaystyle\int_{-1}^{1} x^3 \sin(x^2)\,dx</m>
+                </p>
+              </statement>
+
+              <feedback>
+                <p>
+                  The interval is symmetric about the origin, and the integrand is an odd function.
+                  So the integral is zero.
+                </p>
+              </feedback>
+            </choice>
+
+          <choice correct="no">
+            <statement>
+              <p>
+                <m>\displaystyle\int_{-1}^{1} x^2 e^{x^3}\,dx</m>
+              </p>
+            </statement>
+
+            <feedback>
+              <p>
+                The interval is symmetric about the origin, but the integrand is neither even nor odd.
+                The integral is equal to
+                <me>
+                  \left.\frac{1}{3}e^{x^3}\right|_{-1}^{1} = \frac{1}{3}(e - e^{-1}) > 0.
+                </me>
+              </p>
+            </feedback>
+            </choice>
+
+          <choice correct="no">
+            <statement>
+              <p>
+                <m>\displaystyle\int_{-1}^{1} \sin(x^2)\,dx</m>
+              </p>
+            </statement>
+
+            <feedback>
+              <p>
+                The interval is symmetric about the origin, but the integrand is an even function.
+                The integral is equal to <m>2\int_0^1 \sin(x^2)\,dx</m>, which is positive.
+              </p>
+            </feedback>
+          </choice>
+        </choices>
+        </exercise>
+
+        <exercise workspace="1in">
+          <statement>
+            <p>
+              Find
+              <me>
+                \int \sec x\,dx
+              </me>
+              by multiplying the numerator and denominator by <m>\sec x + \tan x</m>.
+            </p>
+          </statement>
+
+          <solution>
+            <p>
+              We have
+              <me>
+                \begin{split} \int \sec x\,dx &amp;= \int\frac{\sec x(\sec x + \tan x)}{\sec x + \tan x}\,dx \\ &amp;= \int\frac{\sec^2x + \sec x \tan x}{\tan x + \sec x}\,dx \end{split}
+              </me>
+              Now notice the numerator is the derivative of the denominator.
+              So the substitution <m>u = \tan x + \sec x</m> gives
+              <me>
+                \int \sec x \,dx = \ln|\sec x + \tan x| + C.
+              </me>
+            </p>
+          </solution>
+        </exercise>
+      </worksheet>
+    </article>
+  </pretext>
