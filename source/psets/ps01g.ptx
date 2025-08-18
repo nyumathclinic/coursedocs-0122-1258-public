@@ -2,10 +2,12 @@
 
 <pretext>
   <article>
-    <section xml:id="ps01">
-      <title>Problem Set 01</title>
+    <title>Problem Set 1</title>
 
-      <subtitle>Stewart Essential Calculus, Early Transcendentals: Chapter 5</subtitle>
+    <subtitle>Sections 5.1&#x2013;5.5</subtitle>
+    <section xml:id="ps01">
+      <title>Problem Set 1</title>
+
       <exercises>
       <exercise xml:id="p-1">
         <statement>
