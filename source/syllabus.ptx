@@ -45,13 +45,14 @@
           <li>
             <title>Instructional modality</title>
             <p>
-              Section 001 is online. All other sections are in-person.
+              Section 001 meets online for lecture and in-person for exams.
+              All other sections meet in-person.
             </p>
           </li>
         </dl>
       </p>
 
-      <p>“The book of the universe is written in the language of mathematics.” Galileo wrote this four hundred years ago, even before Newton and Leibniz discovered calculus. The statement is as valid today as ever: We use functions in all the sciences, and calculus allows us to analyze the functions and draw scientific conclusions.
+      <p><q>The book of the universe is written in the language of mathematics.</q> Galileo wrote this four hundred years ago, even before Newton and Leibniz discovered calculus. The statement is as valid today as ever: We use functions in all the sciences, and calculus allows us to analyze the functions and draw scientific conclusions.
       </p>
 
       <p>
@@ -154,7 +155,7 @@
       <title>WebAssignments</title>
       <p>
         After lecture you will continue to practice the procedures and concepts
-        through a “WebAssignment”—an assignment on the WebAssign platform. You
+        through a <q>WebAssignment</q>—that is, an assignment on the WebAssign platform. You
         will have multiple opportunities to attempt these problems, and other
         problems like them. WebAssignments are due before recitation.
       </p>
@@ -206,15 +207,24 @@
         <li>
           <title>WebAssign</title>
           <p>
-            The course also requires a subscription to Cengage WebAssign in
-            order to do assigned textbook problems. You can buy your
-            subscription automatically through <url
+            The required online homework platform for this course is <em>WebAssign for Essential Calculus</em> by Stewart.
+            As part of the university's <url
             href="https://www.nyu.edu/about/leadership-university-administration/office-of-the-president/office-of-the-executivevicepresident/finance-and-budget/campus-services/nyu-campus-stores/included.html">Folett
-            ACCESS</url>, independently through the <url
+            ACCESS</url> program, it will be delivered to you digitally through a link in your section's Brightspace site. 
+            The cost of the platform including the book is $24.25, 
+            which will be added as a <q>book charge</q> to your bursar bill.
+            This is the only purchase you need to make for the course.
+          </p>
+          <p>
+            If you choose to purchase your course materials elsewhere, 
+            you must login to the <url href="https://includedcp.follett.com/2015">student portal</url> and opt out of the program.
+            Then you can buy access independently through the <url
             href="https://www.bkstr.com/nyustore/home">NYU Bookstore</url>, or
             within WebAssign itself. For most students, the lowest price will be
-            found through ACCESS. This is the only purchase required to
-            participate in the course.
+            found through ACCESS.
+                         
+            <alert>If you do not opt out by September 17, you will be charged. 
+            If you do opt out, you are responsible for purchasing your own WebAssign access.</alert>
           </p>
         </li>
         <li>
