@@ -12,6 +12,7 @@
     </introduction>
     <xi:include href="./psets/ps01.ptx" xpointer="sec-ps01"/>
     <xi:include href="./psets/ps02.ptx" xpointer="xpointer(//section[1])"/>
+    <xi:include href="./psets/ps03.ptx" xpointer="xpointer(//section[1])"/>
     
     
   </article>

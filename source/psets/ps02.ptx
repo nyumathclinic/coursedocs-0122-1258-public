@@ -4,7 +4,7 @@
         <section xml:id="ps02">
             <title>Problem Set 2</title>
 
-<introduction>
+            <introduction>
                 <p>
                     This problem set consists not only of problems similar to what you've seen, but also of unique problems you may not have seen before.
                     The purpose of the latter is for you to apply the concepts you've previously learned to new, unfamiliar, and usually more interesting situations.
@@ -20,7 +20,9 @@
                 <p>
                     Prepare a single PDF and submit it to Gradescope.
                 </p>
-            </introduction>            <exercises>
+            </introduction>
+
+            <exercises>
             <exercise xml:id="ps02-01">
                 <statement>
                     <p>
@@ -115,39 +117,31 @@
                             Let <m>I = \int \sec^3 u \,du = \int \sec u \cdot \sec^2 u \,du</m>.
                             Let <m>f(u) = \sec u</m> and <m>g'(u) = \sec^2 u</m>.
                             Then <m>f'(u) = \sec u \tan u</m> and <m>g(u) = \tan u</m>.
-                            <me>
-                                I = \sec u \tan u - \int (\tan u)(\sec u \tan u) \,du
-                            </me>
-                            <me>
-                                I = \sec u \tan u - \int \sec u \tan^2 u \,du
-                            </me>
+                            So
+                            <md>
+                                <mrow> I \amp= \sec u \tan u - \int (\tan u)(\sec u \tan u) \,du </mrow>
+                                <mrow> \amp = \sec u \tan u - \int \sec u \tan^2 u \,du</mrow>                                
+                            </md>
                         </p>
 
                         <p>
                             Now, we use the Pythagorean identity <m>\tan^2 u = \sec^2 u - 1</m>:
-                            <me>
-                                I = \sec u \tan u - \int \sec u (\sec^2 u - 1) \,du
-                            </me>
-                            <me>
-                                I = \sec u \tan u - \int (\sec^3 u - \sec u) \,du
-                            </me>
-                            <me>
-                                I = \sec u \tan u - \int \sec^3 u \,du + \int \sec u \,du
-                            </me>
+                            <md>
+                                <mrow> I \amp= \sec u \tan u - \int \sec u (\sec^2 u - 1) \,du </mrow>
+                                <mrow> \amp = \sec u \tan u - \int \sec u (\sec^2 u - 1) \,du</mrow>
+                                <mrow> \amp = \sec u \tan u - \int (\sec^3 u - \sec u) \,du </mrow>
+                                <mrow> \amp = \sec u \tan u - \int \sec^3 u \,du + \int \sec u \,du</mrow>
+                            </md>
                         </p>
 
                         <p>
                             Notice that the integral of <m>\sec^3 u</m> has reappeared.
                             We can now solve for <m>I</m>.
-                            <me>
-                                I = \sec u \tan u - I + \int \sec u \,du
-                            </me>
-                            <me>
-                                2I = \sec u \tan u + \ln|\sec u + \tan u|
-                            </me>
-                            <me>
-                                I = \frac{1}{2}\sec u \tan u + \frac{1}{2}\ln|\sec u + \tan u| + C
-                            </me>
+                            <md>
+                                <mrow> I \amp= \sec u \tan u - I + \int \sec u \,du </mrow>
+                                <mrow> 2I \amp= \sec u \tan u + \ln|\sec u + \tan u| </mrow>
+                                <mrow> I \amp = \frac{1}{2}\sec u \tan u + \frac{1}{2}\ln|\sec u + \tan u| + C </mrow>
+                            </md>
                         </p>
 
                         <p>

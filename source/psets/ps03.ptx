@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pretext>
+  <article>
+    <section xml:id="ps03-section">
+      <title>Problem Set 3</title>
+      <subtitle>Trigonometric Substitution and Partial Fractions </subtitle>
+      <exercises>
+        <exercise xml:id="ex-trig-sub-definite-x-squared-plus-four">
+          <statement>
+            <p>
+              Evaluate the definite integral <me>\int_1^3 \frac{dx}{x^2\sqrt{x^2+4}}</me>. Explain your steps and justify your choices for trigonometric substitution.
+            </p>
+          </statement>
+          </exercise>
+
+        <exercise xml:id="ex-trig-sub-completing-the-square">
+          <statement>
+            <p>
+              Evaluate the indefinite integral <me>\int \frac{x^2}{\sqrt{4x-x^2}} \,dx</me>.
+            </p>
+          </statement>
+          </exercise>
+
+        <exercise xml:id="ex-partial-fractions-long-division">
+          <statement>
+            <p>
+              Evaluate the indefinite integral <me>\int \frac{x^3-4x-10}{x^2-x-6} \,dx</me>.
+            </p>
+          </statement>
+          </exercise>
+        
+        <exercise xml:id="ex-partial-fractions-repeated-quadratic">
+          <statement>
+            <p>
+              Evaluate the indefinite integral <me>\int \frac{x}{(x-1)^2(x^2+1)} \,dx</me>.
+            </p>
+          </statement>
+          </exercise>
+
+        <exercise xml:id="ex-trig-sub-one-over-x-sqrt">
+          <statement>
+            <p>
+              Evaluate the indefinite integral <me>\int \frac{1}{x\sqrt{4-x^2}} \,dx</me>.
+            </p>
+          </statement>
+          </exercise>
+
+        <exercise xml:id="ex-partial-fractions-u-sub">
+          <statement>
+            <p>
+              Evaluate the indefinite integral <me>\int \frac{1}{e^{2x}-e^x-2} \,dx</me>.
+            </p>
+          </statement>
+          </exercise>
+      </exercises>
+    </section>
+  </article>
+</pretext>
