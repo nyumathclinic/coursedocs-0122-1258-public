@@ -2,58 +2,164 @@
 <pretext>
     <article>
         <section xml:id="ps02">
-            <title>Problem Set 02</title>
-            <subtitle>Essential Calculus, Early Transcendentals: Sections 6.1 and 6.2</subtitle>
+            <title>Problem Set 2</title>
 
-            <exercises>
-                <title>Foo</title>
-                <exercise xml:id="ps02-01">
-                    <statement>
-                        <p>
-                            Evaluate the indefinite integral <m>\int x^2 e^{2x} \, dx</m>. You must show all steps of the integration by parts process.
-                        </p>
-                    </statement>
-                    </exercise>
+<introduction>
+                <p>
+                    This problem set consists not only of problems similar to what you've seen, but also of unique problems you may not have seen before.
+                    The purpose of the latter is for you to apply the concepts you've previously learned to new, unfamiliar, and usually more interesting situations.
+                    In some cases, problems connect ideas from multiple learning objectives.
+                </p>
 
-                <exercise xml:id="ps02-02">
-                    <statement>
-                        <p>
-                            Evaluate the definite integral <m>\int_1^e \ln(x^4) \, dx</m>.
-                        </p>
-                    </statement>
-                    </exercise>
+                <p>
+                    Write full, clear solutions to the problems below.
+                    It is important that the logic of how you solved these problems is clear.
+                    Although the final answer is important, being able to convey you understand the underlying concepts is more important.
+                </p>
 
-                <exercise xml:id="ps02-03">
-                    <statement>
-                        <p>
-                            A particle moves along a straight line with velocity <m>v(t) = t \sin(2t)</m> meters per second. Find the displacement of the particle over the interval <m>[0, \frac{\pi}{2}]</m>.
-                        </p>
-                    </statement>
-                    </exercise>
+                <p>
+                    Prepare a single PDF and submit it to Gradescope.
+                </p>
+            </introduction>            <exercises>
+            <exercise xml:id="ps02-01">
+                <statement>
+                    <p>
+                        Evaluate the indefinite integral <m>\int x^2 e^{2x} \, dx</m>.
+                        You must show all steps of the integration by parts process.
+                    </p>
+                </statement>
 
-                <exercise xml:id="ps02-04">
-                    <statement>
-                        <p>
-                            Evaluate the indefinite integral <m>\int \sin^3(x) \cos^4(x) \, dx</m>.
-                        </p>
-                    </statement>
-                    </exercise>
+                </exercise>
 
-                <exercise xml:id="ps02-05">
+            <exercise xml:id="ps02-02">
+                <statement>
+                    <p>
+                        Evaluate the definite integral <m>\int_1^e \ln(x^4) \, dx</m>.
+                    </p>
+                </statement>
+
+                </exercise>
+
+            <exercise xml:id="ps02-03">
+                <statement>
+                    <p>
+                        A particle moves along a straight line with velocity <m>v(t) = t \sin(2t)</m> meters per second.
+                        Find the displacement of the particle over the interval <m>[0, \frac{\pi}{2}]</m>.
+                    </p>
+                </statement>
+
+                </exercise>
+
+            <exercise xml:id="ps02-04">
+                <statement>
+                    <p>
+                        Evaluate the integral
+                        <me>
+                            \int \sin^4 x \cos^2 x \,dx
+                        </me>.
+                    </p>
+                </statement>
+
+                </exercise>
+
+            <exercise xml:id="ps02-05">
+                <statement>
+                    <p>
+                        Evaluate the indefinite integral <m>\int \tan^3(x) \sec(x) \, dx</m>.
+                    </p>
+                </statement>
+
+                </exercise>
+
+            <exercise xml:id="ps02-06">
+                <introduction>
+                    <p>
+                        Evaluate the indefinite integral
+                        <me>
+                            \int x \sec^3(x^2) \,dx
+                        </me>.
+                    </p>
+                </introduction>
+
+
+                <task>
                     <statement>
                         <p>
-                            Evaluate the indefinite integral <m>\int \tan^3(x) \sec(x) \, dx</m>.
+                            First, make a substitution to simplify the integral.
                         </p>
                     </statement>
-                    </exercise>
-                
-                <exercise xml:id="ps02-06">
+
+                    <solution>
+                        <p>
+                            Use the substitution <m>u = x^2</m>.
+                            Then <m>du = 2x \,dx</m>, which means <m>x \,dx = \frac{1}{2}du</m>.
+                            This substitution simplifies the integral to
+                            <me>
+                                \frac{1}{2}\int \sec^3 u \,du
+                            </me>.
+                        </p>
+                    </solution>
+                </task>
+
+
+                <task>
                     <statement>
                         <p>
-                            Evaluate the indefinite integral <m>\int \sin(5x)\cos(3x) \, dx</m>.
+                            Evaluate the simplified integral.
                         </p>
                     </statement>
-                    </exercise>
+
+                    <solution>
+                        <p>
+                            To evaluate <m>\int \sec^3 u \,du</m>, we must use integration by parts.
+                            Let <m>I = \int \sec^3 u \,du = \int \sec u \cdot \sec^2 u \,du</m>.
+                            Let <m>f(u) = \sec u</m> and <m>g'(u) = \sec^2 u</m>.
+                            Then <m>f'(u) = \sec u \tan u</m> and <m>g(u) = \tan u</m>.
+                            <me>
+                                I = \sec u \tan u - \int (\tan u)(\sec u \tan u) \,du
+                            </me>
+                            <me>
+                                I = \sec u \tan u - \int \sec u \tan^2 u \,du
+                            </me>
+                        </p>
+
+                        <p>
+                            Now, we use the Pythagorean identity <m>\tan^2 u = \sec^2 u - 1</m>:
+                            <me>
+                                I = \sec u \tan u - \int \sec u (\sec^2 u - 1) \,du
+                            </me>
+                            <me>
+                                I = \sec u \tan u - \int (\sec^3 u - \sec u) \,du
+                            </me>
+                            <me>
+                                I = \sec u \tan u - \int \sec^3 u \,du + \int \sec u \,du
+                            </me>
+                        </p>
+
+                        <p>
+                            Notice that the integral of <m>\sec^3 u</m> has reappeared.
+                            We can now solve for <m>I</m>.
+                            <me>
+                                I = \sec u \tan u - I + \int \sec u \,du
+                            </me>
+                            <me>
+                                2I = \sec u \tan u + \ln|\sec u + \tan u|
+                            </me>
+                            <me>
+                                I = \frac{1}{2}\sec u \tan u + \frac{1}{2}\ln|\sec u + \tan u| + C
+                            </me>
+                        </p>
+
+                        <p>
+                            Finally, we substitute <m>u = x^2</m> back into the expression.
+                            We must also remember the <m>\frac{1}{2}</m> from the initial substitution.
+                            <me>
+                                \int x \sec^3(x^2) \,dx = \frac{1}{2}I = \frac{1}{4}\sec(x^2)\tan(x^2) + \frac{1}{4}\ln|\sec(x^2) + \tan(x^2)| + C
+                            </me>
+                        </p>
+                    </solution>
+                </task>
+            </exercise>
             </exercises>
         </section>
     </article>
