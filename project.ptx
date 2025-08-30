@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- This file, the project manifest, provides the overall configuration for your PreTeXt project. To edit the content of your document, open `source/main.ptx`. See https://pretextbook.org/doc/guide/html/processing-CLI.html#cli-project-manifest. -->
-<project ptx-version="2">
+<project ptx-version="2" xmlns:xi="http://www.w3.org/2001/XInclude">
   <targets>
     <target name="syllabus-web" source="syllabus.ptx" format="html"
             publication="publication-syllabus.ptx" deploy-dir="syllabus" />
@@ -26,25 +26,67 @@
     <target name="notes-print" format="pdf" source="notes.ptx"
             publication="publication.ptx" output-filename="notes.pdf"/>
 
-            
-    <target name="ws-05-01-sol-pdf"  format="pdf"
-            source="activities/ws_05_01.ptx"
-            output-dir="pdfs" publication="publication_standalone.ptx" 
-            output-filename="ws_05_01-sol.pdf" />
-    <target name="ws-05-01-pdf"  format="pdf"
-            source="activities/ws_05_01.ptx"
-            output-dir="pdfs" publication="publication_standalone_nosols.ptx" 
-            output-filename="ws_05_01.pdf"/>
-    <target name="ws-05-05-sol-pdf"  format="pdf"
-            source="activities/ws_05_05.ptx"
-            output-dir="pdfs" publication="publication_standalone.ptx" 
-            output-filename="ws_05_05-sol.pdf" />
-    <target name="ws-05-05-pdf"  format="pdf"
-            source="activities/ws_05_05.ptx"
-            output-dir="pdfs" publication="publication_standalone_nosols.ptx" 
-            output-filename="ws_05_05.pdf"/>
+		<target name="ws-template-scorm-sols" source="activities/ws_template.ptx" output-filename="ws_template-sol.zip" format="html" output-dir="scorms" publication="publication_standalone.ptx" compression="scorm" />
+		<target name="ws-template-pdf-sols" source="activities/ws_template.ptx" output-filename="ws_template-sol.pdf" format="pdf" output-dir="pdfs" publication="publication_standalone.ptx" />
+		<target name="ws-template-tex-sols" source="activities/ws_template.ptx" output-filename="ws_template-sol.tex" format="latex" output-dir="tex" publication="publication_standalone.ptx" />
+		<target name="ws-template-scorm" source="activities/ws_template.ptx" output-filename="ws_template.zip" format="html" output-dir="scorms" publication="publication_standalone_nosols.ptx" compression="scorm" />
+		<target name="ws-template-pdf" source="activities/ws_template.ptx" output-filename="ws_template.pdf" format="pdf" output-dir="pdfs" publication="publication_standalone_nosols.ptx" />
+		<target name="ws-template-tex" source="activities/ws_template.ptx" output-filename="ws_template.tex" format="latex" output-dir="tex" publication="publication_standalone_nosols.ptx" />
+		<target name="ws-06-01-scorm-sols" source="activities/ws_06_01.ptx" output-filename="ws_06_01-sol.zip" format="html" output-dir="scorms" publication="publication_standalone.ptx" compression="scorm" />
+		<target name="ws-06-01-pdf-sols" source="activities/ws_06_01.ptx" output-filename="ws_06_01-sol.pdf" format="pdf" output-dir="pdfs" publication="publication_standalone.ptx" />
+		<target name="ws-06-01-tex-sols" source="activities/ws_06_01.ptx" output-filename="ws_06_01-sol.tex" format="latex" output-dir="tex" publication="publication_standalone.ptx" />
+		<target name="ws-06-01-scorm" source="activities/ws_06_01.ptx" output-filename="ws_06_01.zip" format="html" output-dir="scorms" publication="publication_standalone_nosols.ptx" compression="scorm" />
+		<target name="ws-06-01-pdf" source="activities/ws_06_01.ptx" output-filename="ws_06_01.pdf" format="pdf" output-dir="pdfs" publication="publication_standalone_nosols.ptx" />
+		<target name="ws-06-01-tex" source="activities/ws_06_01.ptx" output-filename="ws_06_01.tex" format="latex" output-dir="tex" publication="publication_standalone_nosols.ptx" />
+		<target name="ws-06-03-scorm-sols" source="activities/ws_06_03.ptx" output-filename="ws_06_03-sol.zip" format="html" output-dir="scorms" publication="publication_standalone.ptx" compression="scorm" />
+		<target name="ws-06-03-pdf-sols" source="activities/ws_06_03.ptx" output-filename="ws_06_03-sol.pdf" format="pdf" output-dir="pdfs" publication="publication_standalone.ptx" />
+		<target name="ws-06-03-tex-sols" source="activities/ws_06_03.ptx" output-filename="ws_06_03-sol.tex" format="latex" output-dir="tex" publication="publication_standalone.ptx" />
+		<target name="ws-06-03-scorm" source="activities/ws_06_03.ptx" output-filename="ws_06_03.zip" format="html" output-dir="scorms" publication="publication_standalone_nosols.ptx" compression="scorm" />
+		<target name="ws-06-03-pdf" source="activities/ws_06_03.ptx" output-filename="ws_06_03.pdf" format="pdf" output-dir="pdfs" publication="publication_standalone_nosols.ptx" />
+		<target name="ws-06-03-tex" source="activities/ws_06_03.ptx" output-filename="ws_06_03.tex" format="latex" output-dir="tex" publication="publication_standalone_nosols.ptx" />
+		<target name="ws-05-05-scorm-sols" source="activities/ws_05_05.ptx" output-filename="ws_05_05-sol.zip" format="html" output-dir="scorms" publication="publication_standalone.ptx" compression="scorm" />
+		<target name="ws-05-05-pdf-sols" source="activities/ws_05_05.ptx" output-filename="ws_05_05-sol.pdf" format="pdf" output-dir="pdfs" publication="publication_standalone.ptx" />
+		<target name="ws-05-05-tex-sols" source="activities/ws_05_05.ptx" output-filename="ws_05_05-sol.tex" format="latex" output-dir="tex" publication="publication_standalone.ptx" />
+		<target name="ws-05-05-scorm" source="activities/ws_05_05.ptx" output-filename="ws_05_05.zip" format="html" output-dir="scorms" publication="publication_standalone_nosols.ptx" compression="scorm" />
+		<target name="ws-05-05-pdf" source="activities/ws_05_05.ptx" output-filename="ws_05_05.pdf" format="pdf" output-dir="pdfs" publication="publication_standalone_nosols.ptx" />
+		<target name="ws-05-05-tex" source="activities/ws_05_05.ptx" output-filename="ws_05_05.tex" format="latex" output-dir="tex" publication="publication_standalone_nosols.ptx" />
+		<target name="ws-05-01-scorm-sols" source="activities/ws_05_01.ptx" output-filename="ws_05_01-sol.zip" format="html" output-dir="scorms" publication="publication_standalone.ptx" compression="scorm" />
+		<target name="ws-05-01-pdf-sols" source="activities/ws_05_01.ptx" output-filename="ws_05_01-sol.pdf" format="pdf" output-dir="pdfs" publication="publication_standalone.ptx" />
+		<target name="ws-05-01-tex-sols" source="activities/ws_05_01.ptx" output-filename="ws_05_01-sol.tex" format="latex" output-dir="tex" publication="publication_standalone.ptx" />
+		<target name="ws-05-01-scorm" source="activities/ws_05_01.ptx" output-filename="ws_05_01.zip" format="html" output-dir="scorms" publication="publication_standalone_nosols.ptx" compression="scorm" />
+		<target name="ws-05-01-pdf" source="activities/ws_05_01.ptx" output-filename="ws_05_01.pdf" format="pdf" output-dir="pdfs" publication="publication_standalone_nosols.ptx" />
+		<target name="ws-05-01-tex" source="activities/ws_05_01.ptx" output-filename="ws_05_01.tex" format="latex" output-dir="tex" publication="publication_standalone_nosols.ptx" />
+		<target name="ws-06-02b-scorm-sols" source="activities/ws_06_02b.ptx" output-filename="ws_06_02b-sol.zip" format="html" output-dir="scorms" publication="publication_standalone.ptx" compression="scorm" />
+		<target name="ws-06-02b-pdf-sols" source="activities/ws_06_02b.ptx" output-filename="ws_06_02b-sol.pdf" format="pdf" output-dir="pdfs" publication="publication_standalone.ptx" />
+		<target name="ws-06-02b-tex-sols" source="activities/ws_06_02b.ptx" output-filename="ws_06_02b-sol.tex" format="latex" output-dir="tex" publication="publication_standalone.ptx" />
+		<target name="ws-06-02b-scorm" source="activities/ws_06_02b.ptx" output-filename="ws_06_02b.zip" format="html" output-dir="scorms" publication="publication_standalone_nosols.ptx" compression="scorm" />
+		<target name="ws-06-02b-pdf" source="activities/ws_06_02b.ptx" output-filename="ws_06_02b.pdf" format="pdf" output-dir="pdfs" publication="publication_standalone_nosols.ptx" />
+		<target name="ws-06-02b-tex" source="activities/ws_06_02b.ptx" output-filename="ws_06_02b.tex" format="latex" output-dir="tex" publication="publication_standalone_nosols.ptx" />
+		<target name="ws-06-02a-scorm-sols" source="activities/ws_06_02a.ptx" output-filename="ws_06_02a-sol.zip" format="html" output-dir="scorms" publication="publication_standalone.ptx" compression="scorm" />
+		<target name="ws-06-02a-pdf-sols" source="activities/ws_06_02a.ptx" output-filename="ws_06_02a-sol.pdf" format="pdf" output-dir="pdfs" publication="publication_standalone.ptx" />
+		<target name="ws-06-02a-tex-sols" source="activities/ws_06_02a.ptx" output-filename="ws_06_02a-sol.tex" format="latex" output-dir="tex" publication="publication_standalone.ptx" />
+		<target name="ws-06-02a-scorm" source="activities/ws_06_02a.ptx" output-filename="ws_06_02a.zip" format="html" output-dir="scorms" publication="publication_standalone_nosols.ptx" compression="scorm" />
+		<target name="ws-06-02a-pdf" source="activities/ws_06_02a.ptx" output-filename="ws_06_02a.pdf" format="pdf" output-dir="pdfs" publication="publication_standalone_nosols.ptx" />
+		<target name="ws-06-02a-tex" source="activities/ws_06_02a.ptx" output-filename="ws_06_02a.tex" format="latex" output-dir="tex" publication="publication_standalone_nosols.ptx" />
 
 
+<!-- Problem Sets -->
+ <target name="ps01-sol-pdf"  format="pdf"
+            source="psets/ps01.ptx"
+            output-dir="pdfs" publication="publication_standalone.ptx" 
+            output-filename="ps01-sol.pdf" />
+    <target name="ps01-pdf"  format="pdf"
+            source="psets/ps01.ptx"
+            output-dir="pdfs" publication="publication_standalone_nosols.ptx" 
+            output-filename="ps01.pdf"/>
+    <target name="ps01-sol-tex"  format="latex"
+            source="psets/ps01.ptx"
+            output-dir="tex" publication="publication_standalone.ptx" 
+            output-filename="ps01-sol.tex" />
+    <target name="ps01-tex"  format="latex"
+            source="psets/ps01.ptx"
+            output-dir="tex" publication="publication_standalone_nosols.ptx" 
+            output-filename="ps01.tex"/>
 
 
   <!-- The following targets are used to create stand-alone documents, -->
@@ -59,6 +101,12 @@
             output-dir="pdfs" publication="publication_standalone.ptx" />
     <target name="pdf-nosols" standalone="yes" format="pdf"
             output-dir="pdfs" publication="publication_standalone_nosols.ptx" />
+
+    <target name="tex" standalone="yes" format="latex"
+            output-dir="tex" publication="publication_standalone.ptx" />
+    <target name="tex-nosols" standalone="yes" format="latex"
+            output-dir="tex" publication="publication_standalone_nosols.ptx" />
+    
   </targets>
 </project>
 

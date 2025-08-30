@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pretext xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../docinfo.ptx" />
+  <article xml:id="art-ps01">
+    <title>Problem Set 1</title>
+
+    <xi:include href="../frontmatter.ptx"/>
+    <worksheet xml:id="ws-ps01">
+      <title>Problem Set 1</title>
+
+      <!-- When creating a new activity, make a copy of this file with appropriate name -->
+      <introduction>
+        <p>
+          This problem set is designed to reinforce your understanding of the foundational concepts of integration, covering material from Sections 5.1-5.5 of Stewart's Calculus: Early Transcendentals, 7th Edition.
+          It aims to challenge you with problems ranging from direct application to extended thinking, and should take an average of 3 hours to complete.
+        </p>
+      </introduction>
+
+      
+    </worksheet>
+  </article>
+</pretext>

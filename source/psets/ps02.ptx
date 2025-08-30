@@ -6,6 +6,7 @@
             <subtitle>Essential Calculus, Early Transcendentals: Sections 6.1 and 6.2</subtitle>
 
             <exercises>
+                <title>Foo</title>
                 <exercise xml:id="ps02-01">
                     <statement>
                         <p>
