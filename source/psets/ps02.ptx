@@ -8,137 +8,123 @@
             <ns0:include href="ps01.ptx" xpointer="xpointer(//section[1]/introduction)" set-xml-id="intro-ps02" />
 
             <exercises>
-            <exercise xml:id="ps02-01">
-                <statement>
-                    <p>
-                        Evaluate the indefinite integral <m>\int x^2 e^{2x} \, dx</m>.
-                        You must show all steps of the integration by parts process.
-                    </p>
-                </statement>
-
-                </exercise>
-
-            <exercise xml:id="ps02-02">
-                <statement>
-                    <p>
-                        Evaluate the definite integral <m>\int_1^e \ln(x^4) \, dx</m>.
-                    </p>
-                </statement>
-
-                </exercise>
-
-            <exercise xml:id="ps02-03">
-                <statement>
-                    <p>
-                        A particle moves along a straight line with velocity <m>v(t) = t \sin(2t)</m> meters per second.
-                        Find the displacement of the particle over the interval <m>[0, \frac{\pi}{2}]</m>.
-                    </p>
-                </statement>
-
-                </exercise>
-
-            <exercise xml:id="ps02-04">
-                <statement>
-                    <p>
-                        Evaluate the integral
-                        <me>
-                            \int \sin^4 x \cos^2 x \,dx
-                        </me>.
-                    </p>
-                </statement>
-
-                </exercise>
-
-            <exercise xml:id="ps02-05">
-                <statement>
-                    <p>
-                        Evaluate the indefinite integral <m>\int \tan^3(x) \sec(x) \, dx</m>.
-                    </p>
-                </statement>
-
-                </exercise>
-
-            <exercise xml:id="ps02-06">
-                <introduction>
-                    <p>
-                        Evaluate the indefinite integral
-                        <me>
-                            \int x \sec^3(x^2) \,dx
-                        </me>.
-                    </p>
-                </introduction>
-
-
-                <task>
+                <exercise xml:id="ps02-01">
                     <statement>
-                        <p>
-                            First, make a substitution to simplify the integral.
-                        </p>
+                        <p> Evaluate the indefinite integral <m>\int x^2 e^{2x} \, dx</m>. You must
+                            show all steps of the integration by parts process. </p>
                     </statement>
 
-                    <solution>
-                        <p>
-                            Use the substitution <m>u = x^2</m>.
-                            Then <m>du = 2x \,dx</m>, which means <m>x \,dx = \frac{1}{2}du</m>.
-                            This substitution simplifies the integral to
-                            <me>
-                                \frac{1}{2}\int \sec^3 u \,du
-                            </me>.
-                        </p>
-                    </solution>
-                </task>
+                    </exercise>
 
-
-                <task>
+                <exercise xml:id="ps02-02">
                     <statement>
-                        <p>
-                            Evaluate the simplified integral.
-                        </p>
+                        <p> Evaluate the definite integral <m>\int_1^e \ln(x^4) \, dx</m>. </p>
                     </statement>
 
-                    <solution>
-                        <p>
-                            To evaluate <m>\int \sec^3 u \,du</m>, we must use integration by parts.
-                            Let <m>I = \int \sec^3 u \,du = \int \sec u \cdot \sec^2 u \,du</m>.
-                            Let <m>f(u) = \sec u</m> and <m>g'(u) = \sec^2 u</m>.
-                            Then <m>f'(u) = \sec u \tan u</m> and <m>g(u) = \tan u</m>.
-                            So
-                            <md>
-                                <mrow> I \amp= \sec u \tan u - \int (\tan u)(\sec u \tan u) \,du </mrow>
-                                <mrow> \amp = \sec u \tan u - \int \sec u \tan^2 u \,du</mrow>                                
-                            </md>
-                        </p>
+                    </exercise>
 
-                        <p>
-                            Now, we use the Pythagorean identity <m>\tan^2 u = \sec^2 u - 1</m>:
-                            <md>
-                                <mrow> I \amp= \sec u \tan u - \int \sec u (\sec^2 u - 1) \,du </mrow>
-                                <mrow> \amp = \sec u \tan u - \int \sec u (\sec^2 u - 1) \,du</mrow>
-                                <mrow> \amp = \sec u \tan u - \int (\sec^3 u - \sec u) \,du </mrow>
-                                <mrow> \amp = \sec u \tan u - \int \sec^3 u \,du + \int \sec u \,du</mrow>
-                            </md>
-                        </p>
+                <exercise xml:id="ps02-03">
+                    <statement>
+                        <p> A particle moves along a straight line with velocity <m>v(t) = t
+                            \sin(2t)</m> meters per second. Find the displacement of the particle
+                            over the interval <m>[0, \frac{\pi}{2}]</m>. </p>
+                    </statement>
 
-                        <p>
-                            Notice that the integral of <m>\sec^3 u</m> has reappeared.
-                            We can now solve for <m>I</m>.
-                            <md>
-                                <mrow> I \amp= \sec u \tan u - I + \int \sec u \,du </mrow>
-                                <mrow> 2I \amp= \sec u \tan u + \ln|\sec u + \tan u| </mrow>
-                                <mrow> I \amp = \frac{1}{2}\sec u \tan u + \frac{1}{2}\ln|\sec u + \tan u| + C </mrow>
-                            </md>
-                        </p>
+                    </exercise>
 
-                        <p>
-                            Finally, we substitute <m>u = x^2</m> back into the expression.
-                            We must also remember the <m>\frac{1}{2}</m> from the initial substitution.
-                            <me>
-                                \int x \sec^3(x^2) \,dx = \frac{1}{2}I = \frac{1}{4}\sec(x^2)\tan(x^2) + \frac{1}{4}\ln|\sec(x^2) + \tan(x^2)| + C
+                <exercise xml:id="ps02-04">
+                    <statement>
+                        <p> Evaluate the integral <me>
+                                \int \sin^4 x \cos^2 x \,dx
                             </me>
+                            .
+                    </p>
+                    </statement>
+
+                    </exercise>
+
+                <exercise xml:id="ps02-05">
+                    <statement>
+                        <p> Evaluate the indefinite integral <m>\int \tan^3(x) \sec(x) \, dx</m>. </p>
+                    </statement>
+
+                    </exercise>
+
+                <exercise xml:id="ps02-06">
+                    <introduction>
+                        <p> Evaluate the indefinite integral <me>
+                                \int x \sec^3(x^2) \,dx
+                            </me>
+                            .
+                    </p>
+                    </introduction>
+
+
+                    <task>
+                        <statement>
+                            <p>
+                                First, make a substitution to simplify the integral.
+                            </p>
+                        </statement>
+
+                        <solution>
+                            <p> Use the substitution <m>u = x^2</m>. Then <m>du = 2x \,dx</m>, which
+                                means <m>x \,dx = \frac{1}{2}du</m>. This substitution simplifies
+                                the integral to <me>
+                                    \frac{1}{2}\int \sec^3 u \,du
+                                </me>
+                                .
                         </p>
-                    </solution>
-                </task>
-            </exercise>
+                        </solution>
+                    </task>
+
+
+                    <task>
+                        <statement>
+                            <p>
+                                Evaluate the simplified integral.
+                            </p>
+                        </statement>
+
+                        <solution>
+                            <p> To evaluate <m>\int \sec^3 u \,du</m>, we must use integration by
+                                parts. Let <m>I = \int \sec^3 u \,du = \int \sec u \cdot \sec^2 u
+                                \,du</m>. Let <m>f(u) = \sec u</m> and <m>g'(u) = \sec^2 u</m>. Then <m>f'(u)
+                                = \sec u \tan u</m> and <m>g(u) = \tan u</m>. So <md>
+                                    <mrow> I \amp= \sec u \tan u - \int (\tan u)(\sec u \tan u) \,du </mrow>
+                                    <mrow> \amp = \sec u \tan u - \int \sec u \tan^2 u \,du</mrow>
+                                </md>
+                            </p>
+
+                            <p> Now, we use the Pythagorean identity <m>\tan^2 u = \sec^2 u - 1</m>: <md>
+                                    <mrow> I \amp= \sec u \tan u - \int \sec u (\sec^2 u - 1) \,du </mrow>
+                                    <mrow> \amp = \sec u \tan u - \int \sec u (\sec^2 u - 1) \,du</mrow>
+                                    <mrow> \amp = \sec u \tan u - \int (\sec^3 u - \sec u) \,du </mrow>
+                                    <mrow> \amp = \sec u \tan u - \int \sec^3 u \,du + \int \sec u
+                                \,du</mrow>
+                                </md>
+                            </p>
+
+                            <p> Notice that the integral of <m>\sec^3 u</m> has reappeared. We can
+                                now solve for <m>I</m>. <md>
+                                    <mrow> I \amp= \sec u \tan u - I + \int \sec u \,du </mrow>
+                                    <mrow> 2I \amp= \sec u \tan u + \ln|\sec u + \tan u| </mrow>
+                                    <mrow> I \amp = \frac{1}{2}\sec u \tan u + \frac{1}{2}\ln|\sec u
+                                + \tan u| + C </mrow>
+                                </md>
+                            </p>
+
+                            <p> Finally, we substitute <m>u = x^2</m> back into the expression. We
+                                must also remember the <m>\frac{1}{2}</m> from the initial
+                                substitution. <me>
+                                    \int x \sec^3(x^2) \,dx = \frac{1}{2}I =
+                                \frac{1}{4}\sec(x^2)\tan(x^2) + \frac{1}{4}\ln|\sec(x^2) +
+                                \tan(x^2)| + C
+                                </me>
+                            </p>
+                        </solution>
+                    </task>
+                </exercise>
             </exercises>
         </section>
     </article>

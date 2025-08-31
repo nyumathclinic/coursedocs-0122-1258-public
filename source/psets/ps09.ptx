@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pretext xmlns:ns0="http://www.w3.org/2001/XInclude">
+  <article>
+    <section xml:id="ps09-section">
+      <title>Problem Set 9</title>
+      <subtitle>Alternating Series and the Ratio Test</subtitle>
+      <ns0:include href="ps01.ptx" xpointer="xpointer(//section[1]/introduction)" />
+      <exercises>
+        <exercise xml:id="ex-alternating-series-test-revised">
+          <statement>
+            <p> Determine whether the series <m>\sum_{n=1}^\infty \frac{(-1)^{n-1}}{n}</m> converges
+              or diverges. </p>
+          </statement>
+          </exercise>
+
+        <exercise xml:id="ex-absolute-convergence">
+          <statement>
+            <p> Determine whether the series <m>\sum_{n=1}^\infty \frac{(-1)^{n-1}}{n^2}</m> is
+              absolutely convergent, conditionally convergent, or divergent. </p>
+          </statement>
+          </exercise>
+
+        <exercise xml:id="ex-ratio-test-revised">
+          <statement>
+            <p> Use the Ratio Test to determine if the series <m>\sum_{n=1}^\infty \frac{n^2}{2^n}</m>
+              converges or diverges. </p>
+          </statement>
+          </exercise>
+
+        <exercise xml:id="ex-root-test">
+          <statement>
+            <p> Use the Root Test to determine if the series <m>\sum_{n=1}^\infty
+              \left(\frac{3n+1}{2n+5}\right)^n</m> converges or diverges. </p>
+          </statement>
+          </exercise>
+      </exercises>
+    </section>
+  </article>
+</pretext>

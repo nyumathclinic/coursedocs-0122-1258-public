@@ -13,7 +13,15 @@
     <xi:include href="./psets/ps01.ptx" xpointer="sec-ps01"/>
     <xi:include href="./psets/ps02.ptx" xpointer="xpointer(//section[1])"/>
     <xi:include href="./psets/ps03.ptx" xpointer="xpointer(//section[1])"/>
-    
+    <xi:include href="./psets/ps04.ptx" xpointer="xpointer(//section[1])"/>
+    <xi:include href="./psets/ps05.ptx" xpointer="xpointer(//section[1])"/>
+    <xi:include href="./psets/ps06.ptx" xpointer="xpointer(//section[1])"/>
+    <xi:include href="./psets/ps07.ptx" xpointer="xpointer(//section[1])"/>
+    <xi:include href="./psets/ps08.ptx" xpointer="xpointer(//section[1])"/>
+    <xi:include href="./psets/ps09.ptx" xpointer="xpointer(//section[1])"/>
+    <xi:include href="./psets/ps10.ptx" xpointer="xpointer(//section[1])"/>
+    <xi:include href="./psets/ps11.ptx" xpointer="xpointer(//section[1])"/>
+    <xi:include href="./psets/ps12.ptx" xpointer="xpointer(//section[1])"/>
     
   </article>
 </pretext>

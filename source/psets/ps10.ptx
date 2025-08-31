@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pretext xmlns:ns0="http://www.w3.org/2001/XInclude">
+  <article>
+    <section xml:id="ps10-section">
+      <title>Problem Set 10</title>
+      <subtitle>Power Series</subtitle>
+      <ns0:include href="ps01.ptx" xpointer="xpointer(//section[1]/introduction)" />
+      <exercises>
+        <exercise xml:id="ex-power-series-convergence-revised">
+          <statement>
+            <p> Find the radius of convergence and interval of convergence for the series <me>\sum_{n=1}^\infty
+              \frac{x^n}{n^2}</me>. </p>
+          </statement>
+          </exercise>
+
+        <exercise xml:id="ex-representing-function-as-power-series-revised">
+          <statement>
+            <p> Find a power series representation for the function <m>f(x) = \frac{1}{1+x}</m> and
+              determine its radius of convergence. </p>
+          </statement>
+          </exercise>
+
+        <exercise xml:id="ex-diff-power-series">
+          <statement>
+            <p> Find a power series representation for the function <m>f(x) = \frac{1}{(1-x)^2}</m>
+              and find its radius of convergence. </p>
+          </statement>
+          </exercise>
+
+        <exercise xml:id="ex-integral-power-series">
+          <statement>
+            <p> Find a power series representation for <m>f(x) = \arctan(x)</m>. </p>
+          </statement>
+          </exercise>
+      </exercises>
+    </section>
+  </article>
+</pretext>

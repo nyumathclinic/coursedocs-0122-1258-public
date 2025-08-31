@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pretext xmlns:ns0="http://www.w3.org/2001/XInclude">
+  <article>
+    <section xml:id="ps07-section">
+      <title>Problem Set 7</title>
+
+      <subtitle>Ordinary Differential Equations</subtitle>
+      <ns0:include href="ps01.ptx" xpointer="xpointer(//section[1]/introduction)" />
+      <exercises>
+        <exercise xml:id="ex-sep-variables-1">
+          <statement>
+            <p> Solve the differential equation <me>
+                \frac{dy}{dx} = \frac{x+1}{y^2}
+              </me>
+              with the initial condition <m>y(0) = 3</m>. </p>
+          </statement>
+
+          </exercise>
+
+        <exercise xml:id="ex-sep-variables-2">
+          <statement>
+            <p> Solve the differential equation <m>y'(t) = ky</m>, where <m>y(0)=y_0</m>. This
+              models exponential growth or decay. </p>
+          </statement>
+
+          </exercise>
+
+        <exercise xml:id="ex-sep-variables-3">
+          <statement>
+            <p> Solve the differential equation <me>
+                \frac{dy}{dx} = \frac{e^x}{y}
+              </me>
+              with the initial condition <m>y(0) = 1</m>. </p>
+          </statement>
+
+          </exercise>
+
+        <exercise xml:id="ex-slope-field">
+          <statement>
+            <p> Match the differential equation with its slope field. <ol>
+                <li>
+                  <me>
+                    \frac{dy}{dx} = x+y
+                  </me>
+                </li>
+
+                <li>
+                  <me>
+                    \frac{dy}{dx} = xy
+                  </me>
+                </li>
+
+                <li>
+                  <me>
+                    \frac{dy}{dx} = y-1
+                  </me>
+                </li>
+              </ol>
+            </p>
+
+            <p>
+              <figure>
+                <caption>Three different slope fields</caption>
+              </figure>
+            </p>
+          </statement>
+
+          </exercise>
+      </exercises>
+    </section>
+  </article>
+</pretext>

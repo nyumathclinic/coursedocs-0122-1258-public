@@ -7,15 +7,18 @@
             <introduction>
                 
                 <p>
-                    This problem set consists not only of problems similar to what you've seen, but also of unique problems you may not have seen before.
-                    The purpose of the latter is for you to apply the concepts you've previously learned to new, unfamiliar, and usually more interesting situations.
+                    This problem set consists not only of problems similar to what you've seen, but
+                    also of unique problems you may not have seen before.
+                    The purpose of the latter is for you to apply the concepts you've previously
+                    learned to new, unfamiliar, and usually more interesting situations.
                     In some cases, problems connect ideas from multiple learning objectives.
                 </p>
 
                 <p>
                     Write full, clear solutions to the problems below.
                     It is important that the logic of how you solved these problems is clear.
-                    Although the final answer is important, being able to convey you understand the underlying concepts is more important.
+                    Although the final answer is important, being able to convey you understand the
+                    underlying concepts is more important.
                 </p>
 
                 <p>
@@ -24,160 +27,158 @@
             </introduction>
 
             <exercises xml:id="exs-ps01">
-            <exercise xml:id="umich_2024-02-12_0116_4">
-                <provenance> <dc:creator>Matthew Leingang</dc:creator> <ns1:created>2025-08-18</ns1:created> <dc:source>https://dhsp.math.lsa.umich.edu/exams/116exam1/w24/p4.pdf</dc:source> <dc:rights>This source is used under a Creative Commons License (CC-BY-NC-SA-4.0).</dc:rights> </provenance>
-                <introduction>
-                    <p>
-                        Avery is measuring the volume of water in their backyard on the day of a rainstorm.
-                        <ol>
-                            <li>
-                                <p>
-                                    Let <m>T(h)</m> be the total amount of rainwater in Avery's backyard, in cubic feet, <m>h</m> hours after 12:00 a.m.
-                                </p>
-                            </li>
+                <exercise xml:id="umich_2024-02-12_0116_4">
+                    <provenance>
+                        <dc:creator>Matthew Leingang</dc:creator>
+                        <ns1:created>2025-08-18</ns1:created>
+                        <dc:source>https://dhsp.math.lsa.umich.edu/exams/116exam1/w24/p4.pdf</dc:source>
+                        <dc:rights>This source is used under a Creative Commons License
+                            (CC-BY-NC-SA-4.0).</dc:rights>
+                    </provenance>
+                    <introduction>
+                        <p> Avery is measuring the volume of water in their backyard on the day of a
+                            rainstorm. <ol>
+                                <li>
+                                    <p> Let <m>T(h)</m> be the total amount of rainwater in Avery's
+                            backyard, in cubic feet, <m>h</m> hours after 12:00 a.m. </p>
+                                </li>
 
-                            <li>
-                                <p>
-                                    Let <m>A(h)</m> be the rate at which the rain adds water to Avery's backyard, in cubic feet per hour, <m>h</m> hours after 12:00 a.m.
-                                </p>
-                            </li>
+                                <li>
+                                    <p> Let <m>A(h)</m> be the rate at which the rain adds water to
+                            Avery's backyard, in cubic feet per hour, <m>h</m> hours after 12:00
+                            a.m. </p>
+                                </li>
 
-                            <li>
-                                <p>
-                                    Let <m>M(h)</m> be the rate at which water drains or evaporates from Avery's backyard, in cubic feet per hour, <m>h</m> hours after 12:00 a.m.
-                                </p>
-                            </li>
-                        </ol>
-                        The functions <m>T(h)</m>, <m>A(h)</m>, and <m>M(h)</m> are all differentiable functions.
-                        Assume there is no water in Avery's backyard at 12:00 a.m.
-                    </p>
-                </introduction>
+                                <li>
+                                    <p> Let <m>M(h)</m> be the rate at which water drains or
+                            evaporates from Avery's backyard, in cubic feet per hour, <m>h</m> hours
+                            after 12:00 a.m. </p>
+                                </li>
+                            </ol>
+                            The functions <m>T(h)</m>, <m>A(h)</m>, and <m>M(h)</m> are all
+                            differentiable functions. Assume there is no water in Avery's backyard
+                            at 12:00 a.m. </p>
+                    </introduction>
 
 
-                <task>
-                    <statement>
-                        <p>
-                            Write a sentence in English which explains the equality
-                            <me>
+                    <task>
+                        <statement>
+                            <p> Write a sentence in English which explains the equality <me>
                                 \int_4^{10} M(h)\,dh = 8000
-                            </me>.
-                        </p>
-                    </statement>
+                                </me>
+                                . </p>
+                        </statement>
 
-                    <solution>
-                        <p>
-                            Between 4:00 a.m.
-                            and 10:00 a.m., the total amount of water that drains or evaporates from Avery's backyard is 8000 cubic feet.
-                        </p>
-                    </solution>
-                </task>
-
-
-                <task>
-                    <statement>
-                        <p>
-                            Write an integral expression which gives the total amount of rainwater in cubic feet, in Avery's backyard at 7:00 a.m.
-                        </p>
-                    </statement>
-
-                    <solution>
-                        <p>
-                            <me>
-                                \int_0^7 (A(h) - M(h)) \, dh
-                            </me>
-                        </p>
-                    </solution>
-                </task>
-
-
-                <task>
-                    <statement>
-                        <p>
-                            Write an expression which gives the average amount of rainwater, in cubic feet, in Avery's backyard between 6:00 a.m.
-                            and 9:00 a.m.
-                        </p>
-                    </statement>
-
-                    <solution>
-                        <p>
-                            <me>
-                                \frac{T(9)-T(6)}{9-6}
-                            </me>
-                        </p>
-                    </solution>
-                </task>
-            </exercise>
-
-            <exercise xml:id="exercise-area-approximation">
-                <statement>
-                    <p>
-                        Estimate the area under the curve <m>f(x) = \frac{1}{x}</m> from <m>x=1</m> to <m> x=5</m> using four rectangles.
-                    </p>
-
-                    <ol>
-                        <li>
+                        <solution>
                             <p>
-                                Use <em>right endpoints</em>.
-                                Sketch the graph and the rectangles.
+                                Between 4:00 a.m.
+                                and 10:00 a.m., the total amount of water that drains or evaporates
+                                from Avery's backyard is 8000 cubic feet.
                             </p>
-                        </li>
+                        </solution>
+                    </task>
 
-                        <li>
+
+                    <task>
+                        <statement>
                             <p>
-                                Repeat the estimation using <em>left endpoints</em>.
+                                Write an integral expression which gives the total amount of
+                                rainwater in cubic feet, in Avery's backyard at 7:00 a.m.
                             </p>
-                        </li>
+                        </statement>
 
-                        <li>
+                        <solution>
                             <p>
-                                Explain why one estimate is an overestimate and the other is an underestimate.
+                                <me>
+                                    \int_0^7 (A(h) - M(h)) \, dh
+                                </me>
                             </p>
-                        </li>
-                    </ol>
-                </statement>
-            </exercise>
+                        </solution>
+                    </task>
 
-            <exercise xml:id="p-2">
-                <statement>
-                    <p>
-                        Let <m>g(x) = \int_0^{x^2} \sin(t^3) \, dt</m>.
-                        Find the exact value of <m>g'(x)</m> .
-                    </p>
-                </statement>
 
+                    <task>
+                        <statement>
+                            <p>
+                                Write an expression which gives the average amount of rainwater, in
+                                cubic feet, in Avery's backyard between 6:00 a.m.
+                                and 9:00 a.m.
+                            </p>
+                        </statement>
+
+                        <solution>
+                            <p>
+                                <me>
+                                    \frac{T(9)-T(6)}{9-6}
+                                </me>
+                            </p>
+                        </solution>
+                    </task>
                 </exercise>
 
-            <exercise xml:id="p-4">
-                <statement>
-                    <p>
-                        A particle's velocity is given by <m>v(t) = 3t^2 - 12t + 9</m> (in meters/second) for <m>0 \le t \le 4</m>.
-                    </p>
+                <exercise xml:id="exercise-area-approximation">
+                    <statement>
+                        <p> Estimate the area under the curve <m>f(x) = \frac{1}{x}</m> from <m>x=1</m>
+                            to <m> x=5</m> using four rectangles. </p>
 
-                    <p>
                         <ol>
                             <li>
-                                Find the displacement of the particle over the interval.
+                                <p> Use <em>right endpoints</em>. Sketch the graph and the
+                                    rectangles. </p>
                             </li>
 
                             <li>
-                                Find the total distance traveled by the particle over the interval.
-                                You must show your work for how you find the total distance.
+                                <p> Repeat the estimation using <em>left endpoints</em>. </p>
+                            </li>
+
+                            <li>
+                                <p>
+                                    Explain why one estimate is an overestimate and the other is an
+                                    underestimate.
+                                </p>
                             </li>
                         </ol>
-                    </p>
-                </statement>
-
+                    </statement>
                 </exercise>
 
-            <exercise xml:id="p-3">
-                <statement>
-                    <p>
-                        Evaluate the definite integral <m>\int_{e}^{e^4} \frac{\sqrt{\ln x}}{x} \, dx</m> using an appropriate substitution.
-                        You must show the change in the limits of integration.
-                    </p>
-                </statement>
+                <exercise xml:id="p-2">
+                    <statement>
+                        <p> Let <m>g(x) = \int_0^{x^2} \sin(t^3) \, dt</m>. Find the exact value of <m>
+                            g'(x)</m> . </p>
+                    </statement>
 
-                </exercise>
+                    </exercise>
+
+                <exercise xml:id="p-4">
+                    <statement>
+                        <p> A particle's velocity is given by <m>v(t) = 3t^2 - 12t + 9</m> (in
+                            meters/second) for <m>0 \le t \le 4</m>. </p>
+
+                        <p>
+                            <ol>
+                                <li>
+                                    Find the displacement of the particle over the interval.
+                                </li>
+
+                                <li>
+                                    Find the total distance traveled by the particle over the
+                                    interval.
+                                    You must show your work for how you find the total distance.
+                                </li>
+                            </ol>
+                        </p>
+                    </statement>
+
+                    </exercise>
+
+                <exercise xml:id="p-3">
+                    <statement>
+                        <p> Evaluate the definite integral <m>\int_{e}^{e^4} \frac{\sqrt{\ln x}}{x}
+                            \, dx</m> using an appropriate substitution. You must show the change in
+                            the limits of integration. </p>
+                    </statement>
+
+                    </exercise>
             </exercises>
         </section>
     </article>

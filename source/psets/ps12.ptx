@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pretext>
+  <article>
+    <section xml:id="ps12-section">
+      <title>Problem Set 12</title>
+      <subtitle>Integration in Polar Coordinates</subtitle>
+      <introduction>
+        <p>
+          This problem set focuses on applications of integration in polar coordinates, including
+          finding areas and arc lengths of polar curves.
+        </p>
+        <p>
+          These problems are for pratice only, and will not be collected or graded. Solutions will
+          be released before the final exam.
+        </p>
+      </introduction>
+      <exercises>
+        <exercise xml:id="ex-polar-area">
+          <statement>
+            <p> Find the area enclosed by one loop of the four-leaved rose given by the polar
+              equation <m>r=\sin(2\theta)</m>. </p>
+          </statement>
+          </exercise>
+
+        <exercise xml:id="ex-polar-arc-length">
+          <statement>
+            <p> Find the length of the spiral <m>r=e^\theta</m> for <m>0 \le \theta \le \pi</m>. </p>
+          </statement>
+          </exercise>
+
+        <exercise xml:id="ex-polar-area-between-curves">
+          <statement>
+            <p> Find the area of the region that lies inside the circle <m>r=3\cos\theta</m> and
+              outside the cardioid <m>r=1+\cos\theta</m>. </p>
+          </statement>
+          </exercise>
+
+        <exercise xml:id="ex-polar-arc-length-2">
+          <statement>
+            <p> Find the length of the cardioid <m>r=1+\cos\theta</m>. </p>
+          </statement>
+          </exercise>
+      </exercises>
+    </section>
+  </article>
+</pretext>
