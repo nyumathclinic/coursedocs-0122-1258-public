@@ -5,6 +5,7 @@
             <title>Problem Set 1</title>
 
             <introduction>
+                
                 <p>
                     This problem set consists not only of problems similar to what you've seen, but also of unique problems you may not have seen before.
                     The purpose of the latter is for you to apply the concepts you've previously learned to new, unfamiliar, and usually more interesting situations.
@@ -24,31 +25,26 @@
 
             <exercises xml:id="exs-ps01">
             <exercise xml:id="umich_2024-02-12_0116_4">
-                <provenance>
-                    <dc:creator>Matthew Leingang</dc:creator>
-                    <ns1:created>2025-08-18</ns1:created>
-                    <dc:source>https://dhsp.math.lsa.umich.edu/exams/116exam1/w24/p4.pdf</dc:source>
-                    <dc:rights>This source is used under a Creative Commons License (CC-BY-NC-SA-4.0).</dc:rights>
-                </provenance>
+                <provenance> <dc:creator>Matthew Leingang</dc:creator> <ns1:created>2025-08-18</ns1:created> <dc:source>https://dhsp.math.lsa.umich.edu/exams/116exam1/w24/p4.pdf</dc:source> <dc:rights>This source is used under a Creative Commons License (CC-BY-NC-SA-4.0).</dc:rights> </provenance>
                 <introduction>
                     <p>
                         Avery is measuring the volume of water in their backyard on the day of a rainstorm.
                         <ol>
                             <li>
-                                <p>Let <m>T(h)</m> be the total amount of rainwater in Avery's backyard, 
-                                    in cubic feet, <m>h</m> hours after 12:00 a.m. 
+                                <p>
+                                    Let <m>T(h)</m> be the total amount of rainwater in Avery's backyard, in cubic feet, <m>h</m> hours after 12:00 a.m.
                                 </p>
                             </li>
+
                             <li>
                                 <p>
-                                    Let <m>A(h)</m> be the rate at which the rain adds water to Avery's backyard, 
-                                    in cubic feet per hour, <m>h</m> hours after 12:00 a.m.
+                                    Let <m>A(h)</m> be the rate at which the rain adds water to Avery's backyard, in cubic feet per hour, <m>h</m> hours after 12:00 a.m.
                                 </p>
                             </li>
+
                             <li>
                                 <p>
-                                    Let <m>M(h)</m> be the rate at which water drains or evaporates from Avery's backyard,
-                                    in cubic feet per hour, <m>h</m> hours after 12:00 a.m.
+                                    Let <m>M(h)</m> be the rate at which water drains or evaporates from Avery's backyard, in cubic feet per hour, <m>h</m> hours after 12:00 a.m.
                                 </p>
                             </li>
                         </ol>
@@ -61,12 +57,17 @@
                 <task>
                     <statement>
                         <p>
-                            Write a sentence in English which explains the equality <me> \int_4^{10} M(h)\,dh = 8000</me>.
+                            Write a sentence in English which explains the equality
+                            <me>
+                                \int_4^{10} M(h)\,dh = 8000
+                            </me>.
                         </p>
                     </statement>
+
                     <solution>
                         <p>
-                            Between 4:00 a.m. and 10:00 a.m., the total amount of water that drains or evaporates from Avery's backyard is 8000 cubic feet.
+                            Between 4:00 a.m.
+                            and 10:00 a.m., the total amount of water that drains or evaporates from Avery's backyard is 8000 cubic feet.
                         </p>
                     </solution>
                 </task>
@@ -75,26 +76,33 @@
                 <task>
                     <statement>
                         <p>
-                            Write an integral expression which gives the total amount of rainwater in cubic feet, in Avery's 
-                            backyard at 7:00 a.m.
+                            Write an integral expression which gives the total amount of rainwater in cubic feet, in Avery's backyard at 7:00 a.m.
                         </p>
                     </statement>
+
                     <solution>
                         <p>
-                            <me>\int_0^7 (A(h) - M(h)) \, dh</me>
+                            <me>
+                                \int_0^7 (A(h) - M(h)) \, dh
+                            </me>
                         </p>
                     </solution>
                 </task>
+
+
                 <task>
                     <statement>
                         <p>
-                            Write an expression which gives the average amount of rainwater, in cubic feet,
-                            in Avery's backyard between 6:00 a.m. and 9:00 a.m.
+                            Write an expression which gives the average amount of rainwater, in cubic feet, in Avery's backyard between 6:00 a.m.
+                            and 9:00 a.m.
                         </p>
                     </statement>
+
                     <solution>
                         <p>
-                            <me>\frac{T(9)-T(6)}{9-6}</me>
+                            <me>
+                                \frac{T(9)-T(6)}{9-6}
+                            </me>
                         </p>
                     </solution>
                 </task>
@@ -170,7 +178,6 @@
                 </statement>
 
                 </exercise>
-
             </exercises>
         </section>
     </article>

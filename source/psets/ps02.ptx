@@ -1,26 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<pretext>
+<pretext xmlns:ns0="http://www.w3.org/2001/XInclude">
     <article>
         <section xml:id="ps02">
             <title>Problem Set 2</title>
 
-            <introduction>
-                <p>
-                    This problem set consists not only of problems similar to what you've seen, but also of unique problems you may not have seen before.
-                    The purpose of the latter is for you to apply the concepts you've previously learned to new, unfamiliar, and usually more interesting situations.
-                    In some cases, problems connect ideas from multiple learning objectives.
-                </p>
-
-                <p>
-                    Write full, clear solutions to the problems below.
-                    It is important that the logic of how you solved these problems is clear.
-                    Although the final answer is important, being able to convey you understand the underlying concepts is more important.
-                </p>
-
-                <p>
-                    Prepare a single PDF and submit it to Gradescope.
-                </p>
-            </introduction>
+            
+            <ns0:include href="ps01.ptx" xpointer="xpointer(//section[1]/introduction)" set-xml-id="intro-ps02" />
 
             <exercises>
             <exercise xml:id="ps02-01">
