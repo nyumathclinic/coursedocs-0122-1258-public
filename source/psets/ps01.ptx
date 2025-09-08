@@ -217,6 +217,16 @@
                                 underestimate.
                             </p>
                         </statement>
+                        <solution>
+                            <p>
+                                The function <m>f(x) = \frac{1}{x}</m> is decreasing on the interval
+                                <m>[1,5]</m>. Therefore, the left endpoints are always higher than
+                                the right endpoints. This means that the rectangles formed using
+                                left endpoints are always taller than those formed using right
+                                endpoints. So the left endpoint estimate is an overestimate and the
+                                right endpoint estimate is an underestimate.
+                            </p>
+                        </solution>
                     </task>
                 </exercise>
 
