@@ -9,7 +9,10 @@
     \newcommand{\Q}{\mathbb Q}
     \newcommand{\R}{\mathbb R}
     \newcommand{\Abs}[1]{\left| #1 \right|}
+    \newcommand{\abs}[1]{\left| #1 \right|}
+    \newcommand{\set}[1]{\left\{ #1 \right\}}
     \newcommand{\ArcTan}[1]{\arctan\left( #1 \right)}
+    \newcommand{\Sin}[1]{\sin\left( #1 \right)}
   </macros>
   <!-- If you put any latex-image elements you can include preambles --> <!-- for those in the next element. -->
   <latex-image-preamble>

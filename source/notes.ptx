@@ -10,8 +10,10 @@
       </p>
     </introduction>
 
-    <xi:include href="./notes/week01.ptx" xpointer="notes/1" />
-    <xi:include href="./notes/week02.ptx" xpointer="notes/1" />
+    <!-- <xi:include href="./notes/week01.ptx" xpointer="notes/1" />
+    <xi:include href="./notes/week02.ptx" xpointer="notes/1" /> -->
+
+    <xi:include href="./notes/sec_06_04.ptx" xpointer="xpointer(//section[1])" />
 
     <!-- Add more xi:include files here to include them in the main course -->
   </article>

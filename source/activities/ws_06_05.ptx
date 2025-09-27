@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pretext xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../docinfo.ptx" />
+  <article xml:id="article">
+    <!--</div
+    attr= class="problems">-->
+    <worksheet margin="1in" bottom="1.25in" xml:id="ws-approxint">
+      <title>Worksheet for Section 6.5</title>
+
+      <objectives>
+        <ul>
+          <li>
+            <p>
+              Approximate definite integrals using the midpoint rule.
+            </p>
+          </li>
+          <li>
+            <p>
+              Approximate definite integrals using the trapezoidal rule.
+            </p>
+          </li>
+          <li>
+            <p>
+              Approximate definite integrals using Simpson's rule.
+            </p>
+          </li>
+          <li>
+            <p>
+              Estimate the error in approximating a definite integral.
+            </p>
+          </li>
+        </ul>
+      </objectives>
+
+
+      <page>
+        <!-- div attr= class="problems"-->
+        <exercise xml:id="ex-approxint-ln2">
+          <introduction>
+            <p> In this exercise we will make several estimates of <me>
+                \ln 2 = \int_1^2 \frac{1}{x} \,dx.
+              </me>
+            </p>
+          </introduction>
+          <task workspace="1in">
+            <statement>
+              <p>Estimate <m>\ln 2</m> with the Trapezoidal Rule and <m>n=8</m> subdivisions.</p>
+            </statement>
+            <solution>
+            <p> We have <m>\Delta x = \frac{1}{8}</m>, and the list of points is <me>\set{x_0,x_1,x_2,\dots,x_7,x_8}
+              = \set{1,\frac{9}{8},\frac{10}{8},\dots,\frac{15}{8},2}</me> So <me>\begin{split}
+                T_8 &amp;= \frac{1}{2}\cdot\frac{1}{8}\left(
+                1 \cdot \frac{8}{8} +
+                2 \cdot \frac{8}{9} +
+                2 \cdot \frac{8}{10} + \dotsm
+                2 \cdot \frac{8}{15} +
+                1 \cdot \frac{8}{16}\right) \\
+                &amp;= \frac{200,107}{288,288} \approx 0.694122
+                \end{split}</me>
+            </p>
+          </solution>
+          </task>
+          <task workspace="1in">
+            <statement>
+              <p>Estimate <m>\ln 2</m> with the Midpoint Rule and <m>n=8</m>.</p>
+            </statement>
+            <solution>
+              <p> This time the set of midpoints is <me>
+                \set{\frac{17}{16},\frac{19}{16},\frac{21}{16},\dots,\frac{29}{16},\frac{31}{16}}</me>
+                So we get <me>\begin{split}
+                  M_8 &amp;= \frac{1}{8}\left(
+                \frac{16}{17}+\frac{16}{19}+\frac{16}{21}+\dots+\frac{16}{29}+\frac{16}{31}\right)
+                  \\
+                  &amp;= \frac{21,858,095,488}{31,556,720,475}
+                  \approx0.692661.
+                  \end{split}</me>
+              </p>
+            </solution>
+          </task>
+          <task workspace="1in">
+            <statement>
+              <p>Estimate <m>\ln 2</m> with Simpson’s rule and <m>n=4</m>.</p>
+            </statement>
+            <solution>
+              <p> This time we are adding up roughly half as many points: <me>\begin{split}
+                  S_4 &amp;= \frac{1}{3} \frac{1}{4}
+                  \left(1 \cdot \frac{4}{4}
+                  + 4 \cdot \frac{5}{4}
+                  + 2 \cdot \frac{6}{4}
+                  + 4 \cdot \frac{7}{4}
+                  + 1 \cdot \frac{8}{4}\right) \\
+                  &amp;= \frac{1747}{2520} \approx 0.693254
+                  \end{split}</me>
+              </p>
+            </solution>
+          </task>
+          <task workspace="1in">
+            <statement>
+              <p> Estimate <m>\ln 2</m> with Simpson’s rule and <m>n=8</m>. </p>
+            </statement>
+            <solution>
+              <p>
+                <me>\begin{split}
+                  S_8 &amp;= \frac{1}{3} \cdot\frac{1}{8}
+                  \left(1 \cdot \frac{8}{8}
+                  + 4 \cdot \frac{8}{9}
+                  + 2 \cdot \frac{8}{10}
+                  + 4 \cdot \frac{8}{11}
+                  + 2 \cdot \frac{8}{12}
+                  + 4 \cdot \frac{8}{13}
+                  + 2 \cdot \frac{8}{14}
+                  + 4 \cdot \frac{8}{15}
+                  + 1 \cdot \frac{8}{16}\right) \\
+                  &amp;= \frac{1498711}{2162160} \approx 0.693155
+                  \end{split}</me>
+              </p>
+            </solution>
+          </task>
+          <conclusion>
+            <p>
+              Compare your answers with a calculator result and note the accuracy.
+            </p>
+          </conclusion>
+        </exercise>
+      </page>
+      <page>
+        <exercise xml:id="ex-approxint-ln2-estimates">
+          <introduction>
+            <p>
+              Of course, the calculator's answer is only an estimate too.
+              The error bound results in the text tell us truly how close
+              our estimates are.
+            </p>
+          </introduction>
+          <task workspace="2in">
+            <statement >
+              <p>Estimate the maximum error in our approximation of <m>\ln 2</m> with the Midpoint
+                Rule and <m>n=4</m>.</p>
+            </statement>
+            <solution>
+              <p>
+                <m>f''(x) = \frac{2}{x^3}</m>, which is <m>\leq 2</m> on <m>[1,2]</m>. So <me>\abs{EM_4}
+                \leq \frac{2}{24\cdot 16} = \frac{1}{192} \approx 0.0052</me> So the accuracy is
+                somewhere between two and three decimal places. </p>
+            </solution>
+          </task>
+          <task workspace="2in">
+            <statement>
+              <p> How many divisions would we need to get <m>\ln
+                  2</m> correct within <m>10^{-10}</m> using the Midpoint Rule? </p>
+            </statement>
+            <solution>
+              <p> For <m>f(x) =
+                  \frac{1}{x}</m> on <m>[1,2]</m> we have <m>\abs{EM_n} \leq \frac{1}{12n^2}</m>. To
+                ensure that <m>\abs{EM_n} &lt; 10^{-10}</m>, it suffices to ensure that <me>\frac{1}{12n^2}
+                &lt;
+                  10^{-10}
+                  \implies
+                  \frac{10^{10}}{12} &lt; n^2
+                  \implies
+                  n &gt; \frac{10^5}{2\sqrt{3}} = \frac{5 \times 10^4}{\sqrt{3}}.</me> Since <m>\frac{5}{\sqrt{3}}
+                &lt; 3</m>, it suffices to take <m>n &gt; 3 \times 10^4 =30,000</m>. We get <me>M_{30000}
+                \approx 0.693147180525223</me>, while Mathematica tells me that <m>\ln 2</m> to 15
+                decimal places is <me>\ln 2 \approx 0.693147180559945</me> So we do have agreement
+                up to ten decimal places. </p>
+            </solution>
+          </task>
+          <task workspace="2in">
+            <statement>
+              <p> How many divisions would we need to get <m>\ln 2</m> correct to within <m>
+                  10^{-10}</m> using Simpson’s Rule? </p>
+            </statement>
+            <solution>
+              <p> This time <m>f^{(4)}(x) = -\frac{24}{x^5}</m>, so <m>\abs{f^{(4)}(x)}
+                  \leq 24</m> on <m>[1,2]</m>. Thus <me>\abs{ES_n} \leq \frac{24}{180 n^4} =
+                \frac{2}{15n^4}.</me> In order to ensure that <m>\abs{ES_n} \leq 10^{-10}</m>, it
+                suffices to ensure that <me>\frac{2}{15n^4}
+                  &lt; 10^{-10}
+                  \implies
+                  n^4 &gt; \frac{2 \times 10^{10}}{15}
+                  \implies
+                  n &gt;\sqrt[4]{\frac{2}{15}} \times 100 \sqrt{10}
+                  = \sqrt[4]{\frac{200}{15}} \times 100</me> Since <m>\frac{200}{15}</m> is between <m>
+                1</m> and <m>16</m>, we estimate <m>\sqrt[4]{\frac{200}{15}} &lt; 2</m>. So we can
+                take <m>n=200</m> and we should be OK. <me>S_{200} \approx 0.693147180579475</me>
+                and indeed we have the right amount of accuracy in much smaller time! </p>
+            </solution>
+          </task>
+        </exercise>
+      </page>
+    </worksheet>
+  </article>
+</pretext>

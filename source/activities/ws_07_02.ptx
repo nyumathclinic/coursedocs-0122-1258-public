@@ -3,8 +3,8 @@
 <pretext xmlns:xi="http://www.w3.org/2001/XInclude">
   <xi:include href="../docinfo.ptx" />
     <!-- When creating a new activity, make a copy of this file with appropriate name -->
-    <worksheet margin="1in" bottom="1.25in" xml:id="XXX">
-      <title>Worksheet for Section XXX</title>
+    <worksheet margin="1in" bottom="1.25in" xml:id="ws-volslice">
+      <title>Worksheet for Section 7.2</title>
 
       <objectives>
         <ul>
