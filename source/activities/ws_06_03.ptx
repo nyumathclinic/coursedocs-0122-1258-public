@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <pretext>
-  <article xml:id="article">
+  <article xml:id="art-ws-pfd">
     
     <worksheet margin="1in" bottom="1.25in" xml:id="ws-pfd">
       <title>Worksheet for Section 6.3</title>

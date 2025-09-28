@@ -13,6 +13,7 @@
     \newcommand{\set}[1]{\left\{ #1 \right\}}
     \newcommand{\ArcTan}[1]{\arctan\left( #1 \right)}
     \newcommand{\Sin}[1]{\sin\left( #1 \right)}
+    \newcommand{\Cos}[1]{\cos\left( #1 \right)}
   </macros>
   <!-- If you put any latex-image elements you can include preambles --> <!-- for those in the next element. -->
   <latex-image-preamble>
@@ -21,4 +22,17 @@
     \usetikzlibrary{shapes,decorations,shadows,fadings,patterns}
     \usetikzlibrary{decorations.markings}
   </latex-image-preamble> <!-- It is possible to rename elements: --> <!-- <rename element="assemblage" xml:lang="en-US">Summary</rename> --> <!-- Specify the default type of cross reference: --> <!-- <cross-references text="type-global" /> -->
+  <prefigure-preamble xmlns="https://prefigure.org">
+    <!-- FIXME These don't get pre-defined. It might be necessary 
+     to xi:include them from another file -->
+    <definition>NyuViolet="#57068c"</definition>
+    <definition>UltraViolet="8900e1"</definition>
+    <definition>MediumViolet1="#702b9d"</definition>
+    <definition>MediumViolet2="#7b5aa6"</definition>
+    <definition>LightViolet1="#ab82c5"</definition>
+    <definition>LightViolet2="#eee6f3"</definition>
+    <point stroke="NyuViolet" fill="NyuViolet" size="2" />
+    <graph stroke="NyuViolet"/>
+    <area-between-curves stroke="NyuViolet" fill="LightViolet1" fill-opacity="0.5" />
+  </prefigure-preamble>
 </docinfo>

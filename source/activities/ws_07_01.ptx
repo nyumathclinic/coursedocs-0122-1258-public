@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
+<pretext xmlns:ns0="http://www.w3.org/2001/XInclude" xmlns:ns1="https://prefigure.org">
+  <ns0:include href="../docinfo.ptx" />
+  <article>
 
-<pretext xmlns:xi="http://www.w3.org/2001/XInclude">
-  <xi:include href="../docinfo.ptx" />
-    <!-- When creating a new activity, make a copy of this file with appropriate name -->
+    
     <worksheet margin="1in" bottom="1.25in" xml:id="ws-area">
       <title>Worksheet for Section 7.1</title>
 
@@ -10,13 +11,15 @@
         <ul>
           <li>
             <p>
-              Objective 1
+              Find the area of Type 1 regions bounded by curves
+              in the plane.
             </p>
           </li>
 
           <li>
             <p>
-              Objective 2
+              Find the area of Type 2 regions bounded by curves
+              in the plane.
             </p>
           </li>
         </ul>
@@ -26,27 +29,185 @@
       <page>
         <exercise workspace="1in">
           <statement>
+            <p> Find the area bounded by the curves <m>y = -x</m> and <m>y = 2-x^2</m>. (Hint: you
+              first need to find where the curves intersect.) </p>
           </statement>
 
-          <solution>
-          </solution>
+          </exercise>
+
+        <exercise workspace="1in">
+          <task workspace="">
+            <statement>
+              <p> Draw the region bounded by the curves <m>y=x</m> and <m>x=y^2 -2</m>. </p>
+            </statement>
+            <solution>
+              <p> See <xref ref="fig-ws-area-ex2-sol" />. </p>
+              <figure xml:id="fig-ws-area-ex2-sol">
+                <image width="61.8%">
+                  <ns1:prefigure label="fig-ws-area-ex2-sol-fig">
+                    <ns1:diagram dimensions="(300,300)" margins="5">
+                      <ns1:definition>NyuViolet="#57068c"</ns1:definition>
+                      <ns1:definition>UltraViolet="8900e1"</ns1:definition>
+                      <ns1:definition>MediumViolet1="#702b9d"</ns1:definition>
+                      <ns1:definition>MediumViolet2="#7b5aa6"</ns1:definition>
+                      <ns1:definition>LightViolet1="#ab82c5"</ns1:definition>
+                      <ns1:definition>LightViolet2="#eee6f3"</ns1:definition>
+                      <ns1:definition>f1(x)=-sqrt(x+2)</ns1:definition>
+                      <ns1:definition>f2(x)= sqrt(x+2)</ns1:definition>
+                      <ns1:definition>g(x)=x</ns1:definition>
+                      <ns1:definition>a = -2</ns1:definition>
+                      <ns1:definition>c = -1</ns1:definition>
+                      <ns1:definition>b = 2</ns1:definition>
+                      <ns1:coordinates bbox="(-3.2,-3.2,2.2,2.2)">
+                        <ns1:grid-axes xlabel="x" ylabel="y" />
+                        <ns1:area-between-curves functions="(f1,f2)" domain="(a,c)" stroke="None" />
+                        <ns1:area-between-curves functions="(g,f2)" domain="(c,b)" stroke="None" />
+
+                        <ns1:graph function="f1" domain="(-2,3)" />
+                        <ns1:graph function="f2" domain="(-2,3)" />
+                        <ns1:graph function="g" domain="(-3,3)" />
+
+                        <ns1:point p="(-1,-1)" />
+                        <ns1:point p="(2,2)" />
+                      </ns1:coordinates>
+                    </ns1:diagram>
+                  </ns1:prefigure>
+                </image>
+              </figure>
+            </solution>
+          </task>
+          <task workspace="">
+            <statement>
+              <p>
+                Find the area by dividing the region into two regions where the top and bottom are
+                an algebraic function and integrating.
+              </p>
+            </statement>
+            <solution>
+              <p> The curves intersect when <me>y^2 - 2 = y \implies y=-1,2 \implies x=-1,2</me>
+                (since one of the curves is <m>y=x</m>). So to integrate in the <m>x</m> direction
+                we need to divide up the region into two pieces: </p>
+
+              <p>
+                <ul>
+                  <li>
+                    <p> Region <m>R_1</m>, which is bounded by <m>y=\sqrt{x+2}</m>, <m>y=-\sqrt{x+2}</m>
+                      , <m>x=-2</m>, and <m>x=-1</m>
+                    </p>
+                  </li>
+
+                  <li>
+                    <p> Region <m>R_2</m>, which is bounded by <m>y=\sqrt{x+2}</m>, <m>y=x</m>, <m>
+                      x=-1</m>, and <m>x=1</m>. </p>
+                  </li>
+
+                </ul>
+              </p>
+
+              <p> The area of the full region is the sum of the areas of <m>R_1</m> and <m>R_2</m>: <me>\int_{-2}^{-1}
+                \left[\sqrt{x+2} - \left(-\sqrt{x+2}\right)\right]\,dx + \int_{-1}^2
+                  \left(\sqrt{x+2} - x\right)\,dx
+                  = \frac{4}{3} + \frac{19}{6} = \frac{9}{2}</me> Notice that we get the same answer
+                as in problem 1, mainly because the region here is a rotation of the region in that
+                problem. </p>
+            </solution>
+          </task>
+          <task workspace="">
+            <statement>
+              <p> Now find the same area by slicing <em>horizontally</em> instead of vertically;
+                that is, write <m>x</m> as a function of <m>y</m> and integrate against <m>dy</m>. </p>
+            </statement>
+            <solution>
+              <p> If we slice horizontally, the strip at level <m>y</m> has width <m>y-(y^2-2)</m>,
+                and we integrate from <m>y=-1</m> to <m>y=2</m>. Thus we get <me>\int_{-1}^2
+                \left(y-(y^2-2)\right)\,dy
+                  = \frac{9}{2}</me> This time we get not only the same answer as in problem 1, but
+                the exact same integral with <m>x</m> changed to <m>y</m>. </p>
+            </solution>
+          </task>
+          <task>
+            <statement>
+              <p>
+                Compare and contrast the two answers and the solutions.
+              </p>
+            </statement>
+            <solution>
+              <p>
+                The answers are the same (which gives us confidence that we are correct).
+                The second method involves only one integral.
+              </p>
+            </solution>
+          </task>
         </exercise>
 
         <exercise workspace="1in">
-          <statement>
-          </statement>
-
-          <solution>
-          </solution>
+          <task workspace="">
+            <statement>
+              <p> Draw graphs of <m>y = \sin x</m> and <m>y = \cos x</m> on the same set of axes,
+                say from <m>x = 0</m> to <m>x = 4\pi</m>. </p>
+            </statement>
+            <solution>
+              <p> See <xref ref="fig-ws-area-ex3-sol" />. </p>
+              <figure xml:id="fig-ws-area-ex3-sol">
+                <image width="61.8%">
+                  <ns1:prefigure label="fig-ws-area-ex3-sol-fig">
+                    <ns1:diagram dimensions="(300,100)" margins="5">
+                      <ns1:definition>NyuViolet="#57068c"</ns1:definition>
+                      <ns1:definition>UltraViolet="8900e1"</ns1:definition>
+                      <ns1:definition>MediumViolet1="#702b9d"</ns1:definition>
+                      <ns1:definition>MediumViolet2="#7b5aa6"</ns1:definition>
+                      <ns1:definition>LightViolet1="#ab82c5"</ns1:definition>
+                      <ns1:definition>LightViolet2="#eee6f3"</ns1:definition>
+                      <ns1:definition>f(x)=sin(x)</ns1:definition>
+                      <ns1:definition>g(x)=cos(x)</ns1:definition>
+                      <ns1:definition>a = -2</ns1:definition>
+                      <ns1:definition>c = -1</ns1:definition>
+                      <ns1:definition>b = 2</ns1:definition>
+                      <ns1:coordinates bbox="(0,-1,4*pi,1)">
+                        <ns1:grid-axes h-pi-format="yes" xlabel="x" ylabel="y" />
+                        <ns1:area-between-curves functions="(f,g)" domain="(pi/4,5*pi/4)" stroke="None" />
+                        <ns1:graph function="f" domain="(0,4*pi)" />
+                        <ns1:graph function="g" domain="(0,4*pi)" />
+                      </ns1:coordinates>
+                    </ns1:diagram>
+                  </ns1:prefigure>
+                </image>
+              </figure>
+            </solution>
+          </task>
+          <task workspace="">
+            <statement>
+              <p>
+                Notice that the curves bound a certain blob which gets repeated over and over again.
+                (Every second blob is flipped horizontally.)
+              </p>
+              <p> Find the area of one of the blobs.
+              </p>
+            </statement>
+            <solution>
+              <p> The curves intersect when <m>x=\frac{\pi}{4}</m> plus any multiple of <m>\pi</m>.
+                So the area of the first full blob is <me>\int_{\pi/4}^{5\pi/4}\left(\sin(x) -
+                \cos(x)\right)\,dx = 2 \sqrt{2}.</me>
+              </p>
+            </solution>
+          </task>
         </exercise>
+
+        <exercise>
+          <statement>
+            <p> Find the area bounded by the graph of <m>y = \ln x</m>, and a line joining the two
+              points <m>(1, 0)</m> and <m>(e^2, 2)</m> on the curve. </p>
+          </statement>
+          </exercise>
 
         <exercise workspace="1in">
           <statement>
+            <p>
+              Suppose two circles of radius 2 are drawn with the center of each circle on the edge
+              of the other circle. What is the total area enclosed by both circles?
+            </p>
           </statement>
-
-          <solution>
-          </solution>
-        </exercise>
+          </exercise>
       </page>
     </worksheet>
   </article>
