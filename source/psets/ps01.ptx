@@ -1,16 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<pretext xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/"
-    xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version='1.0' encoding='UTF-8'?>
+<pretext xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns1="http://purl.org/dc/terms/">
     <article>
-        <title></title>
+        <title />
         <section xml:id="sec-ps01">
             <title>Problem Set 1</title>
 
             <introduction>
-                <!-- Don't put an xml:id on the element above. It causes an error because this
-                element is xi:include'd into other documents. It seems like there should be a way
-                around that, but it's not working. -->
+                
                 <p>
                     This problem set consists not only of problems similar to what you've seen, but
                     also of unique problems you may not have seen before.
@@ -35,7 +31,7 @@
                 <exercise xml:id="umich_2024-02-12_0116_4">
                     <provenance>
                         <dc:creator>Matthew Leingang</dc:creator>
-                        <dcterms:created>2025-08-18</dcterms:created>
+                        <ns1:created>2025-08-18</ns1:created>
                         <dc:source>https://dhsp.math.lsa.umich.edu/exams/116exam1/w24/p4.pdf</dc:source>
                         <dc:rights>This source is used under a Creative Commons License
                             (CC-BY-NC-SA-4.0).</dc:rights>
@@ -74,16 +70,7 @@
                                 . </p>
                         </statement>
 
-                        <solution>
-                            <p> Another name for the second fundamental theorem of calculus is the
-                                “net change theorem.” The integral of a rate of change over an
-                                interval gives the total change over that interval. The quantity
-                                integrated here is <m>M(h)</m>, the rate at which water drains or
-                                evaporates from Avery's backyard. Therefore, the equation says that
-                                the total amount of water that drains or evaporates from Avery's
-                                backyard between 4:00 a.m. and 10:00 a.m. is 8000 cubic feet. </p>
-                        </solution>
-                    </task>
+                        </task>
 
 
                     <task>
@@ -94,16 +81,7 @@
                             </p>
                         </statement>
 
-                        <solution>
-                            <p> The rate at which the water in Avery's backyard is changing at time <m>
-                                h</m> is the rate at which rain adds water, minus the rate at which
-                                water drains or evaporates. This is <m> A(h) - M(h) </m>. Therefore,
-                                the total amount of rainwater in Avery's backyard at 7:00 is <me>
-                                \int_0^7 (A(h) - M(h)) \, dh
-                                </me>
-                            </p>
-                        </solution>
-                    </task>
+                        </task>
 
 
                     <task>
@@ -115,22 +93,7 @@
                             </p>
                         </statement>
 
-                        <solution>
-                            <p> The average value of a function <m>f(x)</m> on the interval <m>[a,b]</m>
-                                is <m>\frac{1}{b-a} \int_a^b f(x) \, dx </m>. In this context, the
-                                function we want the average value of is <m>T(h)</m>, the total
-                                amount of rainwater in Avery's backyard at time <m>h</m>. That is, <me>
-                                \frac{1}{3} \int_6^9 T(h) \, dh
-                                </me>
-                            </p>
-                            <p> This is not the same thing as the average rate of change of the
-                                amount of rainwater in Avery's backyard. That would be <me>
-                                \frac{1}{3} \int_6^9 (A(h)-M(h) \, dh
-                                    = \frac{1}{3} (T(9) - T(6))
-                                </me>
-                            </p>
-                        </solution>
-                    </task>
+                        </task>
                 </exercise>
 
                 <exercise xml:id="exercise-area-approximation">
@@ -144,101 +107,12 @@
                         <statement>
                             <p> Use <em>right endpoints</em>. Sketch the graph and the rectangles. </p>
                         </statement>
-                        <solution>
-                            <p> The width of each rectangle is <m>\Delta x = \frac{5-1}{4} = 1</m>.
-                                The right endpoints are <m>x=2,3,4,5</m>. The heights of the
-                                rectangles are <m>f(2) = \frac{1}{2}</m>, <m>f(3) = \frac{1}{3}</m>, <m>f(4)
-                                =
-                                    \frac{1}{4}</m>, <m>f(5) = \frac{1}{5}</m>. The area of each
-                                rectangle is width times height. So the total area is <me>
-                                    1 \cdot \left(\frac{1}{2} + \frac{1}{3} + \frac{1}{4} +
-                                \frac{1}{5}\right) = \frac{77}{60} \approx 1.2833
-                                </me>.
-                                The sketch is below. </p>
-                            <image width="60%">
-                                <prefigure xmlns="https://prefigure.org"
-                                    label="exercise-area-approximation-diagram-right-endpoints">
-                                    <diagram dimensions="(300,300)" margins="5">
-                                        <definition>f(x)=1/x</definition>
-                                        <definition>NyuViolet="#57068c"</definition>
-                                        <definition>MediumViolet1="#702b9d"</definition>
-                                        <definition>MediumViolet2="#7b5aa6"</definition>
-                                        <definition>LightViolet1="#ab82c5"</definition>
-                                        <definition>LightViolet2="#eee6f3"</definition>
-                                        <coordinates bbox="(-1,-0.25,6,1.25)">
-                                            <grid-axes xlabel="x" ylabel="y"
-                                                hlabels="(1,1,5)"
-                                                vlabels="(0,0.25,1)"
-                                            />
-                                            <graph function="f" stroke="NyuViolet" />
-                                            <area-under-curve function="f" domain="(1,5)"
-                                                fill="LightViolet2" stroke="NyuViolet"
-                                            />
-                                            <repeat parameter="i=1..4">
-                                                <rectangle lower-left="(i,0)"
-                                                    dimensions="(1,f(i+1))"
-                                                    stroke="MediumViolet1"
-                                                    fill="LightViolet1"
-                                                    fill-opacity="0.5"
-                                                />
-                                                <point p="(i+1,f(i+1))" stroke="NyuViolet"
-                                                    fill="NyuViolet" size="2" />
-                                            </repeat>
-                                        </coordinates>
-                                    </diagram>
-                                </prefigure>
-                            </image>
-                        </solution>
-                    </task>
+                        </task>
                     <task>
                         <statement>
                             <p> Repeat the estimation using <em>left endpoints</em>. </p>
                         </statement>
-                        <solution>
-                            <p> The width of each rectangle is <m>\Delta x = \frac{5-1}{4} = 1</m>.
-                                The left endpoints are <m>x=1,2,3,4</m>. The heights of the
-                                rectangles are <m>f(1) = 1</m>, <m>f(2) = \frac{1}{2}</m>, <m>f(3) =
-                                \frac{1}{3}</m>, <m>f(4) = \frac{1}{4}</m>. The area of each
-                                rectangle is width times height. So the total area is <me>
-                                    1 \cdot \left(1 + \frac{1}{2} + \frac{1}{3} +
-                                    \frac{1}{4}\right) = \frac{25}{12} \approx 2.0833
-                                </me>.
-                                The sketch is below. </p>
-                            <image width="60%">
-                                <prefigure xmlns="https://prefigure.org"
-                                    label="exercise-area-approximation-diagram-left-endpoints">
-                                    <diagram dimensions="(300,300)" margins="5">
-                                        <definition>f(x)=1/x</definition>
-                                        <definition>NyuViolet="#57068c"</definition>
-                                        <definition>MediumViolet1="#702b9d"</definition>
-                                        <definition>MediumViolet2="#7b5aa6"</definition>
-                                        <definition>LightViolet1="#ab82c5"</definition>
-                                        <definition>LightViolet2="#eee6f3"</definition>
-                                        <coordinates bbox="(-1,-0.25,6,1.25)">
-                                            <grid-axes xlabel="x" ylabel="y"
-                                                hlabels="(1,1,5)"
-                                                vlabels="(0,0.25,1)"
-                                            />
-                                            <graph function="f" stroke="NyuViolet" />
-                                            <area-under-curve function="f" domain="(1,5)"
-                                                fill="LightViolet2" stroke="NyuViolet"
-                                            />
-                                            <repeat parameter="i=1..4">
-                                                <rectangle lower-left="(i,0)"
-                                                    dimensions="(1,f(i))"
-                                                    stroke="MediumViolet1"
-                                                    fill="LightViolet1"
-                                                    fill-opacity="0.5"
-                                                />
-                                                <point p="(i,f(i))" stroke="NyuViolet"
-                                                    fill="NyuViolet" size="2" />
-                                            </repeat>
-                                        </coordinates>
-                                    </diagram>
-                                </prefigure>
-                            </image>
-                        </solution>
-                    </task>
+                        </task>
                     <task>
                         <statement>
                             <p>
@@ -246,17 +120,7 @@
                                 underestimate.
                             </p>
                         </statement>
-                        <solution>
-                            <p>
-                                The function <m>f(x) = \frac{1}{x}</m> is decreasing on the interval
-                                <m>[1,5]</m>. Therefore, the left endpoints are always higher than
-                                the right endpoints. This means that the rectangles formed using
-                                left endpoints are always taller than those formed using right
-                                endpoints. So the left endpoint estimate is an overestimate and the
-                                right endpoint estimate is an underestimate.
-                            </p>
-                        </solution>
-                    </task>
+                        </task>
                 </exercise>
 
                 <exercise xml:id="p-2">
@@ -265,22 +129,7 @@
                             g'(x)</m> . </p>
                     </statement>
 
-                    <solution>
-                        <p> This problem requires the fundamental theorem of calculus (Part 1)
-                            combined with the chain rule. Let <m>F(x) = \int_0^x \sin(t^3) \, dt</m>.
-                            By FTC1, <m>F'(x) = \sin(x^3)</m>. The function we are asked to
-                            differentiate is <m>g(x) = F(x^2)</m>. Using the chain rule, <md>
-                                <mrow> g'(x) \amp= F'(x^2) \cdot \frac{d}{dx}(x^2)</mrow>
-                                <mrow> \amp= \sin((x^2)^3) \cdot (2x)</mrow>
-                                <mrow> \amp= 2x\sin(x^6)</mrow>
-                            </md>. </p>
-                        <p> Note that we did not need to find an antiderivative of <m>f(t) =
-                            \sin(t^3)</m>. This is because the fundamental theorem of calculus
-                            allows us to differentiate an integral without finding an
-                            antiderivative. In fact, <m>f</m> does not have an elementary
-                            antiderivative. </p>
-                    </solution>
-                </exercise>
+                    </exercise>
 
                 <exercise xml:id="p-4">
                     <introduction>
@@ -293,15 +142,7 @@
                                 Find the displacement of the particle over the interval.
                             </p>
                         </statement>
-                        <solution>
-                            <p> Displacement is given by the integral of velocity. <md>
-                                    <mrow> s(4) - s(0)\amp = \int_0^4 v(t) \, dt </mrow>
-                                    <mrow> \amp = \int_0^4 (3t^2 - 12t + 9) \,dt</mrow>
-                                    <mrow> \amp = [t^3 - 6t^2 + 9t]_0^4 =4 </mrow>
-                                </md>
-                                The displacement is 4 meters. </p>
-                        </solution>
-                    </task>
+                        </task>
                     <task>
                         <statement>
                             <p>
@@ -309,44 +150,7 @@
                                 interval.
                             </p>
                         </statement>
-                        <solution>
-                            <p> Total distance is the integral of <em>speed</em>, which is the
-                                magnitude or absolute value of velocity. <me>
-                                    \text{Distance} = \int_0^4 |v(t)| \, dt = \int_0^4 |3t^2 - 12t +
-                                9| \, dt
-                                </me>
-                                First, we need to find where <m>v(t)=0</m>. <md>
-                                    <mrow> 3t^2 - 12t + 9 \amp = 0 </mrow>
-                                    <mrow> \implies 3(t^2 - 4t + 3)\amp = 0</mrow>
-                                    <mrow> \implies 3(t-1)(t-3)\amp = 0</mrow>
-                                </md>.
-                                The velocity is zero at <m>t=1</m> and <m>t=3</m>, positive on <m>
-                                (0,1)</m> and <m>(3,4)</m>, and negative on <m>(1,3)</m>. </p>
-                            <p> To evaluate the integral of the absolute value, we split the
-                                integral at these points. <md>
-                                    <mrow> \text{Distance} \amp =\int_0^4 |3t^2 - 12t
-                                        + 9| \, dt </mrow>
-                                    <mrow> \amp = \int_0^1 v(t) \, dt + \int_1^3 -v(t) \, dt +
-                                \int_3^4 v(t) \, dt</mrow>
-                                </md>. We
-                                have <md>
-                                    <mrow> \int_0^1 (3t^2 - 12t
-                                        + 9) \, dt \amp= [t^3 - 6t^2 + 9t]_0^1 </mrow>
-                                    <mrow> \amp = (1-6+9) - 0 = 4 </mrow>
-                                    <mrow> \int_1^3 (3t^2 - 12t + 9) \, dt \amp= [t^3 - 6t^2 +
-                                9t]_1^3 </mrow>
-                                    <mrow> \amp= (27-54+27) - (1-6+9) </mrow>
-                                    <mrow> \amp= 0 - 4 = -4 </mrow>
-                                    <mrow> \int_3^4
-                                        (3t^2 - 12t + 9) \, dt \amp = [t^3 - 6t^2 + 9t]_3^4 </mrow>
-                                    <mrow> \amp=
-                                        (64-96+36) -
-                                        (27-54+27) </mrow>
-                                    <mrow> \amp= 4 - 0 = 4 </mrow>
-                                </md>
-                                The total distance is <m>4 - (-4) + 4 = 12</m> meters. </p>
-                        </solution>
-                    </task>
+                        </task>
                 </exercise>
 
                 <exercise xml:id="p-3">
@@ -356,25 +160,7 @@
                             the limits of integration. </p>
                     </statement>
 
-                    <solution>
-                        <p> We use the substitution rule. Let <m>u = \ln x</m>. Then the
-                            differential is <m>du = \frac{1}{x} \, dx</m>. Now, we must change the
-                            limits of integration. When <m>x=e</m>, <m>u = \ln e = 1</m>. When <m>
-                            x=e^4</m>, <m>u = \ln(e^4) = 4</m>. The integral becomes: <me>
-                            \int_{1}^{4} \sqrt{u} \, du = \int_{1}^{4} u^{1/2} \, du
-                            </me>
-                            The antiderivative is <m>\frac{u^{3/2}}{3/2} = \frac{2}{3}u^{3/2}</m>.
-                            Evaluating the antiderivative at the new limits: <md>
-                                <mrow> \left[ \frac{2}{3}u^{3/2} \right]_{1}^{4}\amp=
-                            \frac{2}{3}(4^{3/2} -
-                                    1^{3/2}) </mrow>
-                                <mrow> \amp= \frac{2}{3}((\sqrt{4})^3 - 1) </mrow>
-                                <mrow> \amp= \frac{2}{3}(2^3 - 1) </mrow>
-                                <mrow> \amp= \frac{2}{3}(7) = \frac{14}{3} </mrow>
-                            </md>.
-                            </p>
-                    </solution>
-                </exercise>
+                    </exercise>
             </exercises>
         </section>
     </article>

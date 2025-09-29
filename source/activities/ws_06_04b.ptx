@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<pretext xmlns:xi="http://www.w3.org/2001/XInclude">
-  <xi:include href="../docinfo.ptx" />
+<?xml version='1.0' encoding='UTF-8'?>
+<pretext xmlns:ns0="http://www.w3.org/2001/XInclude">
+  <ns0:include href="../docinfo.ptx" />
   <article>
     <worksheet margin="1in" bottom="1.25in" xml:id="ws-intstrat">
       <title>Strategies and Practice for Integration</title>
@@ -278,7 +278,7 @@
 
 
       <page>
-        <!-- div attr= class="problems"-->
+        
         <exercise workspace="1in">
           <statement>
             <p>
@@ -290,12 +290,7 @@
               \frac{B}{x-1}</me>
             </p>
           </hint>
-          <answer>
-            <p>
-              <m>-\ln{\Abs{1-x}}-\ln{\Abs{x}} +C</m>
-            </p>
-          </answer>
-        </exercise>
+          </exercise>
         <exercise workspace="1in">
           <statement>
             <p>
@@ -306,12 +301,7 @@
             <p> Substitute <m>u=2x^2</m> and <m>du = 4x\,dx</m>. The integral becomes <m>\frac{1}{4}\int
               \sec u\,du</m>. </p>
           </hint>
-          <answer>
-            <p>
-              <m>\frac{1}{4}\ln{\Abs{\sec{2x^2} + \tan{2x^2}}}+C</m>
-            </p>
-          </answer>
-        </exercise>
+          </exercise>
 
         <exercise workspace="1in">
           <statement>
@@ -335,12 +325,7 @@
             <p> Substitute <m>u = \ln x</m> and <m>du = \frac{1}{x}\,dx</m>. The integral becomes <m>\int
               \tan u \,du</m>. </p>
           </hint>
-          <answer>
-            <p>
-              <m>\ln{\Abs{\sec{\ln{\Abs{x}}}}}+C</m>
-            </p>
-          </answer>
-        </exercise>
+          </exercise>
 
         <exercise workspace="1in">
           <statement>
@@ -356,12 +341,7 @@
                 \end{split}</me>
             </p>
           </hint>
-          <answer>
-            <p>
-              <m>3 \ln{\Abs{\sec{t} + \tan{t}}} + 2 \ln{\Abs{\sec{t}}} + C</m>
-            </p>
-          </answer>
-        </exercise>
+          </exercise>
 
         <exercise workspace="1in">
           <statement>
@@ -374,12 +354,7 @@
               integral becomes <m>\int \frac{1+u}{1-u}\cdot\frac{1}{u} \,du</m>. Now you can do
               partial fractions on the integrand <m>\frac{1+u}{u-u^2}</m>. </p>
           </hint>
-          <answer>
-            <p>
-              <m>x-2 \ln{\Abs{1-e^x}}+C</m>
-            </p>
-          </answer>
-        </exercise>
+          </exercise>
 
 
         <exercise workspace="1in">
@@ -396,12 +371,7 @@
                 \frac{A}{1-t} + \frac{B}{1+t} + \frac{Cx + D}{1+t+t^2} + \frac{Ex+F}{1-t+t^2}</me>
             </p>
           </hint>
-          <answer>
-            <p>
-              <m>\frac{1}{3}\ln{\Abs{1+t^3}} - \frac{1}{3} \ln{\Abs{1-t^3}} + C</m>
-            </p>
-          </answer>
-        </exercise>
+          </exercise>
 
         <exercise workspace="1in">
           <statement>
@@ -414,12 +384,7 @@
               substitute <m>u=x+1</m>, <m>du=dx</m>. The integral becomes <m>\int\frac{du}{u^2+1}</m>
               . </p>
           </hint>
-          <answer>
-            <p>
-              <m>\ArcTan{x+1}+C</m>
-            </p>
-          </answer>
-        </exercise>
+          </exercise>
 
         <exercise workspace="1in">
           <statement>
@@ -434,12 +399,7 @@
                 = \int (1-u^2)^2u^2\,du</me>
             </p>
           </hint>
-          <answer>
-            <p>
-              <m>\frac{\cos^7(x)}{7}-\frac{2 \cos ^5(x)}{5}+\frac{\cos ^3(x)}{3} + C</m>
-            </p>
-          </answer>
-        </exercise>
+          </exercise>
 
         <exercise workspace="1in">
           <statement>
@@ -453,14 +413,7 @@
                 2x}{2}\right)^2\left(\frac{1+\cos{2x}}{2}\right)\,dx</me>
             </p>
           </hint>
-          <answer>
-            <p>
-              <m>\frac{x}{16}-\frac{1}{64} \sin (2 x)-\frac{1}{64} \sin (4 x)+\frac{1}{192} \sin (6
-                x)
-                + C</m>
-            </p>
-          </answer>
-        </exercise>
+          </exercise>
 
         <exercise workspace="1in">
           <statement>
@@ -472,12 +425,7 @@
             <p> Substitute <m>u = \sqrt{1-x^2}</m> The integral becomes <m>\int
                 \frac{u^2\,du}{1-u^2}</m>. Now do partial fractions. </p>
           </hint>
-          <answer>
-            <p>
-              <m>\sqrt{1-x^2}-\ln\left|\sqrt{1-x^2}+1\right|+\ln|x| + C</m>
-            </p>
-          </answer>
-        </exercise>
+          </exercise>
 
 
         <exercise workspace="1in">
@@ -493,12 +441,7 @@
                 \sec^{-1} x \,dx = \frac{1}{2}x^2\sec^{-1}x - \int \frac{x}{2\sqrt{x^2-1}}\,dx</me>
               Now substitute <m>u = x^2-1</m>, <m>du=2x\,dx</m> in the remaining integral. </p>
           </hint>
-          <answer>
-            <p>
-              <m>\frac{1}{2}x^2 \sec^{-1}(x) - \frac{1}{2}{\sqrt{x^2-1}}+C</m>
-            </p>
-          </answer>
-        </exercise>
+          </exercise>
 
         <exercise workspace="1in">
           <statement>
@@ -516,12 +459,7 @@
                 \end{split}</me> Now substitute <m>u=\tan(x)</m>, <m>du=\sec^2(x)\,dx</m> in the
               first integral. </p>
           </hint>
-          <answer>
-            <p>
-              <m>\frac{1}{3} \tan^3(x) - \tan(x) + x +C</m>
-            </p>
-          </answer>
-        </exercise>
+          </exercise>
 
         <exercise workspace="1in">
           <statement>
@@ -534,12 +472,7 @@
               becomes <m>\int
                 u \,du</m>. </p>
           </hint>
-          <answer>
-            <p>
-              <m>\frac{1}{2}(\arctan x)^2+C</m>
-            </p>
-          </answer>
-        </exercise>
+          </exercise>
 
         <exercise workspace="1in">
           <statement>
@@ -557,14 +490,7 @@
               of <m>
                 \Cos{2y}</m> and <m>\Cos{4y}</m>. Then integrate by parts with <m>u=y</m>. </p>
           </hint>
-          <answer>
-            <p>
-              <m>\frac{3 x^2+2 (3 x^2+5) x \tan^{-1}(x)+3 (x^2+1)^2 (\tan^{-1}(x))^2+4}{16
-                (x^2+1)^2}
-                + C</m>
-            </p>
-          </answer>
-        </exercise>
+          </exercise>
 
         <exercise workspace="1in">
           <statement>
@@ -581,12 +507,7 @@
               \frac{x^2}{1+x^2}\,dx</me> Now rewrite <m>\frac{x^2}{1+x^2} = 1 - \frac{1}{1+x^2}</m>
               (long division). </p>
           </hint>
-          <answer>
-            <p>
-              <m>\frac{1}{2}x\ln{\left(1+x^2\right)} + \ArcTan{x} -x+C</m>
-            </p>
-          </answer>
-        </exercise>
+          </exercise>
 
         <exercise workspace="1in">
           <statement>
@@ -599,12 +520,7 @@
               x\ln\left(1+x^2\right)\,dx</m>. Substitute <m>u=1+x^2</m> and <m>du = 2x\,dx</m>. The
               integral becomes <m>\frac{1}{4}\int \ln{u} \,du</m>. </p>
           </hint>
-          <answer>
-            <p>
-              <m>\frac{1}{4}\left((1+x^2)\ln{\left(1+x^2\right)}-x^2 -1\right)+C</m>
-            </p>
-          </answer>
-        </exercise>
+          </exercise>
 
         <exercise workspace="1in">
           <statement>
@@ -624,12 +540,7 @@
                 \cos\theta\,d\theta</m>. The remaining integral becomes <m>\int\sin^2\theta\,d\theta</m>.
               This can be done with a half-angle identity. </p>
           </hint>
-          <answer>
-            <p>
-              <m>x \arcsin \sqrt{x} - \frac{1}{2} \arcsin \sqrt{x} + \frac{1}{2} \sqrt{x-x^2} +C</m>
-            </p>
-          </answer>
-        </exercise>
+          </exercise>
 
         <exercise workspace="1in">
           <statement>
@@ -646,18 +557,7 @@
               \left(y^2+\sqrt{2} y+1\right)</me>
             </p>
           </hint>
-          <answer>
-            <p>
-              <me>\begin{gathered}
-                \frac{1}{2 \sqrt{2}}\biggl(-2 \tan ^{-1}\left(1-\sqrt{2} \sqrt{\tan (x)}\right)+2
-                \tan
-                ^{-1}\left(\sqrt{2}
-                \sqrt{\tan (x)}+1\right)+\\+\log \left(\tan (x)-\sqrt{2} \sqrt{\tan
-                (x)}+1\right)-\\-\log \left(\tan (x)+\sqrt{2} \sqrt{\tan (x)}+1\right)\biggr)+C
-                \end{gathered}</me>
-            </p>
-          </answer>
-        </exercise>
+          </exercise>
 
         <exercise workspace="1in">
           <statement>
@@ -670,17 +570,7 @@
                 = (x^2+1)(x^2 - \sqrt{3}x + 1)(x^2 +\sqrt{3}x + 1)</me>
             </p>
           </hint>
-          <answer>
-            <p>
-              <me>\begin{gathered}
-                \frac{1}{12} \biggl(\sqrt{3} \log \left(x^2+\sqrt{3} x+1\right)-\sqrt{3} \log
-                \left(x^2-\sqrt{3} x+1\right)+\\+4 \tan ^{-1}(x)+2 \tan ^{-1}\left(2
-                x+\sqrt{3}\right)-2
-                \tan ^{-1}\left(\sqrt{3}-2 x\right)\biggr)+C
-                \end{gathered}</me>
-            </p>
-          </answer>
-        </exercise>
+          </exercise>
       </page>
     </worksheet>
   </article>

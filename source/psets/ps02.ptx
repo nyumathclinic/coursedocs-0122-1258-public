@@ -1,13 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<pretext xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version='1.0' encoding='UTF-8'?>
+<pretext xmlns:ns0="http://www.w3.org/2001/XInclude">
     <article>
         <section xml:id="ps02">
             <title>Problem Set 2</title>
 
-            <!-- Duplicate the introduction from Problem Set 1 -->
-            <xi:include href="ps01.ptx" xpointer="xpointer(//section[1]/introduction)"
-                set-xml-id="intro-ps02" />
+            
+            <ns0:include href="ps01.ptx" xpointer="xpointer(//section[1]/introduction)" set-xml-id="intro-ps02" />
 
             <exercises>
                 <exercise xml:id="ps02-01">
@@ -16,89 +14,14 @@
                             show all steps of the integration by parts process. </p>
                     </statement>
 
-                    <solution>
-                        <p> We use integration by parts, with the LIATE rule suggesting we choose <m>
-                            u</m> as the polynomial term. We will need to apply the process twice. </p>
-
-                        <p> For the first iteration, let: <me>
-                                u = x^2 \quad \text{and} \quad dv = e^{2x} \, dx
-                            </me>
-                        <me>
-                            du = 2x \, dx \quad \text{and} \quad v = \frac{1}{2}e^{2x}
-                            </me>
-                            Using the formula <m>\int u \, dv = uv - \int v \, du</m>, we get: <md>
-                                <mrow> \int x^2 e^{2x} \, dx\amp = x^2 \left( \frac{1}{2}e^{2x}
-                            \right) - \int \frac{1}{2}e^{2x} (2x) \, dx</mrow>
-                                <mrow> \amp = \frac{1}{2}x^2 e^{2x} - \int x e^{2x} \, dx</mrow>
-                            </md>
-                        </p>
-
-                        <p> We now apply integration by parts again to the new integral <m>\int x
-                            e^{2x} \, dx</m>. Let: <me>
-                                u = x \quad \text{and} \quad dv = e^{2x} \, dx
-                            </me>
-                        <me>
-                            du = dx \quad \text{and} \quad v = \frac{1}{2}e^{2x}
-                            </me>
-                            Then <md>
-                                <mrow> \int x e^{2x} \, dx\amp = x \left( \frac{1}{2}e^{2x} \right)
-                            - \int \frac{1}{2}e^{2x} \, dx</mrow>
-                                <mrow> \amp = \frac{1}{2}x e^{2x} - \frac{1}{2} \int e^{2x} \, dx</mrow>
-                            </md>
-                        </p>
-
-                        <p> Substituting this result back into our first equation, we get the final
-                            answer: <md>
-                                <mrow> \int x^2 e^{2x} \, dx \amp= \frac{1}{2}x^2 e^{2x} - \left(
-                            \frac{1}{2}x e^{2x} - \frac{1}{4}e^{2x} \right) + C </mrow>
-                                <mrow> \amp= \frac{1}{2}x^2 e^{2x} - \frac{1}{2}x e^{2x} +
-                            \frac{1}{4}e^{2x} + C </mrow>
-                                <mrow> \amp= \frac{1}{4}e^{2x}(2x^2 - 2x + 1) + C </mrow>
-                            </md>
-                        </p>
-                    </solution>
-                </exercise>
+                    </exercise>
 
                 <exercise xml:id="ps02-02">
                     <statement>
                         <p> Evaluate the definite integral <m>\int_1^e \ln(x^4) \, dx</m>. </p>
                     </statement>
 
-                    <solution>
-                        <p> First, we can simplify the integrand using a logarithm property: <m>\ln(x^4)
-                            = 4\ln(x)</m>. <me>
-                                \int_1^e 4\ln(x) \, dx = 4 \int_1^e \ln(x) \, dx
-                            </me>
-                        </p>
-
-                        <p> To evaluate <m>\int \ln(x) \, dx</m>, we use integration by parts with a
-                            clever choice of <m>dv</m>. Let: <me>
-                                u = \ln(x) \quad \text{and} \quad dv = dx
-                            </me>
-                        <me>
-                            du = \frac{1}{x} \, dx \quad \text{and} \quad v = x
-                            </me>
-                            Applying the integration by parts formula: <md>
-                                <mrow> \int \ln(x) \, dx\amp = x\ln(x) - \int x \left( \frac{1}{x}
-                            \right) \, dx</mrow>
-                                <mrow> \amp = x\ln(x) - \int 1 \, dx </mrow>
-                                <mrow> \amp = x\ln(x) - x + C </mrow>
-                            </md>
-                        </p>
-
-                        <p> Now we evaluate the definite integral using the Fundamental Theorem of
-                            Calculus: <md>
-                                <mrow> 4 \int_1^e \ln(x) \, dx \amp = 4 \left[ x\ln(x) - x
-                            \right]_1^e</mrow>
-                                <mrow> \amp = 4 \left( (e\ln(e) - e) - (1\ln(1) - 1) \right) </mrow>
-                                <mrow> \amp = 4 \left( (e(1) - e) - (1(0) - 1) \right) = 4(0 - (-1))
-                            = 4 </mrow>
-                            </md>
-                        </p>
-
-                        <p> The value of the integral is <m>4</m>. </p>
-                    </solution>
-                </exercise>
+                    </exercise>
 
                 <exercise xml:id="ps02-03">
                     <statement>
@@ -107,49 +30,7 @@
                             over the interval <m>[0, \frac{\pi}{2}]</m>. </p>
                     </statement>
 
-                    <solution>
-                        <p> The displacement is the definite integral of the velocity function over
-                            the given interval. We need to evaluate <m>\int_0^{\frac{\pi}{2}} t
-                            \sin(2t) \, dt</m>. We will use integration by parts. Let: <me>
-                                u = t \quad \text{and} \quad dv = \sin(2t) \, dt
-                            </me>
-                        <me>
-                            du = dt \quad \text{and} \quad v = -\frac{1}{2}\cos(2t)
-                            </me>
-                            Applying the formula for definite integrals: <me>
-                                \int_a^b u \, dv = [uv]_a^b - \int_a^b v \, du
-                            </me>
-                        <md>
-                                <mrow> \int_0^{\frac{\pi}{2}} t \sin(2t) \, dt \amp = \left[ t
-                            \left( -\frac{1}{2}\cos(2t) \right) \right]_0^{\frac{\pi}{2}} -
-                            \int_0^{\frac{\pi}{2}} \left( -\frac{1}{2}\cos(2t) \right) \, dt</mrow>
-                                <mrow> \amp = \left[ -\frac{1}{2}t\cos(2t) \right]_0^{\frac{\pi}{2}}
-                            + \frac{1}{2} \int_0^{\frac{\pi}{2}} \cos(2t) \, dt</mrow>
-                            </md>
-                        </p>
-
-                        <p> Now we evaluate each part: <md>
-                                <mrow> \left[ -\frac{1}{2}t\cos(2t) \right]_0^{\frac{\pi}{2}} \amp=
-                            \left(
-                            -\frac{1}{2}\left(\frac{\pi}{2}\right)\cos\left(2\left(\frac{\pi}{2}\right)\right)
-                            \right) - \left( -\frac{1}{2}(0)\cos(2(0)) \right) </mrow>
-                                <mrow> \amp= \left( -\frac{\pi}{4}\cos(\pi) \right) - 0 =
-                            -\frac{\pi}{4}(-1) = \frac{\pi}{4} </mrow>
-                            </md>
-                            And the remaining integral: <md>
-                                <mrow> \frac{1}{2} \int_0^{\frac{\pi}{2}} \cos(2t) \, dt\amp=
-                            \frac{1}{2} \left[ \frac{1}{2}\sin(2t) \right]_0^{\frac{\pi}{2}} =
-                            \frac{1}{4} \left( \sin\left(2\left(\frac{\pi}{2}\right)\right) -
-                            \sin(2(0)) \right) </mrow>
-                                <mrow> \amp = \frac{1}{4}(\sin(\pi) - \sin(0)) = \frac{1}{4}(0-0) =
-                            0</mrow>
-                            </md>
-                        </p>
-
-                        <p> Combining the results, the displacement is <m>\frac{\pi}{4} + 0 =
-                            \frac{\pi}{4}</m> meters. </p>
-                    </solution>
-                </exercise>
+                    </exercise>
 
                 <exercise xml:id="ps02-04">
                     <statement>
@@ -160,88 +41,14 @@
                     </p>
                     </statement>
 
-                    <solution>
-                        <p> Since the powers of sine and cosine are both even, we must use
-                            half-angle formulas. <me>
-                                \sin^2 x = \frac{1 - \cos(2x)}{2}
-                            </me>
-                        <me>
-                            \cos^2 x = \frac{1 + \cos(2x)}{2}
-                            </me>
-                        <md>
-                                <mrow> \sin^4 x \cos^2 x\amp = (\sin^2 x)^2 \cos^2 x </mrow>
-                                <mrow> \amp= \left( \frac{1 - \cos(2x)}{2} \right)^2 \left( \frac{1
-                            + \cos(2x)}{2} \right) </mrow>
-                                <mrow> \amp= \frac{1}{8} (1 - 2\cos(2x) + \cos^2(2x))(1+\cos(2x))</mrow>
-                                <mrow> \amp = \frac{1}{8} (1 - 2\cos(2x) + \cos^2(2x) + \cos(2x) -
-                            2\cos^2(2x) + \cos^3(2x))</mrow>
-                                <mrow> \amp = \frac{1}{8} (1 - \cos(2x) - \cos^2(2x) + \cos^3(2x))</mrow>
-                            </md>
-                        </p>
-
-                        <p> Now, we integrate each term. For <m>\cos^2(2x)</m>, use the half-angle
-                            formula again: <me>
-                                \int \cos^2(2x) \,dx = \int \frac{1+\cos(4x)}{2} \,dx = \frac{1}{2}x
-                            + \frac{1}{8}\sin(4x)
-                            </me>
-                        </p>
-
-                        <p> For <m>\cos^3(2x)</m>, save one cosine and convert the rest to sines: <me>
-                            \int \cos^3(2x) \,dx = \int (1-\sin^2(2x))\cos(2x) \,dx
-                            </me>
-                            Let <m>u = \sin(2x)</m>, so <m>du = 2\cos(2x) \,dx</m>. <md>
-                                <mrow> \int (1-\sin^2(2x))\cos(2x) \,dx \amp = \frac{1}{2}\int
-                            (1-u^2) \,du </mrow>
-                                <mrow> \amp= \frac{1}{2}(u - \frac{1}{3}u^3) </mrow>
-                                <mrow> \amp= \frac{1}{2}\sin(2x) - \frac{1}{6}\sin^3(2x) </mrow>
-                            </md>
-                        </p>
-
-                        <p> Putting all parts together and integrating the full expression: <md>
-                                <mrow> \amp\int \frac{1}{8} (1 - \cos(2x) - \cos^2(2x) + \cos^3(2x))
-                            \,dx </mrow>
-                                <mrow> \amp = \frac{1}{8} \left( x - \frac{1}{2}\sin(2x) -
-                            \left(\frac{1}{2}x + \frac{1}{8}\sin(4x)\right) +
-                            \left(\frac{1}{2}\sin(2x) - \frac{1}{6}\sin^3(2x)\right) \right) + C</mrow>
-                                <mrow> \amp = \frac{1}{8} \left( \frac{1}{2}x - \frac{1}{8}\sin(4x)
-                            - \frac{1}{6}\sin^3(2x) \right) + C</mrow>
-                            </md>
-                        </p>
-                    </solution>
-                </exercise>
+                    </exercise>
 
                 <exercise xml:id="ps02-05">
                     <statement>
                         <p> Evaluate the indefinite integral <m>\int \tan^3(x) \sec(x) \, dx</m>. </p>
                     </statement>
 
-                    <solution>
-                        <p> Denote the integral by <m>I</m> for brevity. For this trigonometric
-                            integral, we can split off a factor of <m>\sec(x)\tan(x)</m> and use the
-                            identity <m>\tan^2(x) = \sec^2(x) - 1</m>. <md>
-                                <mrow> I = \int \tan^3(x) \sec(x) \, dx \amp= \int \tan^2(x)
-                            (\sec(x)\tan(x)) \, dx </mrow>
-                                <mrow> \amp= \int (\sec^2(x) - 1) (\sec(x)\tan(x)) \, dx </mrow>
-                            </md>
-                        </p>
-
-                        <p> Now we use the substitution <m>u = \sec(x)</m>, so <m>du =
-                            \sec(x)\tan(x) \, dx</m>. <me>
-                                I = \int (u^2 - 1) \, du
-                            </me>
-                        </p>
-
-                        <p> Integrating with respect to <m>u</m>: <me>
-                                I = \frac{u^3}{3} - u + C
-                            </me>
-                        </p>
-
-                        <p> Substituting back <m>u = \sec(x)</m>: <me>
-                                \int \tan^3(x) \sec(x) \, dx = \frac{\sec^3(x)}{3} - \sec(x) + C
-                            </me>
-                        </p>
-                    </solution>
-                </exercise>
+                    </exercise>
 
                 <exercise xml:id="ps02-06">
                     <introduction>
@@ -260,16 +67,7 @@
                             </p>
                         </statement>
 
-                        <solution>
-                            <p> Use the substitution <m>u = x^2</m>. Then <m>du = 2x \,dx</m>, which
-                                means <m>x \,dx = \frac{1}{2}du</m>. This substitution simplifies
-                                the integral to <me>
-                                    \frac{1}{2}\int \sec^3 u \,du
-                                </me>
-                                .
-                        </p>
-                        </solution>
-                    </task>
+                        </task>
 
 
                     <task>
@@ -279,44 +77,7 @@
                             </p>
                         </statement>
 
-                        <solution>
-                            <p> To evaluate <m>\int \sec^3 u \,du</m>, we must use integration by
-                                parts. Let <m>I = \int \sec^3 u \,du = \int \sec u \cdot \sec^2 u
-                                \,du</m>. Let <m>f(u) = \sec u</m> and <m>g'(u) = \sec^2 u</m>. Then <m>f'(u)
-                                = \sec u \tan u</m> and <m>g(u) = \tan u</m>. So <md>
-                                    <mrow> I \amp= \sec u \tan u - \int (\tan u)(\sec u \tan u) \,du </mrow>
-                                    <mrow> \amp = \sec u \tan u - \int \sec u \tan^2 u \,du</mrow>
-                                </md>
-                            </p>
-
-                            <p> Now, we use the Pythagorean identity <m>\tan^2 u = \sec^2 u - 1</m>: <md>
-                                    <mrow> I \amp= \sec u \tan u - \int \sec u (\sec^2 u - 1) \,du </mrow>
-                                    <mrow> \amp = \sec u \tan u - \int \sec u (\sec^2 u - 1) \,du</mrow>
-                                    <mrow> \amp = \sec u \tan u - \int (\sec^3 u - \sec u) \,du </mrow>
-                                    <mrow> \amp = \sec u \tan u - \int \sec^3 u \,du + \int \sec u
-                                \,du</mrow>
-                                </md>
-                            </p>
-
-                            <p> Notice that the integral of <m>\sec^3 u</m> has reappeared. We can
-                                now solve for <m>I</m>. <md>
-                                    <mrow> I \amp= \sec u \tan u - I + \int \sec u \,du </mrow>
-                                    <mrow> 2I \amp= \sec u \tan u + \ln|\sec u + \tan u| </mrow>
-                                    <mrow> I \amp = \frac{1}{2}\sec u \tan u + \frac{1}{2}\ln|\sec u
-                                + \tan u| + C </mrow>
-                                </md>
-                            </p>
-
-                            <p> Finally, we substitute <m>u = x^2</m> back into the expression. We
-                                must also remember the <m>\frac{1}{2}</m> from the initial
-                                substitution. <me>
-                                    \int x \sec^3(x^2) \,dx = \frac{1}{2}I =
-                                \frac{1}{4}\sec(x^2)\tan(x^2) + \frac{1}{4}\ln|\sec(x^2) +
-                                \tan(x^2)| + C
-                                </me>
-                            </p>
-                        </solution>
-                    </task>
+                        </task>
                 </exercise>
             </exercises>
         </section>

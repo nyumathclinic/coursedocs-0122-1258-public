@@ -1,108 +1,38 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<pretext xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version='1.0' encoding='UTF-8'?>
+<pretext xmlns:ns0="http://www.w3.org/2001/XInclude">
   <article>
     <section xml:id="ps09-section">
       <title>Problem Set 9</title>
       <subtitle>Alternating Series and the Ratio Test</subtitle>
-      <xi:include href="ps01.ptx" xpointer="xpointer(//section[1]/introduction)" />
+      <ns0:include href="ps01.ptx" xpointer="xpointer(//section[1]/introduction)" />
       <exercises>
         <exercise xml:id="ex-alternating-series-test-revised">
           <statement>
             <p> Determine whether the series <m>\sum_{n=1}^\infty \frac{(-1)^{n-1}}{n}</m> converges
               or diverges. </p>
           </statement>
-          <solution>
-            <p> This is an alternating series. We can use the Alternating Series Test. Let <m>b_n =
-              \frac{1}{n}</m>. The Alternating Series Test has two conditions: </p>
-            <p>
-              <ol>
-                <li>
-                  <p>
-                    <m>b_{n+1} \le b_n</m> for all <m>n</m>. Since <m>n+1 \ge n</m>, we have <m>\frac{1}{n+1}
-                    \le \frac{1}{n}</m>. The condition is satisfied. </p>
-                </li>
-                <li>
-                  <p>
-                    <m>\lim_{n \to \infty} b_n = 0</m>. <me>
-                      \lim_{n \to \infty} \frac{1}{n} = 0
-                    </me>
-                    The condition is satisfied. </p>
-                </li>
-              </ol>
-            </p>
-            <p>
-              Since both conditions of the Alternating Series Test are met, the series converges.
-            </p>
-          </solution>
-        </exercise>
+          </exercise>
 
         <exercise xml:id="ex-absolute-convergence">
           <statement>
             <p> Determine whether the series <m>\sum_{n=1}^\infty \frac{(-1)^{n-1}}{n^2}</m> is
               absolutely convergent, conditionally convergent, or divergent. </p>
           </statement>
-          <solution>
-            <p> We first test for absolute convergence by considering the series of absolute values: <me>
-              \sum_{n=1}^\infty \left| \frac{(-1)^{n-1}}{n^2} \right| = \sum_{n=1}^\infty
-              \frac{1}{n^2}
-              </me>
-              This is a <m>p</m>-series with <m>p=2</m>. Since <m>p=2 &gt; 1</m>, the series
-              converges. </p>
-            <p> Since the series of absolute values converges, the original series <m>\sum_{n=1}^\infty
-              \frac{(-1)^{n-1}}{n^2}</m> is **absolutely convergent**. </p>
-            <p>
-              Note: An absolutely convergent series is also convergent, so we do not need to apply
-              the Alternating Series Test.
-            </p>
-          </solution>
-        </exercise>
+          </exercise>
 
         <exercise xml:id="ex-ratio-test-revised">
           <statement>
             <p> Use the Ratio Test to determine if the series <m>\sum_{n=1}^\infty \frac{n^2}{2^n}</m>
               converges or diverges. </p>
           </statement>
-          <solution>
-            <p> We use the Ratio Test. <me>
-                L = \lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right|
-              </me>
-              Here, <m>a_n = \frac{n^2}{2^n}</m>. </p>
-            <md>
-              <mrow>L \amp = \lim_{n \to \infty} \left| \frac{(n+1)^2}{2^{n+1}} \cdot
-                \frac{2^n}{n^2} \right|</mrow>
-              <mrow>\amp = \lim_{n \to \infty} \left| \frac{(n+1)^2}{n^2} \cdot \frac{2^n}{2^{n+1}}
-                \right|</mrow>
-              <mrow>\amp = \lim_{n \to \infty} \left( \frac{n+1}{n} \right)^2 \cdot \frac{1}{2}</mrow>
-              <mrow>\amp = \left( \lim_{n \to \infty} \left( 1 + \frac{1}{n} \right) \right)^2 \cdot
-                \frac{1}{2}</mrow>
-              <mrow>\amp = (1)^2 \cdot \frac{1}{2} = \frac{1}{2}</mrow>
-            </md>
-            <p> Since <m>L = \frac{1}{2} &lt; 1</m>, the series converges by the Ratio Test. </p>
-          </solution>
-        </exercise>
+          </exercise>
 
         <exercise xml:id="ex-root-test">
           <statement>
             <p> Use the Root Test to determine if the series <m>\sum_{n=1}^\infty
               \left(\frac{3n+1}{2n+5}\right)^n</m> converges or diverges. </p>
           </statement>
-          <solution>
-            <p> We use the Root Test. <me>
-                L = \lim_{n \to \infty} \sqrt[n]{|a_n|}
-              </me> Here, <m>a_n
-              = \left(\frac{3n+1}{2n+5}\right)^n</m>. </p>
-            <md>
-              <mrow>L \amp = \lim_{n \to \infty}
-                \sqrt[n]{\left|\left(\frac{3n+1}{2n+5}\right)^n\right|}</mrow>
-              <mrow>\amp = \lim_{n \to \infty} \frac{3n+1}{2n+5}</mrow>
-            </md>
-            <p> We can evaluate the limit by dividing the numerator and denominator by <m>n</m>: <me>
-              L = \lim_{n \to \infty} \frac{3 + 1/n}{2 + 5/n} = \frac{3+0}{2+0} = \frac{3}{2}
-              </me>
-            </p>
-            <p> Since <m>L = \frac{3}{2} &gt; 1</m>, the series diverges by the Root Test. </p>
-          </solution>
-        </exercise>
+          </exercise>
       </exercises>
     </section>
   </article>

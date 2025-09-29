@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<pretext xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version='1.0' encoding='UTF-8'?>
+<pretext xmlns:ns0="http://www.w3.org/2001/XInclude">
   <article>
     <section xml:id="ps11-section">
       <title>Problem Set 11</title>
       <subtitle>Parametric Curves and Polar Coordinates</subtitle>
-      <xi:include href="ps01.ptx" xpointer="xpointer(//section[1]/introduction)" />
+      <ns0:include href="ps01.ptx" xpointer="xpointer(//section[1]/introduction)" />
 
       <exercises>
         <exercise xml:id="ex-parametric-derivatives">
@@ -12,108 +12,26 @@
             <p> A curve is defined by the parametric equations <m>x(t) = t^2+1</m> and <m>y(t)=t^3-1</m>.
               Find <m>\frac{dy}{dx}</m> and <m>\frac{d^2y}{dx^2}</m>. </p>
           </statement>
-          <solution>
-            <p> The formulas for the first and second derivatives of a parametric curve are: <me>
-              \frac{dy}{dx} = \frac{dy/dt}{dx/dt} \qquad \text{and} \qquad \frac{d^2y}{dx^2} =
-              \frac{d}{dx}\left(\frac{dy}{dx}\right) = \frac{d/dt(dy/dx)}{dx/dt}
-              </me>
-              First, we find the derivatives with respect to <m>t</m>: <me>
-                \frac{dx}{dt} = 2t
-              </me>
-              <me>
-                \frac{dy}{dt} = 3t^2
-              </me> Now we find <m>\frac{dy}{dx}</m>
-              :
-              <me>
-                \frac{dy}{dx} = \frac{3t^2}{2t} = \frac{3}{2}t
-              </me>
-              Finally, we find the second derivative: <me>
-                \frac{d}{dt}\left(\frac{dy}{dx}\right) = \frac{d}{dt}\left(\frac{3}{2}t\right) =
-              \frac{3}{2}
-              </me>
-              <me>
-              \frac{d^2y}{dx^2} = \frac{3/2}{2t} = \frac{3}{4t}
-              </me>
-            </p>
-          </solution>
-        </exercise>
+          </exercise>
 
         <exercise xml:id="ex-polar-to-cartesian">
           <statement>
             <p> Convert the polar equation <m>r=2\cos\theta</m> to a Cartesian equation. </p>
           </statement>
-          <solution>
-            <p> We use the conversion formulas <m>x=r\cos\theta</m> and <m>y=r\sin\theta</m>, and
-              also <m>r^2=x^2+y^2</m>. We can multiply both sides of the polar equation by <m>r</m>: <me>
-              r^2 = 2r\cos\theta
-              </me> Now we can substitute the
-              Cartesian equivalents: <me>
-                x^2+y^2 = 2x
-              </me> To see what this curve is, we can
-              complete the square for the <m>x</m> terms: <md>
-                <mrow>x^2 - 2x + y^2 \amp = 0</mrow>
-                <mrow>(x^2 - 2x + 1) + y^2 \amp = 1</mrow>
-                <mrow>(x-1)^2 + y^2 \amp = 1</mrow>
-              </md> This is the equation of a
-              circle with center <m>(1, 0)</m> and radius <m>1</m>. </p>
-          </solution>
-        </exercise>
+          </exercise>
 
         <exercise xml:id="ex-parametric-arc-length">
           <statement>
             <p> Find the length of the curve given by the parametric equations <m>x=t^3</m> and <m>
               y=t^2</m> for <m>0 \le t \le 1</m>. </p>
           </statement>
-          <solution>
-            <p> The formula for the arc length of a parametric curve is <me>L = \int_a^b
-              \sqrt{\left(\frac{dx}{dt}\right)^2 + \left(\frac{dy}{dt}\right)^2} \,dt</me>. First,
-              we find the derivatives with respect to <m>t</m>: <me>
-                \frac{dx}{dt} = 3t^2
-              </me>
-              <me>
-                \frac{dy}{dt} = 2t
-              </me> Now we substitute these into
-              the arc length formula: <me>
-                L = \int_0^1 \sqrt{(3t^2)^2 + (2t)^2} \,dt = \int_0^1 \sqrt{9t^4 + 4t^2} \,dt
-              </me>
-              We can factor <m>t^2</m> out from the square root: <me>
-                L = \int_0^1 \sqrt{t^2(9t^2+4)} \,dt = \int_0^1 t\sqrt{9t^2+4} \,dt
-              </me>
-              Now we use a <m>u</m>-substitution. Let <m>u = 9t^2+4</m>. Then <m>du = 18t \,dt</m>,
-              so <m>t \,dt = \frac{1}{18} \,du</m>. When <m>t=0</m>, <m>u=9(0)^2+4=4</m>. When <m>
-              t=1</m>, <m>u=9(1)^2+4=13</m>. </p>
-            <md>
-              <mrow>L \amp = \int_4^{13} \sqrt{u} \cdot \frac{1}{18} \,du = \frac{1}{18} \int_4^{13}
-                u^{1/2} \,du</mrow>
-              <mrow>\amp = \frac{1}{18} \left[ \frac{u^{3/2}}{3/2} \right]_4^{13} = \frac{1}{18}
-                \left[ \frac{2}{3} u^{3/2} \right]_4^{13}</mrow>
-              <mrow>\amp = \frac{1}{27} \left[ 13^{3/2} - 4^{3/2} \right] = \frac{1}{27} \left[
-                13\sqrt{13} - 8 \right]</mrow>
-            </md>
-          </solution>
-        </exercise>
+          </exercise>
 
         <exercise xml:id="ex-cartesian-to-polar">
           <statement>
             <p> Convert the Cartesian equation <m>y=x^2</m> to a polar equation. </p>
           </statement>
-          <solution>
-            <p> We use the conversion formulas <m>x=r\cos\theta</m> and <m>y=r\sin\theta</m>.
-              Substitute these into the Cartesian equation: <me>
-                r\sin\theta = (r\cos\theta)^2 = r^2\cos^2\theta
-              </me>
-              We can divide both sides by <m>r</m> (assuming <m>r \ne 0</m>, which corresponds to
-              the origin, which is included in the curve): <me>
-                \sin\theta = r\cos^2\theta
-              </me> Now, we solve for <m>r</m>
-              :
-              <me>
-                r = \frac{\sin\theta}{\cos^2\theta} = \frac{\sin\theta}{\cos\theta} \cdot
-              \frac{1}{\cos\theta} = \tan\theta\sec\theta
-              </me>
-            </p>
-          </solution>
-        </exercise>
+          </exercise>
       </exercises>
     </section>
   </article>

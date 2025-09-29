@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<pretext xmlns:xi="http://www.w3.org/2001/XInclude">
+<?xml version='1.0' encoding='UTF-8'?>
+<pretext>
   <article>
     <section xml:id="ps03-section">
       <title>Problem Set 3</title>
@@ -44,307 +44,37 @@
             <p> Evaluate the definite integral <me>\int_1^3 \frac{dx}{x^2\sqrt{x^2+4}}</me>. Explain
               your steps and justify your choices for trigonometric substitution. </p>
           </statement>
-          <solution>
-            <p> The form <m>\sqrt{x^2+a^2}</m> suggests a tangent substitution. Let <m>x =
-              2\tan\theta</m>. Then <m>dx = 2\sec^2\theta \,d\theta</m>. </p>
-            <p> The square root becomes <m>\sqrt{(2\tan\theta)^2+4} = \sqrt{4\tan^2\theta+4} =
-              \sqrt{4(\tan^2\theta+1)} = \sqrt{4\sec^2\theta} = 2\sec\theta</m>. </p>
-            <p> We must also change the limits of integration. When <m>x=1</m>, <m>1 = 2\tan\theta</m>,
-              so <m>\theta = \arctan(1/2)</m>. When <m>x=3</m>, <m>3 = 2\tan\theta</m>, so <m>\theta
-              = \arctan(3/2)</m>. </p>
-            <p>
-              Substitute these into the integral:
-            </p>
-            <me>
-              \int_{\arctan(1/2)}^{\arctan(3/2)} \frac{2\sec^2\theta \,d\theta}{(2\tan\theta)^2
-              (2\sec\theta)}
-            </me>
-            <me>
-              = \int_{\arctan(1/2)}^{\arctan(3/2)} \frac{2\sec^2\theta}{4\tan^2\theta \cdot
-              2\sec\theta} \,d\theta
-            </me>
-            <me>
-              = \frac{1}{4} \int_{\arctan(1/2)}^{\arctan(3/2)} \frac{\sec\theta}{\tan^2\theta}
-              \,d\theta
-            </me>
-            <p>
-              Convert to sine and cosine:
-            </p>
-            <me>
-              \frac{1}{4} \int \frac{1/\cos\theta}{\sin^2\theta/\cos^2\theta} \,d\theta =
-              \frac{1}{4} \int \frac{\cos\theta}{\sin^2\theta} \,d\theta
-            </me>
-            <p> Let <m>u = \sin\theta</m>, so <m>du = \cos\theta \,d\theta</m>. </p>
-            <me>
-              = \frac{1}{4} \int u^{-2} \,du = \frac{1}{4} \left( -u^{-1} \right) =
-              -\frac{1}{4\sin\theta} = -\frac{1}{4}\csc\theta
-            </me>
-            <p> We can now evaluate the definite integral using our new limits and the fact that <m>\csc\theta
-              = \frac{\text{hypotenuse}}{\text{opposite}}</m>. For <m>\theta = \arctan(3/2)</m>,
-              consider a right triangle with opposite side 3 and adjacent side 2. The hypotenuse is <m>\sqrt{3^2+2^2}
-              = \sqrt{13}</m>. So, <m>\csc(\arctan(3/2)) = \sqrt{13}/3</m>. For <m>\theta =
-              \arctan(1/2)</m>, consider a right triangle with opposite side 1 and adjacent side 2.
-              The hypotenuse is <m>\sqrt{1^2+2^2} = \sqrt{5}</m>. So, <m>\csc(\arctan(1/2)) =
-              \sqrt{5}/1 = \sqrt{5}</m>. </p>
-            <me>
-              \left[ -\frac{1}{4}\csc\theta \right]_{\arctan(1/2)}^{\arctan(3/2)} =
-              -\frac{1}{4}\left(\frac{\sqrt{13}}{3} - \sqrt{5}\right) = \frac{\sqrt{5}}{4} -
-              \frac{\sqrt{13}}{12}
-            </me>
-          </solution>
-        </exercise>
+          </exercise>
 
         <exercise xml:id="ex-trig-sub-completing-the-square">
           <statement>
             <p> Evaluate the indefinite integral <me>\int \frac{x^2}{\sqrt{4x-x^2}} \,dx</me>. </p>
           </statement>
-          <solution>
-            <p> This problem requires completing the square before using trigonometric substitution. <me>
-              4x-x^2 = -(x^2-4x) = -(x^2-4x+4-4) = 4-(x-2)^2
-              </me>
-            </p>
-            <p> The integral becomes <me>\int \frac{x^2}{\sqrt{4-(x-2)^2}} \,dx</me>. The form <m>
-              \sqrt{a^2-u^2}</m> suggests a sine substitution. Let <m>u = x-2</m>. Then <m>x = u+2</m>
-              and <m>dx = du</m>. The integral is now <me>\int \frac{(u+2)^2}{\sqrt{4-u^2}} \,du</me>
-              . </p>
-            <p> Now, let <m>u = 2\sin\theta</m>. Then <m>du = 2\cos\theta \,d\theta</m>. Also, <m>\sqrt{4-u^2}
-              = \sqrt{4-4\sin^2\theta} = \sqrt{4\cos^2\theta} = 2\cos\theta</m>. </p>
-            <p>
-              Substitute these into the integral:
-            </p>
-            <me>
-              \int \frac{(2\sin\theta+2)^2}{2\cos\theta} (2\cos\theta) \,d\theta = \int
-              (2\sin\theta+2)^2 \,d\theta
-            </me>
-            <me>
-              = \int (4\sin^2\theta+8\sin\theta+4) \,d\theta
-            </me>
-            <p> Use the half-angle identity <m>\sin^2\theta = \frac{1-\cos(2\theta)}{2}</m>: </p>
-            <me>
-              = \int \left(4\left(\frac{1-\cos(2\theta)}{2}\right) + 8\sin\theta + 4\right)
-              \,d\theta
-            </me>
-            <me>
-              = \int (2-2\cos(2\theta) + 8\sin\theta + 4) \,d\theta = \int (6 - 2\cos(2\theta) +
-              8\sin\theta) \,d\theta
-            </me>
-            <me>
-              = 6\theta - \sin(2\theta) - 8\cos\theta + C
-            </me>
-            <p> Since <m>\sin(2\theta) = 2\sin\theta\cos\theta</m>, we have <m>6\theta -
-              2\sin\theta\cos\theta - 8\cos\theta + C</m>. </p>
-            <p> We need to substitute back in terms of <m>x</m>. From <m>u = 2\sin\theta</m>, we get <m>\sin\theta
-              = u/2</m>. Draw a right triangle to find <m>\cos\theta = \frac{\sqrt{4-u^2}}{2}</m>
-              and <m>\theta = \arcsin(u/2)</m>. </p>
-            <me>
-              = 6\arcsin\left(\frac{u}{2}\right) -
-              2\left(\frac{u}{2}\right)\left(\frac{\sqrt{4-u^2}}{2}\right) -
-              8\left(\frac{\sqrt{4-u^2}}{2}\right) + C
-            </me>
-            <me>
-              = 6\arcsin\left(\frac{u}{2}\right) - \frac{u\sqrt{4-u^2}}{2} - 4\sqrt{4-u^2} + C
-            </me>
-            <p> Finally, substitute back <m>u=x-2</m> to get the final answer in terms of <m>x</m>. </p>
-          </solution>
-        </exercise>
+          </exercise>
 
         <exercise xml:id="ex-partial-fractions-long-division">
           <statement>
             <p> Evaluate the indefinite integral <me>\int \frac{x^3-4x-10}{x^2-x-6} \,dx</me>. </p>
           </statement>
-          <solution>
-            <p>
-              Since the degree of the numerator is greater than the degree of the denominator, we
-              must perform long division first.
-            </p>
-            <me>
-              \frac{x^3-4x-10}{x^2-x-6} = x+1 + \frac{3x-4}{x^2-x-6}
-            </me>
-            <p> So the integral becomes <me>\int \left( x+1 + \frac{3x-4}{x^2-x-6} \right) \,dx</me>.
-              We now use partial fractions on the remaining rational function. Factor the
-              denominator: <m>x^2-x-6 = (x-3)(x+2)</m>. </p>
-            <me>
-              \frac{3x-4}{(x-3)(x+2)} = \frac{A}{x-3} + \frac{B}{x+2}
-            </me>
-            <p> Multiply both sides by <m>(x-3)(x+2)</m>: <me>
-                3x-4 = A(x+2) + B(x-3)
-              </me> To solve for <m>A</m>, let <m>
-              x=3</m>: <m>3(3)-4 = A(3+2) \implies 5 = 5A \implies A=1</m>. To solve for <m>B</m>,
-              let <m>x=-2</m>: <m>3(-2)-4 = B(-2-3) \implies -10 = -5B \implies B=2</m>. </p>
-            <p> The partial fraction decomposition is <me>\frac{1}{x-3} + \frac{2}{x+2}</me>. </p>
-            <p>
-              Now we integrate:
-            </p>
-            <me>
-              \int \left( x+1 + \frac{1}{x-3} + \frac{2}{x+2} \right) \,dx
-            </me>
-            <me>
-              = \frac{1}{2}x^2 + x + \ln|x-3| + 2\ln|x+2| + C
-            </me>
-          </solution>
-        </exercise>
+          </exercise>
 
         <exercise xml:id="ex-trig-sub-one-over-x-sqrt">
           <statement>
             <p> Evaluate the indefinite integral <me>\int \frac{1}{x\sqrt{4-x^2}} \,dx</me>. </p>
           </statement>
-          <solution>
-            <p> The form <m>\sqrt{a^2-x^2}</m> suggests a sine substitution. Let <m>x = 2\sin\theta</m>.
-              Then <m>dx = 2\cos\theta \,d\theta</m>. </p>
-            <p> The square root becomes <m>\sqrt{4-(2\sin\theta)^2} = \sqrt{4-4\sin^2\theta} =
-              \sqrt{4\cos^2\theta} = 2\cos\theta</m>. </p>
-            <p>
-              Substitute these into the integral:
-            </p>
-            <me>
-              \int \frac{2\cos\theta \,d\theta}{(2\sin\theta)(2\cos\theta)}
-            </me>
-            <me>
-              = \int \frac{1}{2\sin\theta} \,d\theta = \frac{1}{2}\int \csc\theta \,d\theta
-            </me>
-            <p> The integral of cosecant is a standard result: <m>\int \csc\theta \,d\theta =
-              \ln|\csc\theta - \cot\theta|</m>. </p>
-            <me>
-              = \frac{1}{2}\ln|\csc\theta - \cot\theta| + C
-            </me>
-            <p> To substitute back in terms of <m>x</m>, we use a right triangle. Since <m>\sin\theta
-              = x/2</m>, the opposite side is <m>x</m> and the hypotenuse is 2. The adjacent side is <m>
-              \sqrt{4-x^2}</m>. </p>
-            <me>
-              \csc\theta = \frac{2}{x}
-            </me>
-            <me>
-              \cot\theta = \frac{\sqrt{4-x^2}}{x}
-            </me>
-            <p>
-              Substitute these back into the expression:
-            </p>
-            <me>
-              = \frac{1}{2}\ln\left|\frac{2}{x} - \frac{\sqrt{4-x^2}}{x}\right| + C
-            </me>
-            <me>
-              = \frac{1}{2}\ln\left|\frac{2 - \sqrt{4-x^2}}{x}\right| + C
-            </me>
-          </solution>
-        </exercise>
+          </exercise>
         <exercise xml:id="ex-partial-fractions-repeated-quadratic">
           <statement>
             <p> Evaluate the definite integral <me>\int_{0}^{1/\sqrt{3}} \frac{x}{(x-1)^2(x^2+1)}
               \,dx</me>. </p>
           </statement>
-          <solution>
-            <p>
-              The denominator has a repeated linear factor and an irreducible quadratic factor.
-              The form of the partial fraction decomposition is:
-            </p>
-            <me>
-              \frac{x}{(x-1)^2(x^2+1)} = \frac{A}{x-1} + \frac{B}{(x-1)^2} + \frac{Cx+D}{x^2+1}
-            </me>
-            <p> Multiply by the denominator: <me>
-                x = A(x-1)(x^2+1) + B(x^2+1) + (Cx+D)(x-1)^2
-              </me> To
-              solve for <m>B</m>, let <m>x=1</m>: <m>1 = B(1^2+1) \implies 1 = 2B \implies B =
-              \frac{1}{2}</m>. </p>
-            <p> Now expand and collect powers of <m>x</m> to find <m>A, C, D</m>. <me>
-                x = A(x^3-x^2+x-1) + B(x^2+1) + (Cx+D)(x^2-2x+1)
-              </me>
-              <me>
-              x = Ax^3-Ax^2+Ax-A + Bx^2+B + Cx^3-2Cx^2+Cx + Dx^2-2Dx+D
-              </me>
-              <me>
-              x = (A+C)x^3 + (-A+B-2C+D)x^2 + (A+C-2D)x + (-A+B+D)
-              </me>
-            </p>
-            <p> Comparing coefficients: <me>
-                x^3: A+C = 0 \implies C = -A
-              </me>
-              <me>
-                x^2: -A+B-2C+D = 0
-              </me>
-              <me>
-                x^1: A+C-2D = 1
-              </me>
-              <me>
-                x^0: -A+B+D = 0
-              </me>
-            </p>
-            <p> From <m>A+C=0</m> and <m>A+C-2D=1</m>, we get <m>0-2D=1 \implies D = -\frac{1}{2}</m>.
-              Now use <m>-A+B+D=0</m> with <m>B=1/2</m> and <m>D=-1/2</m>: <m>-A + \frac{1}{2} -
-              \frac{1}{2} = 0 \implies A=0</m>. From <m>C=-A</m>, we have <m>C=0</m>. </p>
-            <p> The decomposition is <me>\frac{1/2}{(x-1)^2} + \frac{-1/2}{x^2+1}</me>. </p>
-            <me>
-              \int \left( \frac{1}{2(x-1)^2} - \frac{1}{2(x^2+1)} \right) \,dx
-            </me>
-            <me>
-              = -\frac{1}{2(x-1)} - \frac{1}{2}\arctan(x) + C
-            </me>
-            <p> Now we evaluate the definite integral from 0 to <m>1/\sqrt{3}</m>. <md>
-                <mrow> \int_{0}^{1/\sqrt{3}} \frac{x}{(x-1)^2(x^2+1)} \,dx
-                  \amp = \left[-\frac{1}{2(x-1)} - \frac{1}{2}\arctan(x) \right]_0^{\pi/3}</mrow>
-                <mrow> \amp = \frac{1}{2}\left[\frac{1}{x-1} + \arctan(x) \right]^0_{\pi/3}</mrow>
-                <mrow> \amp = \frac{1}{2}\left[
-                  \left(\frac{1}{-1} + \frac{1}{2}\arctan(0)\right) -
-                  \left(\frac{1}{\sqrt{3}-1} + \arctan\left(1/\sqrt{3}\right)\right) \right]
-                </mrow>
-                <mrow> \amp = \frac{1}{2}\left[
-                  \left(-1 + 0 \right) -
-                  \left(\frac{\sqrt{3}}{1-\sqrt{3}} + \frac{\pi}{6}\right) \right]
-                </mrow>
-                <mrow> \amp = \frac{1}{2}\left[
-                  -1 + \frac{\sqrt{3}}{\sqrt{3}-1} - \frac{\pi}{6} \right]
-                </mrow>
-                <mrow> \amp = \frac{\sqrt{3}}{2\sqrt{3}-2)} - \frac{\pi}{12} - \frac{1}{2}
-                </mrow>
-              </md>
-            </p>
-          </solution>
-        </exercise>
+          </exercise>
 
         <exercise xml:id="ex-partial-fractions-u-sub">
           <statement>
             <p> Evaluate the indefinite integral <me>\int \frac{1}{e^{2x}-e^x-2} \,dx</me>. </p>
           </statement>
-          <solution>
-            <p> This problem requires a substitution before partial fractions can be used. Let <m>u
-                = e^x</m>. Then <m>du = e^x \,dx</m>, so <m>dx = \frac{du}{e^x} = \frac{du}{u}</m>. </p>
-            <p>
-              The integral becomes:
-            </p>
-            <me>
-              \int \frac{1}{u^2-u-2} \cdot \frac{du}{u} = \int \frac{du}{u(u^2-u-2)}
-            </me>
-            <p> Factor the denominator: <m>u(u^2-u-2) = u(u-2)(u+1)</m>. </p>
-            <p>
-              Now use partial fractions:
-            </p>
-            <me>
-              \frac{1}{u(u-2)(u+1)} = \frac{A}{u} + \frac{B}{u-2} + \frac{C}{u+1}
-            </me>
-            <p> Multiply by the denominator: <me>
-                1 = A(u-2)(u+1) + Bu(u+1) + Cu(u-2)
-              </me> To solve for <m>
-              A</m>, let <m>u=0</m>: <m>1 = A(-2)(1) \implies A = -\frac{1}{2}</m>. To solve for <m>
-              B</m>, let <m>u=2</m>: <m>1 = B(2)(3) \implies B = \frac{1}{6}</m>. To solve for <m>C</m>,
-              let <m>u=-1</m>: <m>1 = C(-1)(-3) \implies C = \frac{1}{3}</m>. </p>
-            <p> The decomposition is <me>\frac{-1/2}{u} + \frac{1/6}{u-2} + \frac{1}{3(u+1)}</me>. </p>
-            <p>
-              Now we integrate:
-            </p>
-            <me>
-              \int \left( -\frac{1}{2u} + \frac{1}{6(u-2)} + \frac{1}{3(u+1)} \right) \,du
-            </me>
-            <me>
-              = -\frac{1}{2}\ln|u| + \frac{1}{6}\ln|u-2| + \frac{1}{3}\ln|u+1| + C
-            </me>
-            <p> Finally, substitute back <m>u = e^x</m>: </p>
-            <me>
-              = -\frac{1}{2}\ln(e^x) + \frac{1}{6}\ln|e^x-2| + \frac{1}{3}\ln|e^x+1| + C
-            </me>
-            <me>
-              = -\frac{1}{2}x + \frac{1}{6}\ln|e^x-2| + \frac{1}{3}\ln(e^x+1) + C
-            </me>
-          </solution>
-        </exercise>
+          </exercise>
       </exercises>
     </section>
   </article>

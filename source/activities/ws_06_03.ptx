@@ -1,8 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
+<?xml version='1.0' encoding='UTF-8'?>
 <pretext>
   <article xml:id="art-ws-pfd">
-    <!--</div attr= class="problems">-->
+    
     <worksheet margin="1in" bottom="1.25in" xml:id="ws-pfd">
       <title>Worksheet for Section 6.3</title>
 
@@ -26,7 +25,7 @@
         <p>
           Evaluate the integrals.
           In the case of a definite integral, your answer should be a number.
-          For indefinite integrals, your answer should be the most general antiderivative (this means don&#x2019;t forget <m>+C</m>).
+          For indefinite integrals, your answer should be the most general antiderivative (this means don’t forget <m>+C</m>).
         </p>
       </introduction>
 
@@ -39,37 +38,7 @@
             </p>
           </statement>
 
-          <solution>
-            <p>
-              We know that
-              <me>
-                \frac{2x+7}{(x-1)(x+2)} = \frac{A}{x-1} + \frac{B}{x+2} = \frac{A(x+2)+B(x-1)}{(x-1)(x+2)}
-              </me>
-              for some constants <m>A</m> and <m>B</m>.
-              So
-              <me>
-                2x+7 = A(x+2)+B(x-1)
-              </me>
-              for all <m>x</m>.
-              Substituting <m>x=-2</m> gives
-              <me>
-                \begin{aligned} 2(-2) +7 &amp;= 0 + B(-3) \\ 3        &amp;= -3B \\ B        &amp;= -1 \end{aligned}
-              </me>
-              Substituting <m>x=1</m> gives
-              <me>
-                \begin{aligned} 2(1) + 7 &amp;= 3A + 0 \\ 9 &amp;= 3A \\ A &amp;= 1 \end{aligned}
-              </me>
-              So
-              <me>
-                \frac{2x+7}{(x-1)(x+2)} = \frac{3}{x-1} - \frac{1}{x+2}
-              </me>
-              Therefore
-              <me>
-                \begin{split} \int \frac{2 x+7}{(x-1) (x+2)} \,dx &amp;= \int\left(\frac{3}{x-1} - \frac{1}{x+2}\right)\,dx \\ &amp;= \int\frac{3}{x-1}\,dx - \int\frac{1}{x+2} \,dx \\ &amp;= \ln|x-1| - \ln|x+2| + C \end{split}
-              </me>
-            </p>
-          </solution>
-        </exercise>
+          </exercise>
 
         <exercise workspace="1in">
           <statement>
@@ -78,37 +47,7 @@
             </p>
           </statement>
 
-          <solution>
-            <!-- div attr= class="solution"-->
-            <p>
-              We know that
-              <me>
-                \frac{x}{x^2-3x+2} = \frac{x}{(x-2)(x-1)} = \frac{A}{x-2} + \frac{B}{x-1} = \frac{A(x-1)+B(x-2)}{(x-2)(x-1)}
-              </me>
-              for some constants <m>A</m> and <m>B</m>.
-              So for all <m>x</m>,
-              <me>
-                x = A(x-1)+B(x-2)
-              </me>
-              Substituting <m>x=1</m> gives
-              <me>
-                \begin{aligned} 1 = A \cdot 0 + B\cdot (-1) \implies B = -1 \end{aligned}
-              </me>
-              Substituting <m>x=2</m> gives
-              <me>
-                2 = A \cdot 1 + B \cdot 0 \implies A=2
-              </me>
-              So
-              <me>
-                \frac{x}{x^2-3x+2} = \frac{2}{x-2} - \frac{1}{x-1}
-              </me>
-              Therefore,
-              <me>
-                \begin{split} \int \frac{x\,dx}{x^2 -3x+ 2} &amp;= \int\left( \frac{2}{x-2} - \frac{1}{x-1}\right)\,dx \\ &amp;= \int \frac{2}{x-2}\,dx - \int \frac{1}{x-1}\,dx \\ &amp;= 2 \ln|x-2| - \ln|x-1| + C \end{split}
-              </me>
-            </p>
-          </solution>
-        </exercise>
+          </exercise>
       </page>
 
 
@@ -120,48 +59,7 @@
             </p>
           </statement>
 
-          <solution>
-            <!-- div attr= class="solution"-->
-            <p>
-              If the denominator has rational roots, they will be integer factors of the constant term <m>-2</m>.
-              We try substituting <m>x=1</m> and get <m>0</m>.
-              So we know automatically that <m>x-1</m> is a factor.
-              By long division we find
-              <me>
-                x^3 + 2x^2 - x - 2 = (x-1)(x^2+3x+2) = (x-1)(x+1)(x+2)
-              </me>
-              Therefore the partial fraction decomposition is of the form
-              <me>
-                \frac{7x+5}{x^3 + 2x^2 - x - 2} = \frac{A}{x-1} + \frac{B}{x+1} + \frac{C}{x+2}
-              </me>
-              Collecting the terms on the right, we have
-              <me>
-                \begin{aligned} \frac{7x+5}{x^3 + 2x^2 - x - 2} &amp;= \frac{A(x+1)(x+2) + B(x-1)(x+2) + C(x-1)(x+1)}{x^3 + 2x^2 - x - 2} \\\implies 7x+5 &amp;= A(x+1)(x+2) + B(x-1)(x+2) + C(x-1)(x+1) \end{aligned}
-              </me>
-              If we evaluate both sides at <m>x=1</m>, we get
-              <me>
-                12 = A \cdot 2 \cdot 3 \implies A = 2
-              </me>
-              And at <m>x=-1</m>,
-              <me>
-                -2 = B (-2)(1) \implies B=1
-              </me>
-              Finally, at <m>x=-2</m>,
-              <me>
-                -9 = C(-3)(-1) \implies C=-3
-              </me>
-              So we know
-              <me>
-                \frac{7x+5}{x^3 + 2x^2 - x - 2} = \frac{2}{x-1} + \frac{1}{x+1} - \frac{3}{x+2}
-              </me>
-              and therefore
-              <me>
-                \int\frac{7x+5}{x^3 + 2x^2 - x - 2} \,dx = 2\ln|x-1| + \ln|x+1| - 3 \ln|x+2| + C
-              </me>
-            </p>
-            <!--</div attr= class="solution">-->
-          </solution>
-        </exercise>
+          </exercise>
 
         <exercise workspace="1in">
           <statement>
@@ -170,43 +68,7 @@
             </p>
           </statement>
 
-          <solution>
-            <!-- div attr= class="solution"-->
-            <p>
-              We know that
-              <me>
-                \frac{1}{x(x+1)^2} = \frac{A}{x} + \frac{B}{x+1} + \frac{C}{(x+1)^2} = \frac{A(x+1)^2 + Bx(x+1) + Cx}{x(x+1)^2}
-              </me>
-              for some constants <m>A</m>, <m>B</m>, and <m>C</m>.
-              So for all <m>x</m>,
-              <me>
-                1 = A(x+1)^2 + Bx(x+1) + Cx
-              </me>
-              Substituting <m>x=0</m> gives
-              <me>
-                1 = A \cdot 1^2 + B \cdot 0 + C \cdot 0 \implies A=1
-              </me>
-              Substituting <m>x=-1</m> gives
-              <me>
-                1 = A \cdot 0^2 + B \cdot 0 + C \cdot(-1) \implies C=-1
-              </me>
-              We have no more <q>roots</q> to substitute, but we can choose another suitably nice value.
-              For instance, substituting <m>x=1</m> and remembering our solved values for <m>A</m> and <m>C</m> gives
-              <me>
-                \begin{aligned} 1 &amp;= A \cdot 2^2 + B \cdot 1 \cdot 2 + C \cdot 1 \\ &amp;= 4A + 2B + C \\ &amp;= 4 + 2B -1 \\ &amp;= 2B + 3 \\ \implies B &amp;= -1 \end{aligned}
-              </me>
-              So
-              <me>
-                \frac{1}{x(x+1)^2} = \frac{1}{x} - \frac{1}{x+1} - \frac{1}{(x+1)^2}
-              </me>
-              Therefore,
-              <me>
-                \begin{split} \int \frac{dx}{x(x+1)^2} &amp;= \int\frac{1}{x} \,dx - \int\frac{1}{x+1}\,dx - \int\frac{1}{(x+1)^2}\,dx \\ &amp;= \ln|x| -\ln|x+1| + \frac{1}{x+1} +C \end{split}
-              </me>
-            </p>
-            <!--</div attr= class="solution">-->
-          </solution>
-        </exercise>
+          </exercise>
       </page>
 
 
@@ -218,42 +80,7 @@
             </p>
           </statement>
 
-          <solution>
-            <!-- div attr= class="solution"-->
-            <p>
-              We know that
-              <me>
-                \begin{split} \frac{3 x^2+7}{(x+1) (x^2+4)} &amp;= \frac{A}{x+1} + \frac{Bx+C}{x^2 + 4} = \frac{A(x^2 + 4) + (x+1)(Bx+C)}{(x+1)(x^2+4)} \end{split}
-              </me>
-              for some constants <m>A</m>, <m>B</m>, and <m>C</m>.
-              So for all <m>x</m>,
-              <me>
-                3 x^2+7 = A(x^2 + 4) + (x+1)(Bx+C)
-              </me>
-              Substituting <m>x=-1</m> gives
-              <me>
-                3 \cdot 1 + 7 = A \cdot 5 + 0 \implies A=2
-              </me>
-              Substituting <m>x=0</m> gives
-              <me>
-                0 + 7 = A \cdot 4 + 1 \cdot C = 4A + C = 8+C \implies C=-1
-              </me>
-              Substituting <m>x=1</m> gives
-              <me>
-                \begin{aligned} 10 &amp;= 5A + 2(B+C) \\ 10 &amp;= 5A + 2B + 2C \\ 10 &amp;= 10 + 2B -2 \\ \implies B&amp;=1 \end{aligned}
-              </me>
-              So
-              <me>
-                \frac{3 x^2+7}{(x+1) (x^2+4)} = \frac{2}{x+1} + \frac{x}{x^2 + 4} - \frac{1}{x^2 + 4}
-              </me>
-              Therefore,
-              <me>
-                \begin{split} \int \frac{3 x^2+7}{(x+1) (x^2+4)}\,dx &amp;= \int \frac{2}{x+1} \,dx + \int \frac{x}{x^2 + 4}\,dx - \frac{1}{x^2 + 4} \\ &amp;= 2 \ln|x+1|+ \frac{1}{2} \ln(x^2+4)-\frac{1}{2} \arctan\left(\frac{x}{2}\right)+C \end{split}
-              </me>
-            </p>
-            <!--</div attr= class="solution">-->
-          </solution>
-        </exercise>
+          </exercise>
 
         <exercise workspace="1in">
           <statement>
@@ -262,22 +89,7 @@
             </p>
           </statement>
 
-          <solution>
-            <!-- div attr= class="solution"-->
-            <p>
-              The denominator factors as <m>x^3 + x = x(x^2 + 1)</m>, so
-              <me>
-                \begin{split} \frac{3x^2 + 4x + 4}{x^3 + x} &amp;= \frac{A}{x} + \frac{Bx+C}{x^2 + 1} \\ &amp;= \frac{A(x^2 +1) +x(Bx+C)}{x(x^2+1)} \\ &amp;= \frac{(A+B)x^2 + Cx + A}{x^3 +x} \end{split}
-              </me>
-              So <m>A = 4</m>, <m>C=4</m>, and since <m>A+B = 3</m>, we must have <m>B=-1</m>.
-              Therefore,
-              <me>
-                \begin{split} \int{\frac{3x^2 + 4x + 4}{x^3 + x}}{\,dx} &amp;= \int{\left(\frac{4}{x} - \frac{x}{x^2 + 1} + \frac{4}{x^2 +1}\right)}{\,dx} \\ &amp;= 4 \ln|x| - \frac{1}{2}\ln(x^2 + 1) + 4 \tan^{-1}{x} + C \end{split}
-              </me>
-            </p>
-            <!--</div attr= class="solution">-->
-          </solution>
-        </exercise>
+          </exercise>
       </page>
 
 
@@ -289,30 +101,7 @@
             </p>
           </statement>
 
-          <solution>
-            <!-- div attr= class="solution"-->
-            <p>
-              Make the substitution <m>u=\cos{\theta}</m>, so <m>du = -\sin{\theta}\,d\theta</m>.
-              Then
-              <me>
-                \int \frac{\sin \theta \,d\theta}{\cos^2 \theta + \cos \theta -2} = -\int\frac{du}{u^2+u-2}
-              </me>
-              The denominator factors as <m>u^2 + u-2 = (u+2)(u-1)</m>.
-              Therefore there are constants <m>A</m> and <m>B</m> such that
-              <me>
-                \frac{-1}{u^2 + u-2} = \frac{A}{u+2} + \frac{B}{u-1} = \frac{A(u-1) + B(u+2)}{(u+2)(u-1)}
-              </me>
-              So <m>A(u-1) + B(u+2) = -1</m> for all <m>u</m>.
-              Evaluating at <m>u=1</m> gives <m>3B = -1</m>, so <m>B = -\frac{1}{3}</m>.
-              Evaluating at <m>u=-2</m> gives <m>-3A = -1</m>, so <m>A = \frac{1}{3}</m>.
-              Therefore
-              <me>
-                \begin{split} -\int\frac{du}{u^2+u-2} &amp;= \frac{1}{3}\int{\left(\frac{1}{u+2} - \frac{1}{u-1}\right)}{\,dx} \\ &amp;= \frac{1}{3}\left(\ln|u+2| - \ln|u-1|\right) +C \\ &amp;= \frac{1}{3}\left(\ln|\cos{\theta} + 2| - \ln|\cos{\theta} -1|\right) +C \end{split}
-              </me>
-            </p>
-            <!--</div attr= class="solution">-->
-          </solution>
-        </exercise>
+          </exercise>
 
         <exercise workspace="1in">
           <statement>
@@ -321,40 +110,7 @@
             </p>
           </statement>
 
-          <solution>
-            <!-- div attr= class="solution"-->
-            <p>
-              The denominator factors as <m>x^3 + x + 10 = (x+2)(x^2 -2x + 5)</m>.
-              Therefore there exist constants <m>A</m>, <m>B</m>, and <m>C</m> such that
-              <me>
-                \begin{split} \frac{x^2+9 x-12}{x^3+x+10} &amp;= \frac{A}{x+2} + \frac{Bx+C}{x^2-2x+5} = \frac{A(x^2-2x+5) + (x+2)(Bx+C)}{(x+2)(x^2-2x+5)}\\ &amp;= \frac{(A + B)x^2 +(-2A+2B+C) x + (5A + 2C)}{x^3+x+10} \end{split}
-              </me>
-              So we have three equations <m>A+B = 1</m>, <m>-2A+2B+C = 9</m>, and <m>5A + 2C = -12</m>.
-              Adding twice the first to the second gives <m>4B+C = 11</m>.
-              Subtracting five times the first from the third gives <m>-5B + 2C = -17</m>.
-              Adding <m>5(4B+C = 11)</m> to <m>4(-5B + 2C = -17)</m> gives
-              <me>
-                13C = 55 - 68=-13 \implies C=-1
-              </me>
-              Through back-substitution the other constants are <m>B=3</m> and <m>A=-2</m>.
-              Therefore
-              <me>
-                \int\frac{x^2+9 x-12}{x^3+x+10}\,dx = \int{\left(\frac{-2}{x+2} + \frac{3x}{x^2-2x+5} - \frac{1}{x^2-2x+5}\right)}{\,dx}
-              </me>
-              The quadratic denominator can be written as <m>x^2 - 2x+5 = (x-1)^2 + 4</m>.
-              So let <m>u= x-1</m>.
-              Then
-              <me>
-                \begin{split} \int{\frac{3x}{x^2-2x+5}}{\,dx} - \int{\frac{1}{x^2-2x+5}}{\,dx} &amp;= \int{\frac{3(u+1)}{u^2 + 4}}{\,du} - \int{\frac{1}{u^2+4}}{\,du} \\ &amp;= \int{\frac{3u}{u^2 + 4}}{\,du} + \int{\frac{2}{u^2+4}}{\,du} \\ &amp;= \frac{3}{2}\ln(u^2 + 4) + \tan^{-1}\left(\frac{u}{2}\right) +C \\ &amp;= \frac{3}{2}\ln|x^2-2x+5| + \tan^{-1}({\frac{x-1}{2})+C \end{split}
-              </me>
-              So the whole integral is
-              <me>
-                \int\frac{x^2+9 x-12}{x^3+x+10}\,dx = -2 \ln|x+2|+\frac{3}{2}  \ln|x^2-2 x+5|+\tan^{-1}\left({\frac{x-1}{2}}\right)+C
-              </me>
-            </p>
-            <!--</div attr= class="solution">-->
-          </solution>
-        </exercise>
+          </exercise>
       </page>
     </worksheet>
   </article>

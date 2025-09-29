@@ -1,8 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
+<?xml version='1.0' encoding='UTF-8'?>
 <pretext>
   <article xml:id="article">
-    <!-- When creating a new activity, make a copy of this file with appropriate name -->
+    
     <worksheet margin="1in" bottom="1.25in" xml:id="ws-usub">
       <title>Worksheet for Section 5.5</title>
 
@@ -32,81 +31,44 @@
       </introduction>
 
       <exercise xml:id="ex-usub-1">
-        <!-- Thomas, Exercise 5.7.1 -->
+        
         <statement>
           <p>
             <m>\int(3x-5)^{17}\,dx</m>, <m>u=3x-5</m>
           </p>
         </statement>
 
-        <solution>
-          <p>
-            As suggested, we let <m>u=3x-5</m>.
-            Then <m>du=3\,dx</m> so <m>dx = \frac{1}{3}\,du</m>.
-            Thus
-            <me>
-              \int(3x-5)^{17}\,dx = \frac13\int u^{17}\,du = \frac{1}{3}\cdot\frac{1}{18}u^{18} +C = \frac{1}{54}(3x-5)^{18}+C
-            </me>
-          </p>
-        </solution>
-      </exercise>
+        </exercise>
 
       <exercise workspace="1in">
-        <!-- Thomas, Exercise 5.7.3 -->
+        
         <statement>
           <p>
             <m>\int_0^4 x\sqrt{x^2+9}\,dx</m>, <m>u=x^2 + 9</m>
           </p>
         </statement>
 
-        <solution>
-          <p>
-            We have <m>du = 2x\,dx</m>, which takes care of the <m>x</m> and <m>dx</m> that appear in the integrand.
-            The limits are changed to <m>u(0) = 9</m> and <m>u(4) = 25</m>.
-            Thus
-            <me>
-              \begin{split} \int_0^4 x\sqrt{x^2+9}\,dx &amp;= \frac12\int_9^{25} \sqrt{u} \,du = \frac12\cdot\left.\frac23 u^{3/2}\right|^{25}_{9} \\ &amp;= \frac13\cdot(125-27) = \frac{98}{3}.
-              \end{split}
-            </me>
-          </p>
-        </solution>
-      </exercise>
+        </exercise>
 
       <exercise workspace="1in">
         <statement>
-          <!-- Thomas, Exercise 5.7.8 -->
+          
           <p>
             <m>\int \frac{e^{\sqrt x}}{\sqrt x}\,dx</m>, <m>u=\sqrt{x}</m>.
           </p>
         </statement>
 
-        <solution>
-          <p>
-            We have <m>du = \frac{1}{2\sqrt x}\,dx</m>, which means that
-            <me>
-              \int \frac{e^{\sqrt x}}{\sqrt x}\,dx = 2\int e^u\,du = 2 e^u + C
-            </me>
-          </p>
-        </solution>
-      </exercise>
+        </exercise>
 
       <exercise workspace="1in">
-        <!-- Thomas, Exercise 5.7.10 -->
+        
         <statement>
           <p>
             <m>\displaystyle\int \frac{\cos 3x\,dx}{5 + 2 \sin 3x}</m>, <m>u=5 + 2 \sin 3x</m>
           </p>
         </statement>
 
-        <solution>
-          <p>
-            We have <m>du = 6\cos 3x\,dx</m>, so
-            <me>
-              \int \frac{\cos 3x\,dx}{5 + 2 \sin 3x} = \frac16\int\frac{du}{u} = \frac16\ln|u| + C = \frac16\ln|5+2\sin 3x| + C
-            </me>
-          </p>
-        </solution>
-      </exercise>
+        </exercise>
 
       </exercisegroup> <exercisegroup>
       <title>Finding Substitutions</title>
@@ -118,42 +80,24 @@
       </introduction>
 
       <exercise workspace="1in">
-        <!-- Thomas, Exercise 5.7.13 -->
+        
         <statement>
           <p>
             <m>\int (4-3x)^7 \,dx</m>.
           </p>
         </statement>
 
-        <solution>
-          <p>
-            Let <m>u=4-3x</m>, so <m>du=-3x\,dx</m> and <m>dx = -\frac13du</m>.
-            Thus
-            <me>
-              \begin{split} \int (4-3x)^7 \,dx = -\frac{1}{3}\int u^7\,du = -\frac{u^8}{24} + C = -\frac{1}{24}(4-3x)^8 + C \end{split}
-            </me>
-          </p>
-        </solution>
-      </exercise>
+        </exercise>
 
       <exercise workspace="1in">
-        <!-- Thomas, Exercise 5.7.20 -->
+        
         <statement>
           <p>
             <m>\int_{\pi/4}^{\pi/3} \csc^2(5x)\,dx</m>
           </p>
         </statement>
 
-        <solution>
-          <p>
-            Let <m>u = 5x</m>, so <m>du = 5\,dx</m> and <m>dx=\frac15 du</m>.
-            So
-            <me>
-              \begin{split} \int_{\pi/4}^{\pi/3} \csc^2(5x)\,dx &amp;= \frac15\int_{5\pi/4}^{5\pi/3} \csc^2 u\,du \\ &amp;= -\left.\frac15\cot u\right|_{5\pi/4}^{5\pi/3} \\ &amp;= \frac15\left[\cot\left(\frac{5\pi}{4}\right) - \cot\left(\frac{5\pi}{3}\right)\right] \\ &amp;= \frac15\left[1 + \frac{\sqrt{3}}{3}\right] \end{split}
-            </me>
-          </p>
-        </solution>
-      </exercise>
+        </exercise>
 
       <exercise workspace="1in">
         <statement>
@@ -162,17 +106,7 @@
           </p>
         </statement>
 
-        <solution>
-          <p>
-            Let <m>u=3x^3-1</m>, so <m>du = 9x^2\,dx</m> and <m>dx=\frac{1}{9}du</m>.
-            So
-            <me>
-              \begin{split} \int x^2 e^{3x^3-1}\,dx &amp;= \frac{1}{9}\int e^u\,du = \frac{1}{9}e^u + C \\ &amp;= \frac{1}{9}e^{3x^3-1}.
-              \end{split}
-            </me>
-          </p>
-        </solution>
-      </exercise>
+        </exercise>
       </exercisegroup>
 
       <exercise workspace="1in">
@@ -190,28 +124,7 @@
             </p>
           </statement>
 
-          <solution>
-            <p>
-              Long division yields
-              <me>
-                \frac{x}{1+x} = 1 - \frac{1}{1+x}
-              </me>
-              So
-              <me>
-                \int\frac{x}{1+x}\,dx = x - \int\frac{dx}{1+x}
-              </me>
-              To find the leftover integral, let <m>u=1+x</m>.
-              Then <m>du = dx</m> and so
-              <me>
-                \int\frac{dx}{1+x} = \int\frac{du}{u} = \ln|u| + C
-              </me>
-              Therefore
-              <me>
-                \int\frac{x}{1+x}\,dx = x - \ln|x+1| + C
-              </me>
-            </p>
-          </solution>
-        </task>
+          </task>
 
 
         <task>
@@ -221,20 +134,7 @@
             </p>
           </statement>
 
-          <solution>
-            <p>
-              Making the substitution immediately gives <m>du=dx</m> and <m>x = u-1</m>.
-              So
-              <me>
-                \begin{split} \int\frac{x}{1+x}\,dx &amp;= \int\frac{u-1}{u}\,du = \int\left(1-\frac1u\right)\,du \\ &amp;= u - \ln|u| +C \\ &amp;= x+1 - \ln|x+1| + C \end{split}
-              </me>
-            </p>
-
-            <p>
-              It may appear that the two solutions are <q>different.</q> But the difference is a constant, and we know that antiderivatives are only unique up to addition of a constant.
-            </p>
-          </solution>
-        </task>
+          </task>
 
 
         <task>
@@ -244,15 +144,7 @@
             </p>
           </statement>
 
-          <solution>
-            <p>
-              We have <m>du = 2z\,dz</m> and the integral becomes
-              <me>
-                \int \frac{du}{\sqrt[3]{u}} = \int u^{-1/3}\,du = \frac{3}{2}u^{2/3} +C = \frac{3}{2}(z^2 + 1)^{2/3}
-              </me>.
-            </p>
-          </solution>
-        </task>
+          </task>
 
 
         <task>
@@ -262,20 +154,7 @@
             </p>
           </statement>
 
-          <solution>
-            <p>
-              We have <m>u^3 = z^2 + 1</m> and <m>3u^2\,du = 2z\,dz</m>.
-              The integral becomes
-              <me>
-                \int \frac{3u^2}{u}\,du = \int 3u^2 \,du = \frac{3}{2}u^3 + C = \frac{3}{2}(z^2+1)^{2/3} +C
-              </me>.
-            </p>
-
-            <p>
-              The second one is a dirtier substitution, but the integration is cleaner.
-            </p>
-          </solution>
-        </task>
+          </task>
       </exercise>
 
       <exercisegroup>
@@ -298,20 +177,7 @@
           </p>
         </statement>
 
-        <solution>
-          <p>
-            Using <m>\cos 2\alpha = 1- 2\sin^2 \alpha</m>, we get
-            <me>
-              \sin^2\alpha = \frac{1-\cos 2\alpha}{2}
-            </me>
-            So
-            <me>
-              \begin{split} \int\sin^2 x\,dx &amp;= \int\left(\frac12 - \frac12\cos2 x\right)\,dx \\ &amp;= \frac{x}{2} - \frac{1}{4}\sin 2x + C.
-              \end{split}
-            </me>
-          </p>
-        </solution>
-      </exercise>
+        </exercise>
 
 
 
@@ -322,20 +188,7 @@
             </p>
           </statement>
 
-          <solution>
-            <p>
-              Using <m>\cos 2\alpha = 2\cos^2 \alpha-1</m>, we get
-              <me>
-                \sin^2\alpha = \frac{1+\cos 2\alpha}{2}
-              </me>
-              So
-              <me>
-                \begin{split} \int\sin^2 x\,dx &amp;= \int\left(\frac12 + \frac12\cos2 x\right)\,dx \\ &amp;= \frac{x}{2} + \frac{1}{4}\sin 2x + C.
-                \end{split}
-              </me>
-            </p>
-          </solution>
-        </exercise>
+          </exercise>
         </exercisegroup>
 
               <exercise workspace="1in">
@@ -390,7 +243,7 @@
                 The interval is symmetric about the origin, but the integrand is neither even nor odd.
                 The integral is equal to
                 <me>
-                  \left.\frac{1}{3}e^{x^3}\right|_{-1}^{1} = \frac{1}{3}(e - e^{-1}) > 0.
+                  \left.\frac{1}{3}e^{x^3}\right|_{-1}^{1} = \frac{1}{3}(e - e^{-1}) &gt; 0.
                 </me>
               </p>
             </feedback>
@@ -424,20 +277,7 @@
             </p>
           </statement>
 
-          <solution>
-            <p>
-              We have
-              <me>
-                \begin{split} \int \sec x\,dx &amp;= \int\frac{\sec x(\sec x + \tan x)}{\sec x + \tan x}\,dx \\ &amp;= \int\frac{\sec^2x + \sec x \tan x}{\tan x + \sec x}\,dx \end{split}
-              </me>
-              Now notice the numerator is the derivative of the denominator.
-              So the substitution <m>u = \tan x + \sec x</m> gives
-              <me>
-                \int \sec x \,dx = \ln|\sec x + \tan x| + C.
-              </me>
-            </p>
-          </solution>
-        </exercise>
+          </exercise>
       </worksheet>
     </article>
   </pretext>

@@ -1,16 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<pretext xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:dc="http://purl.org/dc/elements/1.1/"
-    xmlns:dcterms="http://purl.org/dc/terms/">
-    <xi:include href="../docinfo.ptx" />
+<?xml version='1.0' encoding='UTF-8'?>
+<pretext xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:ns0="http://www.w3.org/2001/XInclude" xmlns:ns2="http://purl.org/dc/terms/">
+    <ns0:include href="../docinfo.ptx" />
     <article xml:id="art-ps05">
         <section xml:id="sec-ps05">
             <title>Problem Set 5</title>
-            <xi:include href="ps03.ptx" xpointer="xpointer(//section[1]/introduction)" />
+            <ns0:include href="ps03.ptx" xpointer="xpointer(//section[1]/introduction)" />
             <exercises xml:id="exs-ps05">
                 <exercise xml:id="ex-area-between-curves-cubic-quadratic">
                     <provenance>
                         <dc:creator>Matthew Leingang</dc:creator>
-                        <dcterms:created>2025-09-27</dcterms:created>
+                        <ns2:created>2025-09-27</ns2:created>
                     </provenance>
                     <statement>
                         <p> The curves with equations <m>y=x^2-1</m> and <m>2x^3-14x^2+27x-11</m>
@@ -19,88 +18,23 @@
                             the region bounded by the curves between those two first quadrant
                             points. </p>
                     </statement>
-                    <solution>
-                        <p> Set the two expressions for <m>y</m> equal to find intersection points: <me>
-                            x^{2}-1 = 2x^{3}-14x^{2}+27x-11.
-                            </me>
-                            Rearranging gives the cubic <me>
-                                2x^{3}-15x^{2}+27x-10=0,
-                            </me>
-                            which factors as <me>
-                                (x-\tfrac{1}{2})(x-2)(x-5)=0.
-                            </me>
-                            Hence the intersection <m>
-                                x</m>-coordinates are <m>x=\tfrac{1}{2},2,5</m>, and the
-                            corresponding points are <m>(\tfrac{1}{2},-\tfrac{3}{4}),(2,3),(5,24)</m>
-                            . </p>
-
-                        <p> The two first-quadrant intersections are <m>(2,3)</m> and <m>(5,24)</m>.
-                            For a test value (e.g. <m>x=3</m>) one finds <me> 2x^{3}-15x^{2}+27x-10
-                            &lt; 0,
-                            </me> so on <m>
-                            [2,5]</m> the cubic is below the quadratic <m>y=x^{2}-1</m>. Thus the
-                            area of the region between the curves from <m>x=2</m> to <m>x=5</m> is <me>
-                            A=\int_{2}^{5} \bigl[(x^{2}-1)-(2x^{3}-14x^{2}+27x-11)\bigr]\,dx
-                            =\int_{2}^{5}\bigl(-2x^{3}+15x^{2}-27x+10\bigr)\,dx.
-                            </me>
-                        </p>
-
-                        <p> An antiderivative is <me>
-                            -\tfrac{1}{2}x^{4}+5x^{3}-\tfrac{27}{2}x^{2}+10x,
-                            </me>
-                            and evaluating from <m>2</m> to <m>5</m> gives <me>
-                                A = 27.
-                            </me>
-                        </p>
-                    </solution>
-
-                </exercise>
+                    </exercise>
 
                 <exercise xml:id="ex-area-between-curves">
                     <provenance>
                         <dc:creator>ChatGPT</dc:creator>
-                        <dcterms:created>2025-09-27</dcterms:created>
+                        <ns2:created>2025-09-27</ns2:created>
                     </provenance>
                     <statement>
                         <p> Find the area of the region bounded by the curves <m>x = y^{2}</m> and <m>x
                             = 2y+3</m>. </p>
                     </statement>
-                    <solution>
-                        <p> The region is shown in <xref
-                                ref="fig-area-y-quad-line" />. </p>
-                        <figure xml:id="fig-area-y-quad-line">
-                            <caption>The shaded region bounded by <m>x=y^{2}</m> and <m>x=2y+3</m>.</caption>
-                            <image width="60%">
-                                <description>Region bounded by parabola and line, intersections at
-                                    (-1,1) and (3,9).
-                                </description>
-                                <source>area-y-quad-line.png</source>
-                            </image>
-                        </figure>
-                        <p> First find the intersection points by solving <m>y^{2} = 2y+3</m>, which
-                            gives <m>y^{2}-2y-3=0</m> and hence <m>(y-3)(y+1)=0</m>. Thus the curves
-                            intersect when <m>y=-1</m> and <m>y=3</m>. </p>
-                        <p> For <m>-1 \leq y \leq 3</m>, the left boundary is <m>
-                            x_{\text{left}}=y^{2}</m> and the right boundary is <m>
-                            x_{\text{right}}=2y+3</m>. The area is therefore <me>
-                                A = \int_{-1}^{3} \left[ (2y+3) - y^{2} \right] \, dy.
-                            </me>
-                        </p>
-                        <p> An antiderivative is <m>y^{2}+3y-\tfrac{1}{3}y^{3}</m>. Evaluating from <m>
-                            -1</m> to <m>3</m> gives <me>
-                                \left(9\right) - \left(-\tfrac{5}{3}\right)
-                                = \tfrac{32}{3}.
-                            </me>
-                        </p>
-                        <p> Thus the area of the region is <me>A = \tfrac{32}{3}.</me>
-                        </p>
-                    </solution>
-                </exercise>
+                    </exercise>
 
                 <exercise xml:id="tag-paddymacmahon-com-2025-08-31-area">
                     <provenance>
-                        <dcterms:identifier>
-                            https://bsky.app/profile/paddymacmahon.com/post/3lxoj77bxw22c</dcterms:identifier>
+                        <ns2:identifier>
+                            https://bsky.app/profile/paddymacmahon.com/post/3lxoj77bxw22c</ns2:identifier>
                         <dc:creator>Paddy MacMahon</dc:creator>
                     </provenance>
                     <statement>
@@ -111,48 +45,7 @@
                         <p> Find that value of <m>k</m>, and the area of the region between the two
                             curves, the <m>y</m>-axis, and that intersection point. </p>
                     </statement>
-                    <solution>
-                        <p> We look for the value(s) of <m>k>0</m> for which <me>
-                                3x(3-x) = \tfrac{1}{k}(x-k)^{2}
-                            </me>
-                            has exactly one solution (a tangency). Multiply by <m>k</m> and
-                            rearrange: <me>
-                                (x-k)^{2} - k\bigl(9x-3x^{2}\bigr)=0.
-                            </me>
-                            For tangency this polynomial must have a double root; eliminating <m>x</m>
-                            (or setting the resultant of the polynomial and its derivative equal to
-                            zero) yields the condition <me>
-                                3k^{2}(3k+1)(4k-39)=0.
-                            </me>
-                            With <m>k>0</m> the only admissible solution is <m>k=\tfrac{39}{4}.</m>
-                        </p>
-
-                        <p> For <m>k=\tfrac{39}{4}</m> the common root is <me>
-                                x=\tfrac{39}{22},
-                            </me>
-                            and the corresponding <m>y</m>-value (using <m>y=3x(3-x)</m>) is <me>
-                            y=\tfrac{3159}{484}.
-                            </me>
-                        </p>
-
-                        <p> The required region is bounded on the left by the <m>y</m>-axis (<m>x=0</m>),
-                            on the right by the tangency abscissa <m>x=\tfrac{39}{22}</m>, and
-                            between the two curves. On <m>[0,\tfrac{39}{22}]</m> the curve <m>
-                            y=\tfrac{1}{k}(x-k)^{2}</m> (with <m>k=\tfrac{39}{4}</m>) lies above <m>
-                            y=3x(3-x)</m>, so the area is <me>
-                            A=\int_{0}^{39/22}\left[\tfrac{1}{k}(x-k)^{2} -
-                            \bigl(9x-3x^{2}\bigr)\right]\,dx
-                                \quad\text{with}\quad k=\tfrac{39}{4}.
-                            </me>
-                        </p>
-
-                        <p> Evaluating this integral (exactly) gives <me>
-                                A=\tfrac{507}{88}.
-                            </me>
-                        </p>
-                    </solution>
-
-                </exercise>
+                    </exercise>
 
                 <exercise xml:id="ex-volume-washers">
                     <statement>
@@ -160,36 +53,7 @@
                             y=x^2</m> and <m>y=2x</m> about the <m>x</m>-axis. </p>
                     </statement>
 
-                    <solution>
-                        <p> The region is bounded by <m>y=x^2</m> and <m>y=2x</m>. We first find the
-                            intersection points: <md>
-                                <mrow>x^2 \amp = 2x</mrow>
-                                <mrow>x^2-2x \amp = 0</mrow>
-                                <mrow>x(x-2) \amp = 0</mrow>
-                            </md> The
-                            curves intersect at <m>x=0</m> and <m>x=2</m>. When we rotate the region
-                            about the <m>
-                                x</m>-axis, we use the washer method. The outer radius is the
-                            distance from the x-axis to the line <m>y=2x</m>, so <m>R(x)=2x</m>. The
-                            inner radius is the distance from the x-axis to the parabola <m>y=x^2</m>,
-                            so <m>r(x)=x^2</m>. The volume is given by the integral: <me>
-                                V = \pi \int_a^b [R(x)^2 - r(x)^2] \,dx
-                            </me>
-                        </p>
-                        <md>
-                            <mrow>V \amp = \pi \int_0^2 [(2x)^2 - (x^2)^2] \,dx</mrow>
-                            <mrow>\amp = \pi \int_0^2 (4x^2 - x^4) \,dx</mrow>
-                            <mrow>\amp = \pi \left[ \frac{4}{3}x^3 - \frac{1}{5}x^5 \right]_0^2</mrow>
-                            <mrow>\amp = \pi \left[ \left(\frac{4}{3}(2)^3 - \frac{1}{5}(2)^5\right)
-                                -
-                                \left(\frac{4}{3}(0)^3 - \frac{1}{5}(0)^5\right) \right]</mrow>
-                            <mrow>\amp = \pi \left[ \frac{4(8)}{3} - \frac{32}{5} \right] = \pi
-                                \left[
-                                \frac{32}{3} - \frac{32}{5} \right]</mrow>
-                            <mrow>\amp = \pi \left[ \frac{160-96}{15} \right] = \frac{64\pi}{15}</mrow>
-                        </md>
-                    </solution>
-                </exercise>
+                    </exercise>
 
                 <exercise xml:id="ex-volume-squares">
                     <statement>
@@ -198,35 +62,7 @@
                             perpendicular to the <m>y</m>-axis are squares. </p>
                     </statement>
 
-                    <solution>
-                        <p> The base is defined by <m>y=1-x^2</m> and <m>y=0</m>. We need to express <m>
-                            x</m> in terms of <m>y</m> since the cross-sections are perpendicular to
-                            the <m>
-                                y</m>-axis. <me>
-                                y=1-x^2 \implies x^2=1-y \implies x = \pm\sqrt{1-y}
-                            </me>
-                            The length of a side of the square at a given <m>y</m> is the distance
-                            between the two sides of the parabola, which is <m>s(y) = \sqrt{1-y} -
-                            (-\sqrt{1-y}) = 2\sqrt{1-y}</m>. The area of a cross-section is <m>A(y)
-                                =
-                                s(y)^2 = (2\sqrt{1-y})^2 = 4(1-y)</m>. The <m>y</m>-values range
-                            from the lowest point of the parabola (<m>y=0</m>) to its vertex (<m>y=1</m>).
-                            So, our limits of integration are from 0 to 1. </p>
-
-                        <p> The volume is given by the integral: <me>
-                                V = \int_0^1 A(y) \,dy = \int_0^1 4(1-y) \,dy
-                            </me>
-                        </p>
-                        <md>
-                            <mrow>V \amp = 4 \int_0^1 (1-y) \,dy</mrow>
-                            <mrow>\amp = 4 \left[ y - \frac{y^2}{2} \right]_0^1</mrow>
-                            <mrow>\amp = 4 \left[ (1 - \frac{1^2}{2}) - (0 - 0) \right]</mrow>
-                            <mrow>\amp = 4 \left[ 1 - \frac{1}{2} \right] = 4 \left[ \frac{1}{2}
-                                \right]
-                                = 2</mrow>
-                        </md>
-                    </solution>
-                </exercise>
+                    </exercise>
 
                 <exercise xml:id="ex-volume-revolve-y-axis">
                     <statement>
@@ -235,58 +71,7 @@
                             -axis. </p>
                     </statement>
 
-                    <solution>
-                        <p> The region is rotated about the <m>y</m>-axis, and the boundaries are
-                            given in terms of <m>y</m> or can be easily converted. We will use the
-                            **Disk Method** and integrate with respect to <m>y</m>. </p>
-                        <p> The region is bounded by: <ul>
-                                <li> The curve <m>y = \sin^{-1}(x)</m>. Solving for <m>x</m> gives
-                            the radius function: <m>x = \sin(y)</m>. </li>
-                                <li> The <m>y</m>-axis, <m>x=0</m>. </li>
-                                <li> The horizontal line <m>y=\frac{\pi}{2}</m>. </li>
-                            </ul>
-                            The limits of integration for <m>y</m> are from <m>y=0</m> (since <m>
-                            x=\sin(0)=0</m>) to <m>y=\frac{\pi}{2}</m>. </p>
-                        <p> The radius of a disk at height <m>y</m> is <m>R(y) = x = \sin(y)</m>.
-                            The area of a disk is <m>A(y) = \pi [R(y)]^2 = \pi \sin^2(y)</m>. </p>
-                        <p> The volume <m>V</m> is given by the integral: <me>
-                                V = \int_0^{\pi/2} \pi \sin^2(y) \, dy
-                            </me>
-                        </p>
-                        <p> To integrate <m>\sin^2(y)</m>, we use the half-angle identity: <m>\sin^2(y)
-                            = \frac{1 - \cos(2y)}{2}</m>. <md>
-                                <mrow>
-                                    V &amp;= \pi \int_0^{\pi/2} \frac{1 - \cos(2y)}{2} \, dy
-                                </mrow>
-                                <mrow>
-                                    &amp;= \frac{\pi}{2} \int_0^{\pi/2} (1 - \cos(2y)) \, dy
-                                </mrow>
-                                <mrow>
-                                    &amp;= \frac{\pi}{2} \left[ y - \frac{1}{2}\sin(2y)
-                            \right]_0^{\pi/2}
-                                </mrow>
-                            </md>
-                        </p>
-                        <p> Evaluating the definite integral: <md>
-                                <mrow>
-                                    V &amp;= \frac{\pi}{2} \left[ \left(\frac{\pi}{2} -
-                            \frac{1}{2}\sin\left(2 \cdot \frac{\pi}{2}\right)\right) - \left(0 -
-                            \frac{1}{2}\sin(0)\right) \right]
-                                </mrow>
-                                <mrow>
-                                    &amp;= \frac{\pi}{2} \left[ \left(\frac{\pi}{2} -
-                            \frac{1}{2}\sin(\pi)\right) - (0 - 0) \right]
-                                </mrow>
-                                <mrow>
-                                    &amp;= \frac{\pi}{2} \left[ \frac{\pi}{2} - 0 \right]
-                                </mrow>
-                                <mrow>
-                                    &amp;= \frac{\pi^2}{4}
-                                </mrow>
-                            </md>
-                        </p>
-                    </solution>
-                </exercise>
+                    </exercise>
             </exercises>
         </section>
 
