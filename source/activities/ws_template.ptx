@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<pretext xmlns:xi="http://www.w3.org/2001/XInclude">
-  <xi:include href="../docinfo.ptx" />
-    <!-- When creating a new activity, make a copy of this file with appropriate name -->
+<?xml version='1.0' encoding='UTF-8'?>
+<pretext xmlns:ns0="http://www.w3.org/2001/XInclude">
+  <ns0:include href="../docinfo.ptx" />
+  <article>
+    
     <worksheet margin="1in" bottom="1.25in" xml:id="XXX">
       <title>Worksheet for Section XXX</title>
 
@@ -28,25 +28,19 @@
           <statement>
           </statement>
 
-          <solution>
-          </solution>
-        </exercise>
+          </exercise>
 
         <exercise workspace="1in">
           <statement>
           </statement>
 
-          <solution>
-          </solution>
-        </exercise>
+          </exercise>
 
         <exercise workspace="1in">
           <statement>
           </statement>
 
-          <solution>
-          </solution>
-        </exercise>
+          </exercise>
       </page>
     </worksheet>
   </article>
