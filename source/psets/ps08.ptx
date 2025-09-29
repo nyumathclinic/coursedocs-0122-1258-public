@@ -1,11 +1,12 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<pretext xmlns:ns0="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pretext xmlns:xi="http://www.w3.org/2001/XInclude">
     <article>
         <section xml:id="ps08-section">
             <title>Problem Set 8</title>
 
             <subtitle>Sequences and Series</subtitle>
-            <ns0:include href="ps01.ptx" xpointer="xpointer(//section[1]/introduction)" />
+            <xi:include href="ps01.ptx" xpointer="xpointer(//section[1]/introduction)" />
             <exercises>
             <exercise xml:id="ex-sequence-convergence-revised">
                 <statement>
@@ -15,7 +16,24 @@
                     </p>
                 </statement>
 
-                </exercise>
+                <solution>
+                    <p>
+                        To determine convergence, we take the limit as <m>n \to \infty</m>.
+                        <me>
+                            \lim_{n \to \infty} a_n = \lim_{n \to \infty} \frac{3n^2+1}{n^2-2}
+                        </me>
+                        We can divide the numerator and denominator by the highest power of <m>n</m>, which is <m>n^2</m>.
+                    </p>
+                    <md>
+                        <mrow>\lim_{n \to \infty} \frac{\frac{3n^2}{n^2}+\frac{1}{n^2}}{\frac{n^2}{n^2}-\frac{2}{n^2}} \amp = \lim_{n \to \infty} \frac{3+\frac{1}{n^2}}{1-\frac{2}{n^2}}</mrow>
+                        <mrow>\amp = \frac{3+0}{1-0} = 3</mrow>
+                    </md>
+
+                    <p>
+                        Since the limit exists and is a finite number, the sequence converges to 3.
+                    </p>
+                </solution>
+            </exercise>
 
             <exercise xml:id="ex-geometric-series-revised">
                 <statement>
@@ -25,7 +43,31 @@
                     </p>
                 </statement>
 
-                </exercise>
+                <solution>
+                    <p>
+                        We can rewrite the series to identify the first term and the common ratio:
+                        <me>
+                            \sum_{n=1}^\infty \frac{2^{n-1}}{3^n} = \sum_{n=1}^\infty \frac{1}{3} \left( \frac{2}{3} \right)^{n-1}
+                        </me>
+                        This is a geometric series with first term <m>a=\frac{1}{3}</m> and common ratio <m>r=\frac{2}{3}</m>.
+                        A geometric series converges if the absolute value of the common ratio is less than 1, i.e., <m>|r| &lt; 1</m>.
+                        Here, <m>|r| = |\frac{2}{3}| = \frac{2}{3}</m>, which is less than 1.
+                        Therefore, the series converges.
+                    </p>
+
+                    <p>
+                        The sum of a convergent geometric series is given by the formula <m>S = \frac{a}{1-r}</m>.
+                    </p>
+                    <md>
+                        <mrow>S \amp = \frac{1/3}{1-2/3}</mrow>
+                        <mrow>\amp = \frac{1/3}{1/3} = 1</mrow>
+                    </md>
+
+                    <p>
+                        The sum of the series is 1.
+                    </p>
+                </solution>
+            </exercise>
 
             <exercise xml:id="ex-integral-test">
                 <statement>
@@ -34,7 +76,35 @@
                     </p>
                 </statement>
 
-                </exercise>
+                <solution>
+                    <p>
+                        We consider the function <m>f(x) = \frac{1}{x\ln x}</m>.
+                        For <m>x \ge 2</m>, the function is positive, continuous, and decreasing.
+                        We evaluate the corresponding improper integral:
+                        <me>
+                            \int_2^\infty \frac{1}{x\ln x} \,dx = \lim_{t \to \infty} \int_2^t \frac{1}{x\ln x} \,dx
+                        </me>
+                        We use the substitution <m>u=\ln x</m>, so <m>du=\frac{1}{x} \,dx</m>.
+                        When <m>x=2</m>, <m>u=\ln 2</m>.
+                        When <m>x=t</m>, <m>u=\ln t</m>.
+                    </p>
+                    <md>
+                        <mrow>\int_2^t \frac{1}{x\ln x} \,dx \amp = \int_{\ln 2}^{\ln t} \frac{1}{u} \,du</mrow>
+                        <mrow>\amp = \left[ \ln|u| \right]_{\ln 2}^{\ln t} = \ln(\ln t) - \ln(\ln 2)</mrow>
+                    </md>
+
+                    <p>
+                        Now we take the limit:
+                        <me>
+                            \lim_{t \to \infty} (\ln(\ln t) - \ln(\ln 2)) = \ln(\infty) - \ln(\ln 2) = \infty
+                        </me>
+                    </p>
+
+                    <p>
+                        Since the improper integral diverges, the series <m>\sum_{n=2}^\infty \frac{1}{n\ln n}</m> also diverges by the Integral Test.
+                    </p>
+                </solution>
+            </exercise>
 
             <exercise xml:id="ex-comparison-test">
                 <statement>
@@ -43,7 +113,25 @@
                     </p>
                 </statement>
 
-                </exercise>
+                <solution>
+                    <p>
+                        We need to find a series for comparison.
+                        We know that <m>0 \le \cos^2 n \le 1</m> for all <m>n</m>.
+                        Therefore, we have the inequality:
+                        <me>
+                            0 \le \frac{\cos^2 n}{n^2+1} \le \frac{1}{n^2+1}
+                        </me>
+                        For large <m>n</m>, the series <m>\sum \frac{1}{n^2+1}</m> behaves like the series <m>\sum \frac{1}{n^2}</m>, which is a convergent <m>p</m>-series (<m>p=2 &gt; 1</m>).
+                        We can use the Limit Comparison Test with <m>b_n = \frac{1}{n^2}</m> to verify the convergence of the comparison series:
+                        <me>
+                            \lim_{n \to \infty} \frac{a_n}{b_n} = \lim_{n \to \infty} \frac{1/(n^2+1)}{1/n^2} = \lim_{n \to \infty} \frac{n^2}{n^2+1} = 1
+                        </me>
+                        Since the limit is a finite, positive number, both series <m>\sum \frac{1}{n^2+1}</m> and <m>\sum \frac{1}{n^2}</m> either converge or diverge together.
+                        Since <m>\sum \frac{1}{n^2}</m> converges, <m>\sum \frac{1}{n^2+1}</m> also converges.
+                        Now, by the Direct Comparison Test, since <m>0 \le \frac{\cos^2 n}{n^2+1} \le \frac{1}{n^2+1}</m> and the larger series <m>\sum_{n=1}^\infty \frac{1}{n^2+1}</m> converges, the original series <m>\sum_{n=1}^\infty \frac{\cos^2 n}{n^2+1}</m> must also **converge**.
+                    </p>
+                </solution>
+            </exercise>
             </exercises>
         </section>
     </article>

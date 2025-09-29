@@ -48,22 +48,17 @@ def strip_solutions_from_xml_files(directory):
                     root_element = tree.getroot()
 
                     # Find all 'exercise' elements in the document
-                    exercises = root_element.findall(".//exercise")
+                    # Or 'task' elements within an 'exercise' elemetn
+                    exercises = root_element.findall(".//exercise | .//exercise//task")
 
                     for exercise in exercises:
-                        # Find all 'solution' elements within the current 'exercise'
-                        solutions = exercise.findall("solution")
-
-                        # Remove each found 'solution' element
-                        for solution in solutions:
-                            exercise.remove(solution)
-                            modified = True
-
-                        answers = exercise.findall("answers")
-                        # Remove 'answers' elements if they exist
-                        for answer in answers:
-                            exercise.remove(answer)
-                            modified = True
+                        # Find all 'solution' elements or 'answer' elements 
+                        # within the current 'exercise' or 'task'
+                        for node in exercise.findall('.//answer | .//solution'):
+                            parent = node.getparent()
+                            if parent is not None:
+                                parent.remove(node)
+                                modified = True
 
                     # Write the modified XML back to the file
                     # The 'short_empty_elements' is a nice-to-have for cleaner XML

@@ -1,5 +1,5 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<pretext>
+<?xml version="1.0" encoding="UTF-8"?>
+<pretext xmlns:xi="http://www.w3.org/2001/XInclude">
   <article>
     <section xml:id="ps12-section">
       <title>Problem Set 12</title>
@@ -20,26 +20,140 @@
             <p> Find the area enclosed by one loop of the four-leaved rose given by the polar
               equation <m>r=\sin(2\theta)</m>. </p>
           </statement>
-          </exercise>
+          <solution>
+            <p> The formula for the area of a polar region is <me>A = \int_a^b \frac{1}{2}r^2
+              \,d\theta</me>. To find the limits of integration for one loop, we need to find the
+              values of <m>\theta</m> where <m>r=0</m>. <me>
+                \sin(2\theta) = 0
+              </me> This occurs when <m>2\theta =
+              n\pi</m>, so <m>\theta = \frac{n\pi}{2}</m>. For the first loop, we can use <m>
+              \theta=0</m> and <m>\theta=\pi/2</m>. </p>
+            <md>
+              <mrow>A \amp = \int_0^{\pi/2} \frac{1}{2}(\sin(2\theta))^2 \,d\theta</mrow>
+              <mrow>\amp = \frac{1}{2} \int_0^{\pi/2} \sin^2(2\theta) \,d\theta</mrow>
+            </md>
+            <p> We use the half-angle identity <m>\sin^2(x) = \frac{1-\cos(2x)}{2}</m>. Let <m>
+              x=2\theta</m>. </p>
+            <md>
+              <mrow>A \amp = \frac{1}{2} \int_0^{\pi/2} \frac{1-\cos(4\theta)}{2} \,d\theta</mrow>
+              <mrow>\amp = \frac{1}{4} \int_0^{\pi/2} (1-\cos(4\theta)) \,d\theta</mrow>
+              <mrow>\amp = \frac{1}{4} \left[ \theta - \frac{1}{4}\sin(4\theta) \right]_0^{\pi/2}</mrow>
+              <mrow>\amp = \frac{1}{4} \left[ (\frac{\pi}{2} - \frac{1}{4}\sin(2\pi)) - (0 -
+                \frac{1}{4}\sin(0)) \right]</mrow>
+              <mrow>\amp = \frac{1}{4} \left[ \frac{\pi}{2} - 0 \right] = \frac{\pi}{8}</mrow>
+            </md>
+          </solution>
+        </exercise>
 
         <exercise xml:id="ex-polar-arc-length">
           <statement>
             <p> Find the length of the spiral <m>r=e^\theta</m> for <m>0 \le \theta \le \pi</m>. </p>
           </statement>
-          </exercise>
+          <solution>
+            <p> The formula for the arc length of a polar curve is <me>L = \int_a^b \sqrt{r^2 +
+              \left(\frac{dr}{d\theta}\right)^2} \,d\theta</me>. First, we find the derivative of <m>
+              r</m> with respect to <m>\theta</m>: <me>
+                r = e^\theta \implies \frac{dr}{d\theta} = e^\theta
+              </me>
+              Now, we substitute into the formula: </p>
+            <md>
+              <mrow>L \amp = \int_0^\pi \sqrt{(e^\theta)^2 + (e^\theta)^2} \,d\theta</mrow>
+              <mrow>\amp = \int_0^\pi \sqrt{e^{2\theta} + e^{2\theta}} \,d\theta</mrow>
+              <mrow>\amp = \int_0^\pi \sqrt{2e^{2\theta}} \,d\theta = \int_0^\pi \sqrt{2}
+                \sqrt{e^{2\theta}} \,d\theta</mrow>
+              <mrow>\amp = \sqrt{2} \int_0^\pi e^\theta \,d\theta</mrow>
+              <mrow>\amp = \sqrt{2} \left[ e^\theta \right]_0^\pi</mrow>
+              <mrow>\amp = \sqrt{2} (e^\pi - e^0) = \sqrt{2}(e^\pi - 1)</mrow>
+            </md>
+          </solution>
+        </exercise>
 
         <exercise xml:id="ex-polar-area-between-curves">
           <statement>
             <p> Find the area of the region that lies inside the circle <m>r=3\cos\theta</m> and
               outside the cardioid <m>r=1+\cos\theta</m>. </p>
           </statement>
-          </exercise>
+          <solution>
+            <p> First, we find the intersection points by setting the equations equal to each other: <md>
+                <mrow>3\cos\theta \amp = 1+\cos\theta</mrow>
+                <mrow>2\cos\theta \amp = 1</mrow>
+                <mrow>\cos\theta \amp = \frac{1}{2}</mrow>
+              </md> This gives <m>\theta =
+              \pm \frac{\pi}{3}</m>. The region is symmetric about the polar axis, so we can
+              integrate from <m>0</m> to <m>\pi/3</m> and multiply the result by 2. The area of the
+              region is the area of the outer curve minus the area of the inner curve: <me>
+                A = \int_a^b \frac{1}{2} (r_{outer}^2 - r_{inner}^2) \,d\theta
+              </me>
+            </p>
+            <md>
+              <mrow>A \amp = 2 \int_0^{\pi/3} \frac{1}{2} [ (3\cos\theta)^2 - (1+\cos\theta)^2 ]
+                \,d\theta</mrow>
+              <mrow>\amp = \int_0^{\pi/3} [ 9\cos^2\theta - (1+2\cos\theta+\cos^2\theta) ] \,d\theta</mrow>
+              <mrow>\amp = \int_0^{\pi/3} (8\cos^2\theta - 2\cos\theta - 1) \,d\theta</mrow>
+            </md>
+            <p> We use the half-angle identity <m>\cos^2\theta = \frac{1+\cos(2\theta)}{2}</m>: <me>
+              \int_0^{\pi/3} \left( 8\left(\frac{1+\cos(2\theta)}{2}\right) - 2\cos\theta - 1
+              \right) \,d\theta
+              </me>
+              <me>
+              = \int_0^{\pi/3} (4+4\cos(2\theta) - 2\cos\theta - 1) \,d\theta
+              </me>
+              <me>
+              = \int_0^{\pi/3} (3+4\cos(2\theta) - 2\cos\theta) \,d\theta
+              </me>
+            <md>
+                <mrow>A \amp = \left[ 3\theta + 4\left(\frac{\sin(2\theta)}{2}\right) - 2\sin\theta
+              \right]_0^{\pi/3}</mrow>
+                <mrow>\amp = \left[ 3\theta + 2\sin(2\theta) - 2\sin\theta \right]_0^{\pi/3}</mrow>
+                <mrow>\amp = \left( 3\left(\frac{\pi}{3}\right) + 2\sin\left(\frac{2\pi}{3}\right) -
+              2\sin\left(\frac{\pi}{3}\right) \right) - (0+0-0)</mrow>
+                <mrow>\amp = \pi + 2\left(\frac{\sqrt{3}}{2}\right) -
+              2\left(\frac{\sqrt{3}}{2}\right) = \pi</mrow>
+              </md>
+            </p>
+
+          </solution>
+        </exercise>
 
         <exercise xml:id="ex-polar-arc-length-2">
           <statement>
             <p> Find the length of the cardioid <m>r=1+\cos\theta</m>. </p>
           </statement>
-          </exercise>
+          <solution>
+            <p> The formula for the arc length of a polar curve is <me>L = \int_a^b \sqrt{r^2 +
+              \left(\frac{dr}{d\theta}\right)^2} \,d\theta</me>. We first find the derivative of <m>
+              r</m>: <me>
+                r = 1+\cos\theta \implies \frac{dr}{d\theta} = -\sin\theta
+              </me>
+              Now we calculate the term under the square root: <md>
+                <mrow>r^2 + \left(\frac{dr}{d\theta}\right)^2 \amp = (1+\cos\theta)^2 +
+              (-\sin\theta)^2</mrow>
+                <mrow>\amp = (1+2\cos\theta+\cos^2\theta) + \sin^2\theta</mrow>
+                <mrow>\amp = 1+2\cos\theta + (\cos^2\theta+\sin^2\theta) = 1+2\cos\theta+1 =
+              2+2\cos\theta</mrow>
+              </md> The cardioid is traced once for <m>0 \le
+              \theta \le 2\pi</m>. However, the expression <m>2+2\cos\theta</m> is symmetric, so we
+              can integrate from <m>0</m> to <m>\pi</m> and double the result. </p>
+            <p>
+              <me>
+                L = 2 \int_0^\pi \sqrt{2+2\cos\theta} \,d\theta = 2\sqrt{2} \int_0^\pi
+              \sqrt{1+\cos\theta} \,d\theta
+              </me>
+              We use the identity <m>1+\cos\theta = 2\cos^2(\theta/2)</m>: <me>
+                L = 2\sqrt{2} \int_0^\pi \sqrt{2\cos^2(\theta/2)} \,d\theta = 2\sqrt{2} \int_0^\pi
+              \sqrt{2}|\cos(\theta/2)| \,d\theta
+              </me>
+              For <m>0 \le \theta \le \pi</m>, <m>0 \le \theta/2 \le \pi/2</m>, so <m>\cos(\theta/2)
+              \ge 0</m>. <me>
+                L = 4 \int_0^\pi \cos(\theta/2) \,d\theta = 4 \left[ \frac{\sin(\theta/2)}{1/2}
+              \right]_0^\pi
+              </me>
+              <me>
+              = 8 \left[ \sin(\theta/2) \right]_0^\pi = 8(\sin(\pi/2)-\sin(0)) = 8(1-0) = 8
+              </me>
+            </p>
+          </solution>
+        </exercise>
       </exercises>
     </section>
   </article>

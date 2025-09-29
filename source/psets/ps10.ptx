@@ -1,37 +1,111 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<pretext xmlns:ns0="http://www.w3.org/2001/XInclude">
+<?xml version="1.0" encoding="UTF-8"?>
+<pretext xmlns:xi="http://www.w3.org/2001/XInclude">
   <article>
     <section xml:id="ps10-section">
       <title>Problem Set 10</title>
       <subtitle>Power Series</subtitle>
-      <ns0:include href="ps01.ptx" xpointer="xpointer(//section[1]/introduction)" />
+      <xi:include href="ps01.ptx" xpointer="xpointer(//section[1]/introduction)" />
       <exercises>
         <exercise xml:id="ex-power-series-convergence-revised">
           <statement>
             <p> Find the radius of convergence and interval of convergence for the series <me>\sum_{n=1}^\infty
               \frac{x^n}{n^2}</me>. </p>
           </statement>
-          </exercise>
+          <solution>
+            <p> We use the Ratio Test. <me>
+                L = \lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right| = \lim_{n \to \infty}
+              \left| \frac{x^{n+1}}{(n+1)^2} \cdot \frac{n^2}{x^n} \right|
+              </me>
+            </p>
+            <md>
+              <mrow>L \amp = \lim_{n \to \infty} \left| \frac{x^{n+1}}{x^n} \cdot
+                \frac{n^2}{(n+1)^2} \right|</mrow>
+              <mrow>\amp = |x| \lim_{n \to \infty} \left( \frac{n}{n+1} \right)^2 = |x| \lim_{n \to
+                \infty} \left( \frac{1}{1+1/n} \right)^2</mrow>
+              <mrow>\amp = |x| (1)^2 = |x|</mrow>
+            </md>
+            <p> The series converges when <m>L &lt; 1</m>, so we need <m>|x| &lt; 1</m>. The radius
+              of convergence is <m>R=1</m>. The interval of convergence is at least <m>(-1, 1)</m>.
+              We must check the endpoints. </p>
+            <p> At <m>x=1</m>: The series is <me>\sum_{n=1}^\infty \frac{1^n}{n^2} =
+              \sum_{n=1}^\infty \frac{1}{n^2}</me>. This is a convergent <m>p</m>-series (<m>
+              p=2&gt;1</m>). So, <m>x=1</m> is included. </p>
+            <p> At <m>x=-1</m>: The series is <me>\sum_{n=1}^\infty \frac{(-1)^n}{n^2}</me>. This is
+              an alternating series. Since the absolute value series <m>\sum \frac{1}{n^2}</m>
+              converges, this series is absolutely convergent and thus converges. So, <m>x=-1</m> is
+              also included. </p>
+            <p> The interval of convergence is <m>[-1, 1]</m>. </p>
+          </solution>
+        </exercise>
 
         <exercise xml:id="ex-representing-function-as-power-series-revised">
           <statement>
             <p> Find a power series representation for the function <m>f(x) = \frac{1}{1+x}</m> and
               determine its radius of convergence. </p>
           </statement>
-          </exercise>
+          <solution>
+            <p> We know that the geometric series formula is <me>\frac{1}{1-r} = \sum_{n=0}^\infty
+              r^n</me> for <m>|r|&lt;1</m>. We can rewrite our function to match this form. <me>
+                f(x) = \frac{1}{1+x} = \frac{1}{1-(-x)}
+              </me> Now we
+              use the geometric series formula with <m>r=-x</m>. <me>
+                \frac{1}{1-(-x)} = \sum_{n=0}^\infty (-x)^n = \sum_{n=0}^\infty (-1)^n x^n
+              </me>
+            </p>
+            <p> The power series converges when <m>|-x| &lt; 1</m>, which means <m>|x| &lt; 1</m>.
+              The radius of convergence is <m>R=1</m>. </p>
+          </solution>
+        </exercise>
 
         <exercise xml:id="ex-diff-power-series">
           <statement>
             <p> Find a power series representation for the function <m>f(x) = \frac{1}{(1-x)^2}</m>
               and find its radius of convergence. </p>
           </statement>
-          </exercise>
+          <solution>
+            <p> We know that the power series for <m>\frac{1}{1-x}</m> is <me>\frac{1}{1-x} =
+              \sum_{n=0}^\infty x^n</me>. We also know that <me>\frac{d}{dx}\left(\frac{1}{1-x}\right)
+              = \frac{-(-1)}{(1-x)^2} = \frac{1}{(1-x)^2}</me>. By the theorem for differentiation
+              of power series, we can differentiate the series term-by-term: <me>
+              \frac{d}{dx}\left(\sum_{n=0}^\infty x^n\right) = \sum_{n=1}^\infty \frac{d}{dx}(x^n) =
+              \sum_{n=1}^\infty nx^{n-1}
+              </me>
+              The first term (<m>n=0</m>) of the series for <m>1/(1-x)</m> is a constant, so its
+              derivative is 0. The index of the new series starts at <m>n=1</m>. Therefore, the
+              power series representation is <me>f(x) = \sum_{n=1}^\infty nx^{n-1}</me>. </p>
+            <p> The radius of convergence for the differentiated series is the same as the original
+              series, which is <m>R=1</m>. </p>
+          </solution>
+        </exercise>
 
         <exercise xml:id="ex-integral-power-series">
           <statement>
             <p> Find a power series representation for <m>f(x) = \arctan(x)</m>. </p>
           </statement>
-          </exercise>
+          <solution>
+            <p> We know that <me>\frac{d}{dx}(\arctan(x)) = \frac{1}{1+x^2}</me>. We can find a
+              power series for <m>\frac{1}{1+x^2}</m> using the geometric series formula with <m>
+              r=-x^2</m>: <me>
+                \frac{1}{1+x^2} = \frac{1}{1-(-x^2)} = \sum_{n=0}^\infty (-x^2)^n =
+              \sum_{n=0}^\infty (-1)^n x^{2n}
+              </me>
+              This series converges for <m>|-x^2| &lt; 1 \implies x^2 &lt; 1 \implies |x| &lt; 1</m>.
+              Now we integrate this power series term-by-term to get the series for <m>\arctan(x)</m>
+              :
+              <me>
+                \int \frac{1}{1+x^2} \,dx = \int \left( \sum_{n=0}^\infty (-1)^n x^{2n} \right) \,dx
+              </me>
+              <me>
+              \arctan(x) = C + \sum_{n=0}^\infty (-1)^n \frac{x^{2n+1}}{2n+1}
+              </me>
+              To find the constant <m>C</m>, we set <m>x=0</m>. <m>\arctan(0)=0</m>, and the series
+              is 0 at <m>x=0</m>, so <m>C=0</m>. The power series representation is: <me>
+                \arctan(x) = \sum_{n=0}^\infty (-1)^n \frac{x^{2n+1}}{2n+1} = x - \frac{x^3}{3} +
+              \frac{x^5}{5} - \frac{x^7}{7} + \dots
+              </me>
+            </p>
+          </solution>
+        </exercise>
       </exercises>
     </section>
   </article>

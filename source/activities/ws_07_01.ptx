@@ -1,9 +1,10 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<pretext xmlns:ns0="http://www.w3.org/2001/XInclude" xmlns:ns1="https://prefigure.org">
-  <ns0:include href="../docinfo.ptx" />
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pretext xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../docinfo.ptx" />
   <article>
 
-    
+    <!-- When creating a new activity, make a copy of this file with appropriate name -->
     <worksheet margin="1in" bottom="1.25in" xml:id="ws-area">
       <title>Worksheet for Section 7.1</title>
 
@@ -33,7 +34,43 @@
               first need to find where the curves intersect.) </p>
           </statement>
 
-          </exercise>
+          <solution>
+            <p>See <xref ref="fig-ws-area-ex1-sol" /> for a diagram. The two curves intersect when <me>-x
+              = 2-x^2 \iff x^2 - x - 2 = 0 \iff (x+1)(x-2) =
+                0</me> So <m>x=-1</m> or <m>x=2</m>. </p>
+
+            <figure xml:id="fig-ws-area-ex1-sol">
+              <image width="61.8%">
+                <prefigure xmlns="https://prefigure.org"
+                  label="fig-ws-area-ex1-sol-fig">
+                  <diagram dimensions="(300,300)" margins="5">
+                    <definition>NyuViolet="#57068c"</definition>
+                    <definition>UltraViolet="8900e1"</definition>
+                    <definition>MediumViolet1="#702b9d"</definition>
+                    <definition>MediumViolet2="#7b5aa6"</definition>
+                    <definition>LightViolet1="#ab82c5"</definition>
+                    <definition>LightViolet2="#eee6f3"</definition>
+                    <definition>f(x)=2-x^2</definition>
+                    <definition>g(x)=-x</definition>
+                    <definition>a = -1</definition>
+                    <definition>b = 2 </definition>
+                    <coordinates bbox="(-2.2,-2.2,3.2,3.2)">
+                      <grid-axes xlabel="x" ylabel="y" />
+                      <graph at="graph" function="f" />
+                      <graph at="line" function="g" />
+                      <area-between-curves functions="(f,g)" domain="(a,b)" />
+                      <point at="point" p="(a,f(a))" />
+                      <point at="point" p="(b,f(b))" />
+                    </coordinates>
+                  </diagram>
+                </prefigure>
+              </image>
+            </figure>
+
+            <p> The area is <me>\int_{-1}^2 \left((2-x^2)-(-x)\right)\,dx = \frac{9}{2}.</me>
+            </p>
+          </solution>
+        </exercise>
 
         <exercise workspace="1in">
           <task workspace="">
@@ -44,34 +81,35 @@
               <p> See <xref ref="fig-ws-area-ex2-sol" />. </p>
               <figure xml:id="fig-ws-area-ex2-sol">
                 <image width="61.8%">
-                  <ns1:prefigure label="fig-ws-area-ex2-sol-fig">
-                    <ns1:diagram dimensions="(300,300)" margins="5">
-                      <ns1:definition>NyuViolet="#57068c"</ns1:definition>
-                      <ns1:definition>UltraViolet="8900e1"</ns1:definition>
-                      <ns1:definition>MediumViolet1="#702b9d"</ns1:definition>
-                      <ns1:definition>MediumViolet2="#7b5aa6"</ns1:definition>
-                      <ns1:definition>LightViolet1="#ab82c5"</ns1:definition>
-                      <ns1:definition>LightViolet2="#eee6f3"</ns1:definition>
-                      <ns1:definition>f1(x)=-sqrt(x+2)</ns1:definition>
-                      <ns1:definition>f2(x)= sqrt(x+2)</ns1:definition>
-                      <ns1:definition>g(x)=x</ns1:definition>
-                      <ns1:definition>a = -2</ns1:definition>
-                      <ns1:definition>c = -1</ns1:definition>
-                      <ns1:definition>b = 2</ns1:definition>
-                      <ns1:coordinates bbox="(-3.2,-3.2,2.2,2.2)">
-                        <ns1:grid-axes xlabel="x" ylabel="y" />
-                        <ns1:area-between-curves functions="(f1,f2)" domain="(a,c)" stroke="None" />
-                        <ns1:area-between-curves functions="(g,f2)" domain="(c,b)" stroke="None" />
+                  <prefigure xmlns="https://prefigure.org"
+                    label="fig-ws-area-ex2-sol-fig">
+                    <diagram dimensions="(300,300)" margins="5">
+                      <definition>NyuViolet="#57068c"</definition>
+                      <definition>UltraViolet="8900e1"</definition>
+                      <definition>MediumViolet1="#702b9d"</definition>
+                      <definition>MediumViolet2="#7b5aa6"</definition>
+                      <definition>LightViolet1="#ab82c5"</definition>
+                      <definition>LightViolet2="#eee6f3"</definition>
+                      <definition>f1(x)=-sqrt(x+2)</definition>
+                      <definition>f2(x)= sqrt(x+2)</definition>
+                      <definition>g(x)=x</definition>
+                      <definition>a = -2</definition>
+                      <definition>c = -1</definition>
+                      <definition>b = 2</definition>
+                      <coordinates bbox="(-3.2,-3.2,2.2,2.2)">
+                        <grid-axes xlabel="x" ylabel="y" />
+                        <area-between-curves functions="(f1,f2)" domain="(a,c)" stroke="None" />
+                        <area-between-curves functions="(g,f2)" domain="(c,b)" stroke="None" />
 
-                        <ns1:graph function="f1" domain="(-2,3)" />
-                        <ns1:graph function="f2" domain="(-2,3)" />
-                        <ns1:graph function="g" domain="(-3,3)" />
+                        <graph function="f1" domain="(-2,3)" />
+                        <graph function="f2" domain="(-2,3)" />
+                        <graph function="g" domain="(-3,3)" />
 
-                        <ns1:point p="(-1,-1)" />
-                        <ns1:point p="(2,2)" />
-                      </ns1:coordinates>
-                    </ns1:diagram>
-                  </ns1:prefigure>
+                        <point p="(-1,-1)" />
+                        <point p="(2,2)" />
+                      </coordinates>
+                    </diagram>
+                  </prefigure>
                 </image>
               </figure>
             </solution>
@@ -150,27 +188,28 @@
               <p> See <xref ref="fig-ws-area-ex3-sol" />. </p>
               <figure xml:id="fig-ws-area-ex3-sol">
                 <image width="61.8%">
-                  <ns1:prefigure label="fig-ws-area-ex3-sol-fig">
-                    <ns1:diagram dimensions="(300,100)" margins="5">
-                      <ns1:definition>NyuViolet="#57068c"</ns1:definition>
-                      <ns1:definition>UltraViolet="8900e1"</ns1:definition>
-                      <ns1:definition>MediumViolet1="#702b9d"</ns1:definition>
-                      <ns1:definition>MediumViolet2="#7b5aa6"</ns1:definition>
-                      <ns1:definition>LightViolet1="#ab82c5"</ns1:definition>
-                      <ns1:definition>LightViolet2="#eee6f3"</ns1:definition>
-                      <ns1:definition>f(x)=sin(x)</ns1:definition>
-                      <ns1:definition>g(x)=cos(x)</ns1:definition>
-                      <ns1:definition>a = -2</ns1:definition>
-                      <ns1:definition>c = -1</ns1:definition>
-                      <ns1:definition>b = 2</ns1:definition>
-                      <ns1:coordinates bbox="(0,-1,4*pi,1)">
-                        <ns1:grid-axes h-pi-format="yes" xlabel="x" ylabel="y" />
-                        <ns1:area-between-curves functions="(f,g)" domain="(pi/4,5*pi/4)" stroke="None" />
-                        <ns1:graph function="f" domain="(0,4*pi)" />
-                        <ns1:graph function="g" domain="(0,4*pi)" />
-                      </ns1:coordinates>
-                    </ns1:diagram>
-                  </ns1:prefigure>
+                  <prefigure xmlns="https://prefigure.org"
+                    label="fig-ws-area-ex3-sol-fig">
+                    <diagram dimensions="(300,100)" margins="5">
+                      <definition>NyuViolet="#57068c"</definition>
+                      <definition>UltraViolet="8900e1"</definition>
+                      <definition>MediumViolet1="#702b9d"</definition>
+                      <definition>MediumViolet2="#7b5aa6"</definition>
+                      <definition>LightViolet1="#ab82c5"</definition>
+                      <definition>LightViolet2="#eee6f3"</definition>
+                      <definition>f(x)=sin(x)</definition>
+                      <definition>g(x)=cos(x)</definition>
+                      <definition>a = -2</definition>
+                      <definition>c = -1</definition>
+                      <definition>b = 2</definition>
+                      <coordinates bbox="(0,-1,4*pi,1)">
+                        <grid-axes h-pi-format="yes" xlabel="x" ylabel="y" />
+                        <area-between-curves functions="(f,g)" domain="(pi/4,5*pi/4)" stroke="None" />
+                        <graph function="f" domain="(0,4*pi)" />
+                        <graph function="g" domain="(0,4*pi)" />
+                      </coordinates>
+                    </diagram>
+                  </prefigure>
                 </image>
               </figure>
             </solution>
@@ -198,7 +237,62 @@
             <p> Find the area bounded by the graph of <m>y = \ln x</m>, and a line joining the two
               points <m>(1, 0)</m> and <m>(e^2, 2)</m> on the curve. </p>
           </statement>
-          </exercise>
+          <solution>
+            <p> See <xref ref="fig-ws-area-ex4-sol" />. </p>
+            <figure xml:id="fig-ws-area-ex4-sol">
+              <image width="61.8%">
+                <prefigure xmlns="https://prefigure.org"
+                  label="fig-ws-area-ex4-sol-fig">
+                  <diagram dimensions="(300,300)" margins="5">
+                    <definition>NyuViolet="#57068c"</definition>
+                    <definition>UltraViolet="8900e1"</definition>
+                    <definition>MediumViolet1="#702b9d"</definition>
+                    <definition>MediumViolet2="#7b5aa6"</definition>
+                    <definition>LightViolet1="#ab82c5"</definition>
+                    <definition>LightViolet2="#eee6f3"</definition>
+                    <definition>f(x)=ln(x)</definition>
+                    <definition>g(x)=(2/(exp(2)-1))*(x-1)</definition>
+                    <coordinates bbox="(0,-1,10,3)">
+                      <grid-axes xlabel="x" ylabel="y" />
+                      <area-between-curves functions="(f,g)" domain="(1,exp(2))" stroke="None" />
+                      <graph function="f" domain="(0,10)" />
+                      <graph function="g" domain="(0,10)" />
+                      <point p="(1,0)" alignment="n">
+                        <m>(1,0)</m>
+                      </point>
+                      <point p="(exp(2),2)" alignment="n">
+                        <m>(e^2,2)</m>
+                      </point>
+                    </coordinates>
+                  </diagram>
+                </prefigure>
+              </image>
+            </figure>
+
+            <p> The line connecting <m>(1,0)</m> and <m>(e^2,2)</m> has slope <m>\frac{2}{e^2-1}</m>
+              and equation <me>y = \frac{2}{e^2-1}(x-1)</me> So the area between the two is <me>\int_{1}^{e^2}\left[\ln(x)
+              - \left(\frac{2}{e^2-1}(x-1)\right)\right]\,dx = 2</me> On the other hand, we could go
+              vertically. Then the curve has equation <m>x=e^{y}</m> and the line has equation <m>x
+                = \frac{e^2-1}{2}y + 1</m>. The area is <me>\int_{0}^{2} \left[\frac{e^2-1}{2}y + 1
+                -
+                e^y\right]\,dy = 2</me> The <m>y</m> integral eliminates the need to do integration
+              by parts to find <m>\int \ln x\,dx</m>. </p>
+
+            <p> On the third hand, we could simplify our integration this way. Let <m>R_1</m> be the
+              region bounded by <m>y=\ln x</m>, <m>y=0</m>, <m>x=1</m>, and <m>x=e^2</m>. Let <m>R_2</m>
+              be the triangle with vertices <m>(1,0)</m>, <m>(e^2,0)</m>, and <m>(e^2,2)</m>. Notice <m>
+              R_2</m> is contained in <m>R_1</m>, and the region <m>R</m> we want to find the area
+              of is the set of points in <m>R_1</m> that are not in <m>R_2</m>. So the area of <m>R</m>
+              is the area of <m>R_1</m> minus the area of <m>R_2</m>. </p>
+
+            <p> The area of <m>R_2</m> can be calculated using geometry: it is <m>\frac{1}{2}
+                (e^2-1) \cdot 2 = e^2-1</m>. The area of <m>R_1</m> is <me>\begin{aligned}
+                \int_1^2 \ln x \,dx &amp;= \left[x \ln x - x\right]^{e^2}_{1} \\
+                &amp;= \left[(e^2 \ln e^2 - e^2) - (1 \ln 1 - 1)\right] \\
+                &amp;= 2e^2 - e^2 +1 = e^2 + 1
+                \end{aligned}</me> So the area of <m>R</m> is <m>e^2 + 1 - (e^2 - 1) = 2</m>. </p>
+          </solution>
+        </exercise>
 
         <exercise workspace="1in">
           <statement>
@@ -207,7 +301,60 @@
               of the other circle. What is the total area enclosed by both circles?
             </p>
           </statement>
-          </exercise>
+          <solution>
+            <p> Place the circles so that the center of one is at <m>(0,0)</m> and the center of the
+              other is at <m>(2,0)</m>. See <xref ref="fig-ws-area-ex5-sol" />. </p>
+            <figure xml:id="fig-ws-area-ex5-sol">
+              <image width="61.8%">
+                <prefigure xmlns="https://prefigure.org"
+                  label="fig-ws-area-ex5-sol-fig">
+                  <diagram dimensions="(300,225)" margins="5">
+                    <definition>NyuViolet="#57068c"</definition>
+                    <definition>UltraViolet="8900e1"</definition>
+                    <definition>MediumViolet1="#702b9d"</definition>
+                    <definition>MediumViolet2="#7b5aa6"</definition>
+                    <definition>LightViolet1="#ab82c5"</definition>
+                    <definition>LightViolet2="#eee6f3"</definition>
+                    <definition>f(x)=ln(x)</definition>
+                    <definition>g(x)=(2/(exp(2)-1))*(x-1)</definition>
+                    <coordinates bbox="(-3,-3,5,3)">
+                      <grid-axes xlabel="x" ylabel="y" />
+                      <define-shapes>
+                        <circle at="A" center="(0,0)" radius="2" />
+                        <circle at="B" center="(2,0)" radius="2" />
+                      </define-shapes>
+
+                      <shape shapes="A,B" operation="intersection"
+                        fill="LightViolet1" fill-opacity="0.5" />
+                      <shape shape="A" stroke="NyuViolet" />
+                      <shape shape="B" stroke="NyuViolet" />
+                      <point p="(1,sqrt(3))" />
+                      <point p="(1,-sqrt(3))" />
+                    </coordinates>
+                  </diagram>
+                </prefigure>
+              </image>
+            </figure>
+
+            <p> Using the symmetry we see that the area enclosed by both circles is <m>4\int_{-2}^{1}
+              \sqrt{4-x^2}\,dx</m>. Let <m>x=2\Sin{\theta}</m> so that <m>\sqrt{4-x^2} = 2
+              \cos{\theta}</m> and <m>dx=2\cos{\theta}\,d\theta</m>. We have <me>\begin{split}
+              4\int_{-2}^{1} \sqrt{4-x^2}\,dx
+                &amp;= 4 \int_{\sin^{-1}(-1)}^{\sin^{-1}(1/2)} (2 \cos{\theta}) (2 \cos{\theta}
+              \,d\theta) \\
+                &amp;= 16 \int_{-\pi/2}^{\pi/6} \cos^2 \theta \,d\theta \\
+                &amp;= 8 \int_{-\pi/2}^{\pi/6} \left(1+\cos{2\theta}\right) \,d\theta \\
+                &amp;= 8 \left[\theta + \frac{1}{2} \Sin{2\theta}\right]_{-\pi/2}^{\pi/6} \\
+                &amp;= 8 \left[\frac{\pi}{6}-\left(-\frac{\pi}{2}\right)\right]
+                + 4 \left[\Sin{2\cdot\frac{\pi}{6}} - \Sin{2\cdot-\frac{\pi}{2}}\right] \\
+                &amp;= 8 \left[\frac{2\pi}{3}\right]
+                + 4 \left[\Sin{\frac{\pi}{3}} - \Sin{-\pi}\right] \\
+                &amp;= \frac{16\pi}{3} + 4 \cdot \frac{\sqrt{3}}{2}\\
+                &amp;= \frac{16 \pi }{3} + 2\sqrt{3}
+                \end{split}</me>
+            </p>
+          </solution>
+        </exercise>
       </page>
     </worksheet>
   </article>

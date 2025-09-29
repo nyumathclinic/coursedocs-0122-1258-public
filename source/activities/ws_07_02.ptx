@@ -1,9 +1,10 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<pretext xmlns:ns0="http://www.w3.org/2001/XInclude">
-  <ns0:include href="../docinfo.ptx" />
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pretext xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="../docinfo.ptx" />
   <article>
 
-    
+    <!-- When creating a new activity, make a copy of this file with appropriate name -->
     <worksheet margin="1in" bottom="1.25in" xml:id="ws-volslice">
       <title>Worksheet for Section 7.2</title>
 
@@ -33,7 +34,13 @@
               are squares. What is the volume of <m>S</m>? </p>
           </statement>
 
-          </exercise>
+          <solution>
+            <p> A slice through the solid perpendicular to the <m>x</m>-axis at <m>x</m> has volume <me>\Delta
+              V \approx \left(\sqrt{x}\right)^2 \,\Delta x = x \,\Delta x</me> So <me>V = \int_0^1
+              x\,dx = \frac{1}{2}</me>
+            </p>
+          </solution>
+        </exercise>
 
         <exercise workspace="1in">
           <statement>
@@ -42,7 +49,17 @@
               y</m>-axis are equilateral triangles. What is the volume of <m>S</m>? </p>
           </statement>
 
-          </exercise>
+          <solution>
+            <p> First, recall that the area of an equilateral triangle of side length <m>s</m> is <m>
+              \frac{s^2\sqrt{3}}{4}</m>. A slice of the solid perpendicular to the <m>y</m> axis at <m>
+              y</m> is an equilateral triangle with side length <m>3 - y^2/3</m>. So <me>\Delta V
+              \approx \left(3 - \frac{y^2}{3}\right)^2 \frac{\sqrt{3}}{4}\,\Delta x</me> The volume
+              is an integral form of this, to be sure. What are the limits? The curves intersect
+              when <m>y^2 = 9 \implies y = \pm 3</m>. So <me>V = \int_{-3}^3 \left(3 -
+              \frac{y^2}{3}\right)^2 \frac{\sqrt{3}}{4}\,dy = \frac{36 \sqrt{3}}{5} \approx 12.4708.</me>
+            </p>
+          </solution>
+        </exercise>
 
         <exercise workspace="1in">
           <statement>
@@ -50,21 +67,38 @@
               = 0</m> for <m>x \leq 1</m> about the <m>x</m>-axis. </p>
           </statement>
 
-          </exercise>
+          <solution>
+            <p>
+              <me>V = \int_0^1 \pi \left(\sqrt{x}\right)^2 \,dx = \pi \int_0^1 x\,dx = \frac{\pi}{2}</me>
+            </p>
+          </solution>
+        </exercise>
 
         <exercise workspace="1in">
           <statement>
             <p> Find the volume obtained by rotating the region bounded by <m>y = \sqrt{x}</m> and <m>y
               = x^2</m> about the <m>x</m>-axis. </p>
           </statement>
-          </exercise>
+          <solution>
+            <p> The volume is <me>V =\pi \int_0^1 \left(\sqrt{x} - x^2\right)^2 \,dx=
+                \frac{3\pi}{10}</me>
+            </p>
+          </solution>
+        </exercise>
 
         <exercise workspace="1in">
           <statement>
             <p> Find the volume obtained by rotating the region bounded by <m>y = \sqrt{x}</m> and <m>y
               = x^2</m> about the about the line <m>y = -1</m>. </p>
           </statement>
-          </exercise>
+          <solution>
+            <p> The inner and outer radii of the slice at <m>x</m> are not <m>\sqrt{x}</m> and <m>
+              x^2</m>, but <m>\sqrt{x} + 1</m> and <m>x^2 + 1</m>. So <me>V = \int_0^1 \pi
+              \left(\left(\sqrt{x} + 1\right)^2 - \left(x^2 + 1\right)^2 \right) \,dx =
+              \frac{29\pi}{30}</me>
+            </p>
+          </solution>
+        </exercise>
 
         <exercise workspace="1in">
           <statement>
@@ -72,14 +106,32 @@
               Compute the volume of the solid formed by revolving <m>R</m> around (a) the <m>y</m>-axis
               and (b) the line <m>x=-1</m>. </p>
           </statement>
-          </exercise>
+          <solution>
+            <p> We slice the solid perpendicular to the <m>y</m>-axis. At level <m>y</m> the slices
+              are washers with outer radius <m>1</m> and inner radius <m>x= |y|</m>. So <me>\begin{aligned}
+              V = \int_{-1}^1 \pi \left(1^2 - |y|^2\right) &amp;= 2\pi \int_{0}^1 \left(1 -
+              y^2\right) = 2 \pi \cdot \frac{2}{3} = \frac{4\pi}{3}
+                \end{aligned}</me>
+            </p>
+          </solution>
+        </exercise>
 
         <exercise workspace="1in">
           <statement>
             <p> Find the volume of a sphere of radius <m>r</m> by rotating <m>y = \sqrt{r^2 - x^2}</m>
               about the <m>x</m>-axis. </p>
           </statement>
-          </exercise>
+          <solution>
+            <p> Slice the sphere perpendicular to the <m>x</m>-axis. The slice at level <m>x</m> has
+              area <m>\pi\left(\sqrt{r^2-x^2}\right) = \pi (r^2 -x^2)</m>. So <me>\begin{aligned}
+                V &amp;= \int_{-r}^r \pi (r^2 -x^2)\,dx = 2\pi \int_0^r (r^2 - x^2)\,dx \\
+                &amp;= 2\pi \left[r^2x - \frac{x^3}{3}\right]^r_0 = 2\pi \left[r^3 -
+              \frac{r^3}{3}\right] \\
+                &amp;= 2\pi \left(\frac{2r^3}{3}\right) = \frac{4}{3}{\pi r^3}\\
+                \end{aligned}</me>
+            </p>
+          </solution>
+        </exercise>
 
       </page>
     </worksheet>
