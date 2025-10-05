@@ -12,7 +12,7 @@
                         <ns2:created>2025-09-27</ns2:created>
                     </provenance>
                     <statement>
-                        <p> The curves with equations <m>y=x^2-1</m> and <m>2x^3-14x^2+27x-11</m>
+                        <p> The curves with equations <m>y=x^2-1</m> and <m>y=2x^3-14x^2+27x-11</m>
                             intersect in three points. Two of those points are in the first quadrant
                             (both <m>x</m>- and <m>y</m>-coordinates are positive). Find the area of
                             the region bounded by the curves between those two first quadrant
