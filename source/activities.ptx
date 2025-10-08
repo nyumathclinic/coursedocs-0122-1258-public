@@ -24,6 +24,8 @@
     <xi:include href="./activities/ws_06_06.ptx" xpointer="xpointer(//worksheet[1])"/>
     <xi:include href="./activities/ws_07_01.ptx" xpointer="xpointer(//worksheet[1])"/>
     <xi:include href="./activities/ws_07_02.ptx" xpointer="xpointer(//worksheet[1])"/>
+    <xi:include href="./activities/ws_07_03.ptx" xpointer="xpointer(//worksheet[1])"/>
+    <xi:include href="./activities/ws_07_04.ptx" xpointer="xpointer(//worksheet[1])"/>
     <!-- Add more xi:include files here to include them in the main course --> <!-- These would be documents that are fully included into the project. --> <!--
     <xi:include href="./activities/wkst-relns-digramphs.ptx"/>
     --> <!--

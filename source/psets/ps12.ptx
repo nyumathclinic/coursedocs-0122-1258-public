@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<pretext>
+<pretext xmlns:ns0="http://www.w3.org/2001/XInclude">
+  <ns0:include href="../docinfo.ptx" />
   <article>
     <section xml:id="ps12-section">
       <title>Problem Set 12</title>
