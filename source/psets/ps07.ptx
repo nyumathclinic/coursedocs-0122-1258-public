@@ -154,17 +154,17 @@
         <exercise>
           <statement xml:id="ex-sequences-converge">
             <p>Determine the limits of the following sequences, if they exist: <ol>
-                <li>
+                <li xml:id="ex-Rogawski-11-01-18">
                   <p>
                   <m>a_n = \dfrac{4+n-3n^2}{4n^2+1}</m>
                   </p>
                 </li>
-                <li>
+                <li xml:id="ex-Rogawski-11-01-59">
                   <p>
                   <m>a_n = \dfrac{3-4^n}{2+7\cdot 4^n}</m>
                   </p>
                 </li>
-                <li>
+                <li xml:id="ex-Rogawski-11-01-62">
                   <p>
                   <m>a_n = n \sin \left(\frac{\pi}{n}\right)</m>
                   </p>

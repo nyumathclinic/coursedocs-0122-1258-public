@@ -18,8 +18,9 @@
     \newcommand{\ArcTan}[1]{\arctan\left( #1 \right)}
     \newcommand{\Sin}[1]{\sin\left( #1 \right)}
     \newcommand{\Cos}[1]{\cos\left( #1 \right)}
-    \newcommand{\num}[1]{#1}
-    \newcommand{\Seqlist}[1]{\left\{#1\right\}}
+    \providecommand{\num}[1]{#1}
+    \providecommand{\Seqlist}[1]{\left\{#1\right\}}
+    \providecommand{\Sequence}[1]{\left\{#1\right\}}
   </macros>
   <!-- If you put any latex-image elements you can include preambles --> <!-- for those in the next element. -->
   <latex-image-preamble>
@@ -32,7 +33,7 @@
     <!-- FIXME These don't get pre-defined. It might be necessary 
      to xi:include them from another file -->
     <definition>NyuViolet="#57068c"</definition>
-    <definition>UltraViolet="8900e1"</definition>
+    <definition>UltraViolet="#8900e1"</definition>
     <definition>MediumViolet1="#702b9d"</definition>
     <definition>MediumViolet2="#7b5aa6"</definition>
     <definition>LightViolet1="#ab82c5"</definition>
