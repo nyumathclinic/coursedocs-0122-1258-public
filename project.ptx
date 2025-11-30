@@ -170,6 +170,30 @@
         <target name="ws-08-07-scorm" source="activities/ws_08_07.ptx" output-filename="ws_08_07.zip" format="html" output-dir="scorms" publication="publication_standalone_nosols.ptx" compression="scorm" />
         <target name="ws-08-07-pdf" source="activities/ws_08_07.ptx" output-filename="ws_08_07.pdf" format="pdf" output-dir="pdfs" publication="publication_standalone_nosols.ptx" />
         <target name="ws-08-07-tex" source="activities/ws_08_07.ptx" output-filename="ws_08_07.tex" format="latex" output-dir="tex" publication="publication_standalone_nosols.ptx" />
+        <target name="ws-09-01-scorm-sols" source="activities/ws_09_01.ptx" output-filename="ws_09_01-sol.zip" format="html" output-dir="scorms" publication="publication_standalone.ptx" compression="scorm" />
+        <target name="ws-09-01-pdf-sols" source="activities/ws_09_01.ptx" output-filename="ws_09_01-sol.pdf" format="pdf" output-dir="pdfs" publication="publication_standalone.ptx" />
+        <target name="ws-09-01-tex-sols" source="activities/ws_09_01.ptx" output-filename="ws_09_01-sol.tex" format="latex" output-dir="tex" publication="publication_standalone.ptx" />
+        <target name="ws-09-01-scorm" source="activities/ws_09_01.ptx" output-filename="ws_09_01.zip" format="html" output-dir="scorms" publication="publication_standalone_nosols.ptx" compression="scorm" />
+        <target name="ws-09-01-pdf" source="activities/ws_09_01.ptx" output-filename="ws_09_01.pdf" format="pdf" output-dir="pdfs" publication="publication_standalone_nosols.ptx" />
+        <target name="ws-09-01-tex" source="activities/ws_09_01.ptx" output-filename="ws_09_01.tex" format="latex" output-dir="tex" publication="publication_standalone_nosols.ptx" />
+        <target name="ws-09-02-scorm-sols" source="activities/ws_09_02.ptx" output-filename="ws_09_02-sol.zip" format="html" output-dir="scorms" publication="publication_standalone.ptx" compression="scorm" />
+        <target name="ws-09-02-pdf-sols" source="activities/ws_09_02.ptx" output-filename="ws_09_02-sol.pdf" format="pdf" output-dir="pdfs" publication="publication_standalone.ptx" />
+        <target name="ws-09-02-tex-sols" source="activities/ws_09_02.ptx" output-filename="ws_09_02-sol.tex" format="latex" output-dir="tex" publication="publication_standalone.ptx" />
+        <target name="ws-09-02-scorm" source="activities/ws_09_02.ptx" output-filename="ws_09_02.zip" format="html" output-dir="scorms" publication="publication_standalone_nosols.ptx" compression="scorm" />
+        <target name="ws-09-02-pdf" source="activities/ws_09_02.ptx" output-filename="ws_09_02.pdf" format="pdf" output-dir="pdfs" publication="publication_standalone_nosols.ptx" />
+        <target name="ws-09-02-tex" source="activities/ws_09_02.ptx" output-filename="ws_09_02.tex" format="latex" output-dir="tex" publication="publication_standalone_nosols.ptx" />
+        <target name="ws-09-03-scorm-sols" source="activities/ws_09_03.ptx" output-filename="ws_09_03-sol.zip" format="html" output-dir="scorms" publication="publication_standalone.ptx" compression="scorm" />
+        <target name="ws-09-03-pdf-sols" source="activities/ws_09_03.ptx" output-filename="ws_09_03-sol.pdf" format="pdf" output-dir="pdfs" publication="publication_standalone.ptx" />
+        <target name="ws-09-03-tex-sols" source="activities/ws_09_03.ptx" output-filename="ws_09_03-sol.tex" format="latex" output-dir="tex" publication="publication_standalone.ptx" />
+        <target name="ws-09-03-scorm" source="activities/ws_09_03.ptx" output-filename="ws_09_03.zip" format="html" output-dir="scorms" publication="publication_standalone_nosols.ptx" compression="scorm" />
+        <target name="ws-09-03-pdf" source="activities/ws_09_03.ptx" output-filename="ws_09_03.pdf" format="pdf" output-dir="pdfs" publication="publication_standalone_nosols.ptx" />
+        <target name="ws-09-03-tex" source="activities/ws_09_03.ptx" output-filename="ws_09_03.tex" format="latex" output-dir="tex" publication="publication_standalone_nosols.ptx" />
+        <target name="ws-09-04-scorm-sols" source="activities/ws_09_04.ptx" output-filename="ws_09_04-sol.zip" format="html" output-dir="scorms" publication="publication_standalone.ptx" compression="scorm" />
+        <target name="ws-09-04-pdf-sols" source="activities/ws_09_04.ptx" output-filename="ws_09_04-sol.pdf" format="pdf" output-dir="pdfs" publication="publication_standalone.ptx" />
+        <target name="ws-09-04-tex-sols" source="activities/ws_09_04.ptx" output-filename="ws_09_04-sol.tex" format="latex" output-dir="tex" publication="publication_standalone.ptx" />
+        <target name="ws-09-04-scorm" source="activities/ws_09_04.ptx" output-filename="ws_09_04.zip" format="html" output-dir="scorms" publication="publication_standalone_nosols.ptx" compression="scorm" />
+        <target name="ws-09-04-pdf" source="activities/ws_09_04.ptx" output-filename="ws_09_04.pdf" format="pdf" output-dir="pdfs" publication="publication_standalone_nosols.ptx" />
+        <target name="ws-09-04-tex" source="activities/ws_09_04.ptx" output-filename="ws_09_04.tex" format="latex" output-dir="tex" publication="publication_standalone_nosols.ptx" />
 
 
         <!-- Problem Sets -->
