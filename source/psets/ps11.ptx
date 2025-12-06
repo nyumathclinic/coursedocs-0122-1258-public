@@ -5,7 +5,7 @@
     <section xml:id="ps11-section">
       <title>Problem Set 11</title>
       <subtitle>Parametric Curves and Polar Coordinates</subtitle>
-      <ns0:include href="ps01.ptx" xpointer="xpointer(//section[1]/introduction)" />
+      <ns0:include href="ps03.ptx" xpointer="xpointer(//section[1]/introduction)" />
 
 
       <exercises>
